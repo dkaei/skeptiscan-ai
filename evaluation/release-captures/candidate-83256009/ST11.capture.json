@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "caseId": "ST11",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "fe2cc68cd6381ae58b27bdd6073e527eddaf107f6e852ccf7e5f0501e521b821",
+  "inputSha256": "83b5c352f03471d14faf5dd41fa11eb9e279e2b03617e52623627218cd0f07d8",
+  "capturedAt": "2026-09-27T04:03:02.341Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "Chat helper: Send me the account login code to complete your sign-in.",
+    "context": "My note says I am only entering a code in my own app and no one wants me to tell them anything. I am unsure which description is correct for the step in front of me.",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "5d375c04-bf68-44e0-b7db-f1bc43b1b276",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T04:03:02.341Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "5d375c04-bf68-44e0-b7db-f1bc43b1b276",
+          "status": "complete",
+          "title": "Keep account codes private",
+          "nextStep": "Do not send your password or account verification code to another person.",
+          "reason": "Sharing an account code or password can let someone access your account.",
+          "uncertainty": "The sender’s identity and intentions have not been verified.",
+          "evidence": [
+            {
+              "id": "guidance-account-credentials",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Keep banking credentials private",
+              "detail": "DBS advises against giving another person banking credentials, one-time passwords or Digital Token approvals. This source concerns account authentication; it does not classify ordinary parcel-collection codes. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.dbs.com.sg/personal/deposits/security-and-you/default.page",
+              "checkedAt": "2026-09-27T04:02:59.076Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "tell someone a login or account code",
+                "quote": "Send me the account login code to complete your sign-in."
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [
+              "Did you start this request yourself?",
+              "Are they asking you to tell someone a login or account code?",
+              "Did someone ask you to install an app or allow remote access?",
+              "Were you already expecting this payment request?"
+            ]
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T04:03:01.860Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

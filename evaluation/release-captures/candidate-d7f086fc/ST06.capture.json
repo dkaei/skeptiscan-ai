@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "caseId": "ST06",
+  "candidateHash": "3c9b769f10b5b40c9f521f25fba4a3d6281c8ca59526fff0dd655c12843b59c2",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "fe2cc68cd6381ae58b27bdd6073e527eddaf107f6e852ccf7e5f0501e521b821",
+  "inputSha256": "65ba51a1188dd7383b72d7216a72adde394cf50f5759788c5f75489d536af0f9",
+  "capturedAt": "2026-09-27T09:16:35.197Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "The fictional Cedar Workshop really repaired my chair and I owe S$85. I opened the portal I normally use myself. It shows the agreed workshop payee and lets me pay there or settle at the workshop when I collect the chair. There is no new payee, unexpected link, secrecy instruction or urgent deadline.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "461bf1ea-8681-46fe-867c-795913c3df28",
+        "httpStatus": 200,
+        "observedStatus": "partial",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T09:16:35.197Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "461bf1ea-8681-46fe-867c-795913c3df28",
+          "status": "partial",
+          "title": "Check incomplete",
+          "nextStep": "Confirm the request through a contact route you already trust.",
+          "reason": "The final AI review could not be completed.",
+          "uncertainty": "Earlier findings do not replace a completed assessment.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "pay S$85",
+                "quote": "I owe S$85.",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 58,
+                  "end": 69
+                }
+              },
+              {
+                "action": "pay on the portal",
+                "quote": "It shows the agreed workshop payee and lets me pay there",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 113,
+                  "end": 169
+                }
+              },
+              {
+                "action": "settle at the workshop when I collect the chair",
+                "quote": "or settle at the workshop when I collect the chair",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 170,
+                  "end": 220
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T09:16:34.947Z",
+          "aiUsed": true,
+          "recovery": "retry"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "caseId": "ST14",
+  "candidateHash": "fe8372971341d763ca2440a1e164e101dd5801aa8c498cfa467f955992c627d6",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "fe2cc68cd6381ae58b27bdd6073e527eddaf107f6e852ccf7e5f0501e521b821",
+  "inputSha256": "233e05b669c9b5afb359179af46c4a9e81fc616053d19174e319b62491776e60",
+  "capturedAt": "2026-09-27T12:50:30.719Z",
+  "submittedInput": {
+    "mode": "call",
+    "content": "The person on the support call asked which light was flashing and told me to restart my tablet. The phrase install a remote-access app also appears in an older scam-awareness example in my notes.",
+    "context": "I have checked my notes: only restart advice belongs to this call. The installation phrase is from the old example; this caller has not asked for software, passwords, payments or device access.",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "999cad70-78a1-4312-99d5-efdd37646ad2",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T12:50:30.719Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "999cad70-78a1-4312-99d5-efdd37646ad2",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "As described, “The person on the support call asked which light was flashing and told me to restart my tablet.”; “only restart advice belongs to this call.”; “this caller has not asked for software, passwords, payments or device access.”. This ordinary arrangement states no payment, account-access or remote-control demand; the contact’s identity is not verified.",
+          "uncertainty": "This covers the details supplied. A later request may need a new check.",
+          "evidence": [
+            {
+              "id": "phone-unavailable",
+              "kind": "phone",
+              "state": "unavailable",
+              "title": "Caller identity is not verified",
+              "detail": "No complete number was extracted and no authorised reported-number feed is connected. The supplied description can still be assessed for the action requested.",
+              "checkedAt": "2026-09-27T12:50:26.481Z"
+            },
+            {
+              "id": "guidance-remote-access",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Check unexpected technical-support requests",
+              "detail": "SPF describes technical-support scams that ask people to download remote-access software or grant control of their device. Confirm an unexpected support request through the software provider’s official channels before following its instructions. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.police.gov.sg/Media-Hub/News/2026/06/20260609_joint_advisory_on_technical_support_scams_involving_the_impersonation_of_microsoft",
+              "checkedAt": "2026-09-27T12:50:26.481Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "restart my tablet",
+                "quote": "told me to restart my tablet.",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 66,
+                  "end": 95
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T12:50:29.780Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

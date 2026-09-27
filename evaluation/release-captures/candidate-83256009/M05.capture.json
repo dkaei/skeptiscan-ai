@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "caseId": "M05",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "dc2839aa6f94e519bb35c29dfa6c6428292c9945fd15cfd52cb3542ceafb501f",
+  "capturedAt": "2026-09-27T03:57:37.339Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "A recruiter in a chat says I passed an online job interview. Before my first shift, I must transfer S$180 to a personal account to unlock tasks. They say the deposit is fully refundable after I finish five tasks.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "7320059d-41f6-42f7-8cc2-9619eeb8f6ec",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T03:57:37.339Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "7320059d-41f6-42f7-8cc2-9619eeb8f6ec",
+          "status": "complete",
+          "title": "Confirm the payment request",
+          "nextStep": "Verify who should receive the payment through a trusted, independent contact route.",
+          "reason": "Confirming a payment through a separate trusted route can help prevent a mistaken transfer.",
+          "uncertainty": "The recipient and purpose of the payment have not been verified.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "transfer money",
+                "quote": "I must transfer S$180 to a personal account to unlock tasks"
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [
+              "Were you already expecting this payment request?"
+            ]
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T03:57:36.860Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

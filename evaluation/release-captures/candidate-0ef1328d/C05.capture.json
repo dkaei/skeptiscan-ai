@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "caseId": "C05",
+  "candidateHash": "fe8372971341d763ca2440a1e164e101dd5801aa8c498cfa467f955992c627d6",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "e04ef5870456afdef2a8fe628d14da4e4ed0e70ed561c6e39d15f009999dff85",
+  "capturedAt": "2026-09-27T12:44:52.067Z",
+  "submittedInput": {
+    "mode": "call",
+    "content": "I called the support number from the receipt for my new printer. The person asked which light was flashing and suggested restarting the printer. They did not request a password, payment, app installation or remote access.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "f172fedc-3b4a-4a2f-ac2f-d5b9bbaedbbd",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T12:44:52.067Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "f172fedc-3b4a-4a2f-ac2f-d5b9bbaedbbd",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "As described, “The person asked which light was flashing and suggested restarting the printer.”; “They did not request a password, payment, app installation or remote access.”. This ordinary arrangement states no payment, account-access or remote-control demand; the contact’s identity is not verified.",
+          "uncertainty": "This covers the details supplied. A later request may need a new check.",
+          "evidence": [
+            {
+              "id": "phone-unavailable",
+              "kind": "phone",
+              "state": "unavailable",
+              "title": "Caller identity is not verified",
+              "detail": "No complete number was extracted and no authorised reported-number feed is connected. The supplied description can still be assessed for the action requested.",
+              "checkedAt": "2026-09-27T12:44:48.641Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T12:44:51.142Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

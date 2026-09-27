@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "caseId": "ST01",
+  "candidateHash": "fe8372971341d763ca2440a1e164e101dd5801aa8c498cfa467f955992c627d6",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "fe2cc68cd6381ae58b27bdd6073e527eddaf107f6e852ccf7e5f0501e521b821",
+  "inputSha256": "977832291f056d8fdf37b15bbd1275784c7a1577ecb7b206e8b7e6374e0b9583",
+  "capturedAt": "2026-09-27T12:48:26.492Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "I really booked a dental appointment with the fictional Meadow Clinic for tomorrow. A new message gives the correct appointment time, then says: To keep this slot, send the login verification code from your banking app to our coordinator in this chat. No appointment fee is due.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "4661ff36-c79d-46f5-94ef-10a5a582e833",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T12:48:26.492Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "4661ff36-c79d-46f5-94ef-10a5a582e833",
+          "status": "complete",
+          "title": "Keep account codes private",
+          "nextStep": "Do not send your password or account verification code to another person.",
+          "reason": "“I really booked a dental appointment with the fictional Meadow Clinic for tomorrow.” does not authorise the separate request “To keep this slot, send the login verification code from your banking app to our coordinator in this chat.”. Additional supplied detail: “No appointment fee is due.”. Sharing a password or account code, or approving another person’s sign-in, can give them account access.",
+          "uncertainty": "The sender’s identity and intentions have not been verified.",
+          "evidence": [
+            {
+              "id": "guidance-account-credentials",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Keep banking credentials private",
+              "detail": "DBS advises against giving another person banking credentials, one-time passwords or Digital Token approvals. This source concerns account authentication; it does not classify ordinary parcel-collection codes. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.dbs.com.sg/personal/deposits/security-and-you/default.page",
+              "checkedAt": "2026-09-27T12:48:21.875Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": "Meadow Clinic",
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "send the login verification code from your banking app to our coordinator in this chat",
+                "quote": "send the login verification code from your banking app to our coordinator in this chat",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 164,
+                  "end": 250
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T12:48:25.574Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

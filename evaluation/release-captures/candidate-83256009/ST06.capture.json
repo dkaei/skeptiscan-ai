@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "caseId": "ST06",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "fe2cc68cd6381ae58b27bdd6073e527eddaf107f6e852ccf7e5f0501e521b821",
+  "inputSha256": "65ba51a1188dd7383b72d7216a72adde394cf50f5759788c5f75489d536af0f9",
+  "capturedAt": "2026-09-27T04:02:17.909Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "The fictional Cedar Workshop really repaired my chair and I owe S$85. I opened the portal I normally use myself. It shows the agreed workshop payee and lets me pay there or settle at the workshop when I collect the chair. There is no new payee, unexpected link, secrecy instruction or urgent deadline.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "6d6bc367-4367-493c-aea7-ceaf500b7906",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T04:02:17.909Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "6d6bc367-4367-493c-aea7-ceaf500b7906",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "Your description asks for information, without a stated payment, account-code or device-access request.",
+          "uncertainty": "This covers the details supplied. A later request may need a new check.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [],
+            "unreadableDetails": [],
+            "missingContext": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T04:02:17.441Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

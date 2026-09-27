@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "caseId": "ST01",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "fe2cc68cd6381ae58b27bdd6073e527eddaf107f6e852ccf7e5f0501e521b821",
+  "inputSha256": "977832291f056d8fdf37b15bbd1275784c7a1577ecb7b206e8b7e6374e0b9583",
+  "capturedAt": "2026-09-27T04:01:51.293Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "I really booked a dental appointment with the fictional Meadow Clinic for tomorrow. A new message gives the correct appointment time, then says: To keep this slot, send the login verification code from your banking app to our coordinator in this chat. No appointment fee is due.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "c348f6ef-b576-41ee-b405-4ff13cd8a3a1",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T04:01:51.293Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "c348f6ef-b576-41ee-b405-4ff13cd8a3a1",
+          "status": "complete",
+          "title": "Keep account codes private",
+          "nextStep": "Do not send your password or account verification code to another person.",
+          "reason": "Sharing an account code or password can let someone access your account.",
+          "uncertainty": "The sender’s identity and intentions have not been verified.",
+          "evidence": [
+            {
+              "id": "guidance-account-credentials",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Keep banking credentials private",
+              "detail": "DBS advises against giving another person banking credentials, one-time passwords or Digital Token approvals. This source concerns account authentication; it does not classify ordinary parcel-collection codes. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.dbs.com.sg/personal/deposits/security-and-you/default.page",
+              "checkedAt": "2026-09-27T04:01:48.876Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": "Meadow Clinic",
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "send a login verification code to a coordinator in this chat",
+                "quote": "send the login verification code from your banking app to our coordinator in this chat"
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [
+              "Did you start this request yourself?",
+              "Are they asking you to tell someone a login or account code?"
+            ]
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T04:01:50.809Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

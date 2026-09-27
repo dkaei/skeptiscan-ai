@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "caseId": "ST02",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "fe2cc68cd6381ae58b27bdd6073e527eddaf107f6e852ccf7e5f0501e521b821",
+  "inputSha256": "eed75842835c31b6ce7aced6ff278b8cfdc43a1a00b8bd1ce144e0376507e0e1",
+  "capturedAt": "2026-09-27T04:01:55.717Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "I really booked a dental appointment with the fictional Meadow Clinic for tomorrow. A message gives the correct appointment time and asks me to arrive ten minutes early with my appointment reference. It explicitly says not to send banking codes, passwords or payment in the chat.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "40f7caf1-a688-44cf-9d93-8d3c2318dffc",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T04:01:55.717Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "40f7caf1-a688-44cf-9d93-8d3c2318dffc",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "Your description asks for information, without a stated payment, account-code or device-access request.",
+          "uncertainty": "This covers the details supplied. A later request may need a new check.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": "Meadow Clinic",
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "arrive ten minutes early",
+                "quote": "asks me to arrive ten minutes early"
+              },
+              {
+                "action": "have your appointment reference ready",
+                "quote": "with my appointment reference"
+              },
+              {
+                "action": "not send banking codes, passwords or payment in the chat",
+                "quote": "It explicitly says not to send banking codes, passwords or payment in the chat"
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T04:01:55.240Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

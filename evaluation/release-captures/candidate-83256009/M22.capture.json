@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "caseId": "M22",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "016eaf2b200d7fae21e65d16c7c607c7e71397f77b3de39ca7be9ba372b7da0f",
+  "capturedAt": "2026-09-27T03:59:49.788Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "A forwarded message claims CPF will close every account tomorrow unless the message is shared with ten people. It includes no source, link, payment instruction or request for a code. Is the claim true?",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "8b956c69-18da-446c-84e7-325c13ce73ad",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T03:59:49.788Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "8b956c69-18da-446c-84e7-325c13ce73ad",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "Your description asks for information, without a stated payment, account-code or device-access request.",
+          "uncertainty": "This covers the details supplied. A later request may need a new check.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": "CPF",
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "share the message with ten people",
+                "quote": "unless the message is shared with ten people"
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T03:59:49.307Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

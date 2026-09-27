@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "caseId": "M20",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "bc15459611b28019060daa8bbd09e81f32c91378e8d48bc59a122847b94da4b8",
+  "capturedAt": "2026-09-27T03:59:23.644Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "A message says: Please pay S$20 today. I have not given any information about whether this is a bill I was expecting.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "0cba9c11-840b-4923-aedd-45a7656ffd14",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T03:59:23.644Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "0cba9c11-840b-4923-aedd-45a7656ffd14",
+          "status": "complete",
+          "title": "Confirm the payment request",
+          "nextStep": "Verify who should receive the payment through a trusted, independent contact route.",
+          "reason": "Confirming a payment through a separate trusted route can help prevent a mistaken transfer.",
+          "uncertainty": "The recipient and purpose of the payment have not been verified.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "pay",
+                "quote": "Please pay S$20 today."
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [
+              "Were you already expecting this payment request?"
+            ]
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T03:59:23.150Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

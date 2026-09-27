@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "caseId": "ST13",
+  "candidateHash": "3c9b769f10b5b40c9f521f25fba4a3d6281c8ca59526fff0dd655c12843b59c2",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "fe2cc68cd6381ae58b27bdd6073e527eddaf107f6e852ccf7e5f0501e521b821",
+  "inputSha256": "89a5f6baaa99328f2f2f3edf6be5ca139223127d9f10abbb0ed5baf049f9af4e",
+  "capturedAt": "2026-09-27T09:18:13.521Z",
+  "submittedInput": {
+    "mode": "call",
+    "content": "My first note of this call says: the helper wants me to install a remote-access app so they can operate my tablet.",
+    "context": "My other note says the helper only asked me to restart the tablet and requested no software or access. I cannot tell which note describes the step they currently want.",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "2b2c7a3b-d81f-4232-8f74-6603beb49ba2",
+        "httpStatus": 200,
+        "observedStatus": "needs_context",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": "asked_to_install"
+      },
+      "receivedAt": "2026-09-27T09:18:07.994Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "2b2c7a3b-d81f-4232-8f74-6603beb49ba2",
+          "status": "needs_context",
+          "title": "One detail would help",
+          "nextStep": "Answer the question below if you know. You can choose “Not sure”.",
+          "reason": "The accounts disagree: “the helper wants me to install a remote-access app so they can operate my tablet” versus “the helper only asked me to restart the tablet and requested no software or access”. The current step is unresolved. If the step involves these capabilities: Remote access can let someone operate your device.",
+          "uncertainty": "Your answer may change the next step.",
+          "evidence": [
+            {
+              "id": "phone-unavailable",
+              "kind": "phone",
+              "state": "unavailable",
+              "title": "Caller identity is not verified",
+              "detail": "No complete number was extracted and no authorised reported-number feed is connected. The supplied description can still be assessed for the action requested.",
+              "checkedAt": "2026-09-27T09:18:03.196Z"
+            },
+            {
+              "id": "guidance-remote-access",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Check unexpected technical-support requests",
+              "detail": "SPF describes technical-support scams that ask people to download remote-access software or grant control of their device. Confirm an unexpected support request through the software provider’s official channels before following its instructions. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.police.gov.sg/Media-Hub/News/2026/06/20260609_joint_advisory_on_technical_support_scams_involving_the_impersonation_of_microsoft",
+              "checkedAt": "2026-09-27T09:18:03.196Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "install a remote-access app",
+                "quote": "the helper wants me to install a remote-access app so they can operate my tablet",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 33,
+                  "end": 113
+                }
+              },
+              {
+                "action": "restart the tablet",
+                "quote": "the helper only asked me to restart the tablet and requested no software or access",
+                "source": "context",
+                "span": {
+                  "source": "context",
+                  "start": 19,
+                  "end": 101
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [
+              "Did someone ask you to install an app or allow remote access?"
+            ],
+            "screenshotIssues": []
+          },
+          "question": {
+            "id": "asked_to_install",
+            "text": "Did someone ask you to install an app or allow remote access?",
+            "options": [
+              "Yes",
+              "No",
+              "Not sure"
+            ]
+          },
+          "checkedAt": "2026-09-27T09:18:07.836Z",
+          "aiUsed": true,
+          "hasContinuation": true
+        }
+      }
+    },
+    {
+      "observation": {
+        "kind": "clarification",
+        "requestId": "2b2c7a3b-d81f-4232-8f74-6603beb49ba2",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T09:18:13.521Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "2b2c7a3b-d81f-4232-8f74-6603beb49ba2",
+          "status": "complete",
+          "title": "Pause before acting",
+          "nextStep": "Confirm the request through a contact route you already trust.",
+          "reason": "The accounts disagree: “the helper wants me to install a remote-access app so they can operate my tablet” versus “the helper only asked me to restart the tablet and requested no software or access”. The current step is unresolved. If the step involves these capabilities: Remote access can let someone operate your device.",
+          "uncertainty": "The supplied accounts disagree; the current request has not been established.",
+          "evidence": [
+            {
+              "id": "phone-unavailable",
+              "kind": "phone",
+              "state": "unavailable",
+              "title": "Caller identity is not verified",
+              "detail": "No complete number was extracted and no authorised reported-number feed is connected. The supplied description can still be assessed for the action requested.",
+              "checkedAt": "2026-09-27T09:18:08.522Z"
+            },
+            {
+              "id": "guidance-remote-access",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Check unexpected technical-support requests",
+              "detail": "SPF describes technical-support scams that ask people to download remote-access software or grant control of their device. Confirm an unexpected support request through the software provider’s official channels before following its instructions. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.police.gov.sg/Media-Hub/News/2026/06/20260609_joint_advisory_on_technical_support_scams_involving_the_impersonation_of_microsoft",
+              "checkedAt": "2026-09-27T09:18:08.522Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "install a remote-access app",
+                "quote": "the helper wants me to install a remote-access app so they can operate my tablet",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 33,
+                  "end": 113
+                }
+              },
+              {
+                "action": "restart the tablet",
+                "quote": "the helper only asked me to restart the tablet and requested no software or access",
+                "source": "context",
+                "span": {
+                  "source": "context",
+                  "start": 19,
+                  "end": 101
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [
+              "Did someone ask you to install an app or allow remote access?"
+            ],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T09:18:13.361Z",
+          "aiUsed": true
+        }
+      },
+      "answer": "unsure"
+    }
+  ]
+}

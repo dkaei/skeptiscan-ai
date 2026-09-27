@@ -1,0 +1,603 @@
+{
+  "version": "skeptiscan-screenshot-fixtures-completion-2026-09-27",
+  "createdAt": "2026-09-26T16:04:18.187Z",
+  "generatedBy": "scripts/create-remaining-evaluation-fixtures.mjs",
+  "referenceFile": "../screenshot-specs-v1.json",
+  "referenceSha256": "f8c34f0a49ca07955ce985bccc50c09bd5e296caee9e3abb9cc6fb530758f9e4",
+  "status": "pixels_created_ai_visually_reviewed_not_human_reviewed",
+  "humanReviewed": false,
+  "modelOutputsSeen": false,
+  "font": {
+    "family": "Arial",
+    "sourcePath": "C:/Windows/Fonts/arial.ttf",
+    "sourceSha256": "b3658eadae55e682b5f69eb64c439c1ecc8f196c0bb8d4756d145d13bc86476a",
+    "rendering": "SVG text through Sharp/libvips on this Windows host; Arial available as a system font."
+  },
+  "renderer": {
+    "sharp": "0.35.4",
+    "vips": "8.18.6",
+    "svg": "2.62.91"
+  },
+  "preservedOriginalHashes": {
+    "S01.png": "a859f3ff69df1597762b4ca7ba1cfe7e21271f7bb9776fb651556871184edcbd",
+    "S02.png": "c284fa4172255699e53c1f6ed6fabf099d4e7e91fd4b71674379f1d8335b3f4e",
+    "S04.png": "cd87cd498acc92da8937fe8e5e5cf058a5e2e13a6b3b9e918687b64d74670db3",
+    "S06.png": "29097926fac8f83835d712039accd3dc55b9f0dbca2ecb6aca959a960941b59d",
+    "manifest.json": "36afc45135f9d68d9dfc53f0e87d0031c6226b8e4238b9afea1243b940f16a37",
+    "../screenshot-specs-v1.json": "f8c34f0a49ca07955ce985bccc50c09bd5e296caee9e3abb9cc6fb530758f9e4"
+  },
+  "limitations": [
+    "Five remaining scenarios only: existing S02 plus new S03/S05/S07/S08. No model call or application run performed by this generator.",
+    "Synthetic fictional panels without real conversations, code values, personal contacts or account identifiers.",
+    "Human-reviewed remains false. AI pixel inspection cannot establish human comprehension or accessibility.",
+    "All input/context overrides are copied verbatim from the frozen reference, not rewritten for UI convenience.",
+    "S03 contains a public government homepage as literal screenshot text only. It is not visited, and no sender or transaction is authenticated.",
+    "S07 contains a drawn button only. There is no target URL in the SVG, PNG or input.",
+    "The original files and original manifest remain unchanged. This separate manifest does not retrospectively change their historical status."
+  ],
+  "fixtures": [
+    {
+      "id": "S02",
+      "file": "S02.png",
+      "fileCreatedInThisBatch": false,
+      "sha256": "c284fa4172255699e53c1f6ed6fabf099d4e7e91fd4b71674379f1d8335b3f4e",
+      "byteLength": 25204,
+      "width": 600,
+      "height": 650,
+      "mimeType": "image/png",
+      "literalVisibleText": [
+        "ACCOUNT SETUP",
+        "You started signing in to your",
+        "own account.",
+        "Enter the code sent to your",
+        "phone in this app.",
+        "Do not tell this code to anyone."
+      ],
+      "textRuns": [
+        {
+          "text": "ACCOUNT SETUP",
+          "x": 38,
+          "y": 64,
+          "size": 26,
+          "fontFamily": "Arial",
+          "fontSizePx": 26
+        },
+        {
+          "text": "You started signing in to your",
+          "x": 48,
+          "y": 171,
+          "fontFamily": "Arial",
+          "fontSizePx": 24
+        },
+        {
+          "text": "own account.",
+          "x": 48,
+          "y": 213,
+          "fontFamily": "Arial",
+          "fontSizePx": 24
+        },
+        {
+          "text": "Enter the code sent to your",
+          "x": 48,
+          "y": 296,
+          "fontFamily": "Arial",
+          "fontSizePx": 24
+        },
+        {
+          "text": "phone in this app.",
+          "x": 48,
+          "y": 338,
+          "fontFamily": "Arial",
+          "fontSizePx": 24
+        },
+        {
+          "text": "Do not tell this code to anyone.",
+          "x": 48,
+          "y": 434,
+          "fontFamily": "Arial",
+          "fontSizePx": 24
+        }
+      ],
+      "crop": null,
+      "blur": null,
+      "inputOverrides": {
+        "context": "I started this sign-in in the app I normally use. No person is asking me for the code."
+      },
+      "inputWithoutImage": {
+        "mode": "screenshot",
+        "content": "",
+        "context": "I started this sign-in in the app I normally use. No person is asking me for the code.",
+        "senderEmail": "",
+        "senderPhone": "",
+        "externalLookup": false
+      },
+      "pixelReference": {
+        "readableConsequentialSpans": [
+          "You started signing in to your own account.",
+          "Enter the code sent to your phone in this app.",
+          "Do not tell this code to anyone."
+        ],
+        "unreadableConsequentialFields": [],
+        "absentFields": [
+          "actual code",
+          "verified app identity"
+        ]
+      },
+      "expected": {
+        "allowedActionIds": [
+          "check_independently"
+        ],
+        "allowedStatuses": [
+          "complete"
+        ],
+        "clarificationPolicy": "forbidden",
+        "mustExplain": [
+          "Entering a code in a self-initiated workflow differs from sending it to someone."
+        ],
+        "prohibitedOutcomes": [
+          "Claim the app or screenshot is authenticated.",
+          "Describe the displayed instruction as asking the user to send a code to a person."
+        ]
+      },
+      "transportRequirement": "Preserve the separate context exactly; do not run the fixture without it merely because the screenshot UI lacks a context field.",
+      "aiVisualReview": {
+        "status": "inspected_actual_final_pixels_before_model_outputs",
+        "reviewer": "Codex AI subagent",
+        "method": "view_image",
+        "reviewedAt": "2026-09-26T16:05:26.685Z",
+        "reviewedSha256": "c284fa4172255699e53c1f6ed6fabf099d4e7e91fd4b71674379f1d8335b3f4e",
+        "humanReviewed": false,
+        "modelOutputsSeen": false,
+        "notes": "Inspected actual unchanged pixels: all own-account setup, in-app code entry and do-not-tell-anyone lines are legible. No actual code or verified app identity. The exact separate context remains required."
+      }
+    },
+    {
+      "id": "S03",
+      "file": "S03.png",
+      "fileCreatedInThisBatch": true,
+      "sha256": "6240bab02c329197124c8eac1454de88c761f00df21b30b6ea6fa3539cb8bf21",
+      "byteLength": 34486,
+      "width": 600,
+      "height": 650,
+      "mimeType": "image/png",
+      "literalVisibleText": [
+        "COMMUNITY UPDATE",
+        "Read public information at",
+        "https://www.gov.sg/",
+        "To reserve your allocation,",
+        "transfer S$90 now to my",
+        "personal account.",
+        "The public information page is",
+        "proof you can trust me."
+      ],
+      "textRuns": [
+        {
+          "text": "COMMUNITY UPDATE",
+          "x": 38,
+          "y": 64,
+          "size": 26,
+          "fontFamily": "Arial",
+          "fontSizePx": 26
+        },
+        {
+          "text": "Read public information at",
+          "x": 48,
+          "y": 169,
+          "fontFamily": "Arial",
+          "fontSizePx": 24
+        },
+        {
+          "text": "https://www.gov.sg/",
+          "x": 48,
+          "y": 211,
+          "fontFamily": "Arial",
+          "fontSizePx": 24
+        },
+        {
+          "text": "To reserve your allocation,",
+          "x": 48,
+          "y": 287,
+          "fontFamily": "Arial",
+          "fontSizePx": 24
+        },
+        {
+          "text": "transfer S$90 now to my",
+          "x": 48,
+          "y": 329,
+          "fontFamily": "Arial",
+          "fontSizePx": 24
+        },
+        {
+          "text": "personal account.",
+          "x": 48,
+          "y": 371,
+          "fontFamily": "Arial",
+          "fontSizePx": 24
+        },
+        {
+          "text": "The public information page is",
+          "x": 48,
+          "y": 447,
+          "fontFamily": "Arial",
+          "fontSizePx": 24
+        },
+        {
+          "text": "proof you can trust me.",
+          "x": 48,
+          "y": 489,
+          "fontFamily": "Arial",
+          "fontSizePx": 24
+        }
+      ],
+      "crop": null,
+      "blur": null,
+      "obscuration": null,
+      "inputOverrides": {},
+      "inputWithoutImage": {
+        "mode": "screenshot",
+        "content": "",
+        "context": "",
+        "senderEmail": "",
+        "senderPhone": "",
+        "externalLookup": false
+      },
+      "pixelReference": {
+        "readableConsequentialSpans": [
+          "https://www.gov.sg/",
+          "transfer S$90 now to my personal account"
+        ],
+        "unreadableConsequentialFields": [],
+        "absentFields": [
+          "account number",
+          "authenticated sender"
+        ]
+      },
+      "expected": {
+        "allowedActionIds": [
+          "verify_payment"
+        ],
+        "allowedStatuses": [
+          "complete"
+        ],
+        "clarificationPolicy": "forbidden",
+        "mustExplain": [
+          "A known information host does not authenticate the sender or payment request."
+        ],
+        "prohibitedOutcomes": [
+          "Approve the transfer because the screenshot includes an official address.",
+          "Claim the site was opened or the transaction verified."
+        ]
+      },
+      "aiVisualReview": {
+        "status": "inspected_actual_final_pixels_before_model_outputs",
+        "reviewer": "Codex AI subagent",
+        "method": "view_image",
+        "reviewedAt": "2026-09-26T16:05:26.685Z",
+        "reviewedSha256": "6240bab02c329197124c8eac1454de88c761f00df21b30b6ea6fa3539cb8bf21",
+        "humanReviewed": false,
+        "modelOutputsSeen": false,
+        "notes": "Inspected actual final pixels: full https://www.gov.sg/ and transfer S$90 to a personal account are equally legible. The claimed proof-of-trust sentence is visible as fictional sender content. No account number or authenticated sender."
+      }
+    },
+    {
+      "id": "S05",
+      "file": "S05.png",
+      "fileCreatedInThisBatch": true,
+      "sha256": "3ba5f0b69d28d82fcde319b3db1769b0336394e5c5eb3b5e04c0a1fcc459e220",
+      "byteLength": 16367,
+      "width": 600,
+      "height": 650,
+      "mimeType": "image/png",
+      "literalVisibleText": [
+        "MESSAGE",
+        "Send the login code to me",
+        "in this chat.",
+        "I will take care of the rest."
+      ],
+      "textRuns": [
+        {
+          "text": "MESSAGE",
+          "x": 38,
+          "y": 64,
+          "size": 26,
+          "fontFamily": "Arial",
+          "fontSizePx": 26
+        },
+        {
+          "text": "Send the login code to me",
+          "x": 48,
+          "y": 177,
+          "fontFamily": "Arial",
+          "fontSizePx": 24
+        },
+        {
+          "text": "in this chat.",
+          "x": 48,
+          "y": 219,
+          "fontFamily": "Arial",
+          "fontSizePx": 24
+        },
+        {
+          "text": "I will take care of the rest.",
+          "x": 48,
+          "y": 300,
+          "fontFamily": "Arial",
+          "fontSizePx": 24
+        }
+      ],
+      "crop": null,
+      "blur": null,
+      "obscuration": null,
+      "inputOverrides": {
+        "content": "Enter the code in my own app. Nobody is asking me to send it to another person."
+      },
+      "inputWithoutImage": {
+        "mode": "screenshot",
+        "content": "Enter the code in my own app. Nobody is asking me to send it to another person.",
+        "context": "",
+        "senderEmail": "",
+        "senderPhone": "",
+        "externalLookup": false
+      },
+      "pixelReference": {
+        "readableConsequentialSpans": [
+          "Send the login code to me in this chat."
+        ],
+        "unreadableConsequentialFields": [],
+        "absentFields": [
+          "self-initiated login instruction"
+        ]
+      },
+      "expected": {
+        "allowedActionIds": [],
+        "allowedStatuses": [
+          "partial"
+        ],
+        "clarificationPolicy": "forbidden",
+        "mustExplain": [
+          "The supplied correction conflicts with the screenshot about who receives the code."
+        ],
+        "prohibitedOutcomes": [
+          "Silently prefer the reassuring correction and ignore the visible request.",
+          "Assert that the user is definitely being attacked.",
+          "Invent an approved clarification that resolves this text conflict."
+        ]
+      },
+      "transportRequirement": "Submit the conflicting content override exactly alongside the image. The contradiction is part of the test; never replace the pixel text or omit the correction.",
+      "aiVisualReview": {
+        "status": "inspected_actual_final_pixels_before_model_outputs",
+        "reviewer": "Codex AI subagent",
+        "method": "view_image",
+        "reviewedAt": "2026-09-26T16:05:26.685Z",
+        "reviewedSha256": "3ba5f0b69d28d82fcde319b3db1769b0336394e5c5eb3b5e04c0a1fcc459e220",
+        "humanReviewed": false,
+        "modelOutputsSeen": false,
+        "notes": "Inspected actual final pixels: Send the login code to me in this chat and the following assurance are clearly readable. No own-app instruction is present in the image. The separately supplied content must intentionally contradict who receives the code."
+      }
+    },
+    {
+      "id": "S07",
+      "file": "S07.png",
+      "fileCreatedInThisBatch": true,
+      "sha256": "4a7a1503730b8d9317bf24995583e308aa8ec6daecb262fc823379417c96baca",
+      "byteLength": 16851,
+      "width": 600,
+      "height": 650,
+      "mimeType": "image/png",
+      "literalVisibleText": [
+        "DELIVERY MESSAGE",
+        "Your delivery update is ready.",
+        "View in delivery app"
+      ],
+      "textRuns": [
+        {
+          "text": "DELIVERY MESSAGE",
+          "x": 38,
+          "y": 64,
+          "size": 26,
+          "fontFamily": "Arial",
+          "fontSizePx": 26
+        },
+        {
+          "text": "Your delivery update is ready.",
+          "x": 48,
+          "y": 180,
+          "fontFamily": "Arial",
+          "fontSizePx": 24
+        },
+        {
+          "text": "View in delivery app",
+          "x": 276,
+          "y": 273,
+          "anchor": "middle",
+          "fontFamily": "Arial",
+          "fontSizePx": 24
+        }
+      ],
+      "crop": null,
+      "blur": null,
+      "obscuration": null,
+      "renderNote": "Square brackets in renderText describe a button boundary. The visible label is rendered inside a rounded rectangle; there are no hyperlink targets or destinations in the SVG or pixels.",
+      "inputOverrides": {
+        "context": "This is a screenshot only. I do not know where the button goes."
+      },
+      "inputWithoutImage": {
+        "mode": "screenshot",
+        "content": "",
+        "context": "This is a screenshot only. I do not know where the button goes.",
+        "senderEmail": "",
+        "senderPhone": "",
+        "externalLookup": false
+      },
+      "pixelReference": {
+        "readableConsequentialSpans": [
+          "Your delivery update is ready.",
+          "View in delivery app"
+        ],
+        "unreadableConsequentialFields": [],
+        "absentFields": [
+          "link destination",
+          "sender identity",
+          "tracking number"
+        ]
+      },
+      "expected": {
+        "allowedActionIds": [
+          "check_independently",
+          "pause_and_verify"
+        ],
+        "allowedStatuses": [
+          "complete"
+        ],
+        "clarificationPolicy": "forbidden",
+        "mustExplain": [
+          "Button text does not reveal the target URL; use an independently opened trusted app."
+        ],
+        "prohibitedOutcomes": [
+          "Invent a target URL from the button label.",
+          "Say the hidden destination was checked.",
+          "Call an absent URL unreadable and pretend OCR could recover it from these pixels."
+        ]
+      },
+      "transportRequirement": "Preserve the separate context exactly. The destination is absent, not obscured; never add a URL inferred from the button label.",
+      "aiVisualReview": {
+        "status": "inspected_actual_final_pixels_before_model_outputs",
+        "reviewer": "Codex AI subagent",
+        "method": "view_image",
+        "reviewedAt": "2026-09-26T16:05:26.685Z",
+        "reviewedSha256": "4a7a1503730b8d9317bf24995583e308aa8ec6daecb262fc823379417c96baca",
+        "humanReviewed": false,
+        "modelOutputsSeen": false,
+        "notes": "Inspected actual final pixels: delivery update sentence and View in delivery app button label are clearly readable. No URL, QR code, sender identity or tracking number appears. The destination is absent, not blurred or unreadable."
+      }
+    },
+    {
+      "id": "S08",
+      "file": "S08.png",
+      "fileCreatedInThisBatch": true,
+      "sha256": "874b0004f2e19a8f79faf4f524535c1b5bba1942c63d3fba027dcce6d7742214",
+      "byteLength": 25799,
+      "width": 600,
+      "height": 650,
+      "mimeType": "image/png",
+      "literalVisibleText": [
+        "CHAT",
+        "Eh my phone spoilt lah, this is",
+        "my new number.",
+        "Can transfer S$120 to my",
+        "colleague first? I pay you back",
+        "tonight.",
+        "Don't call, in meeting now."
+      ],
+      "textRuns": [
+        {
+          "text": "CHAT",
+          "x": 38,
+          "y": 64,
+          "size": 26,
+          "fontFamily": "Arial",
+          "fontSizePx": 26
+        },
+        {
+          "text": "Eh my phone spoilt lah, this is",
+          "x": 48,
+          "y": 177,
+          "fontFamily": "Arial",
+          "fontSizePx": 24
+        },
+        {
+          "text": "my new number.",
+          "x": 48,
+          "y": 219,
+          "fontFamily": "Arial",
+          "fontSizePx": 24
+        },
+        {
+          "text": "Can transfer S$120 to my",
+          "x": 48,
+          "y": 298,
+          "fontFamily": "Arial",
+          "fontSizePx": 24
+        },
+        {
+          "text": "colleague first? I pay you back",
+          "x": 48,
+          "y": 340,
+          "fontFamily": "Arial",
+          "fontSizePx": 24
+        },
+        {
+          "text": "tonight.",
+          "x": 48,
+          "y": 382,
+          "fontFamily": "Arial",
+          "fontSizePx": 24
+        },
+        {
+          "text": "Don't call, in meeting now.",
+          "x": 48,
+          "y": 461,
+          "fontFamily": "Arial",
+          "fontSizePx": 24
+        }
+      ],
+      "crop": null,
+      "blur": null,
+      "obscuration": null,
+      "inputOverrides": {},
+      "inputWithoutImage": {
+        "mode": "screenshot",
+        "content": "",
+        "context": "",
+        "senderEmail": "",
+        "senderPhone": "",
+        "externalLookup": false
+      },
+      "pixelReference": {
+        "readableConsequentialSpans": [
+          "this is my new number",
+          "transfer S$120 to my colleague",
+          "Don't call, in meeting now"
+        ],
+        "unreadableConsequentialFields": [],
+        "absentFields": [
+          "verified contact identity",
+          "payment account"
+        ]
+      },
+      "expected": {
+        "allowedActionIds": [
+          "verify_payment"
+        ],
+        "allowedStatuses": [
+          "complete"
+        ],
+        "clarificationPolicy": "forbidden",
+        "mustExplain": [
+          "A familiar tone does not confirm a new number or different payment recipient."
+        ],
+        "prohibitedOutcomes": [
+          "Identify the contact from colloquial language.",
+          "Claim the number is reported or verified."
+        ]
+      },
+      "aiVisualReview": {
+        "status": "inspected_actual_final_pixels_before_model_outputs",
+        "reviewer": "Codex AI subagent",
+        "method": "view_image",
+        "reviewedAt": "2026-09-26T16:05:26.685Z",
+        "reviewedSha256": "874b0004f2e19a8f79faf4f524535c1b5bba1942c63d3fba027dcce6d7742214",
+        "humanReviewed": false,
+        "modelOutputsSeen": false,
+        "notes": "Inspected actual final pixels: new-number claim, S$120 transfer to colleague, repayment assurance and do-not-call instruction are legible. No actual number, payment account or verified identity. Colloquial language alone is not evidence of fraud or friendship."
+      }
+    }
+  ],
+  "reviewedAt": "2026-09-26T16:05:26.685Z",
+  "offlineValidation": {
+    "exactReferenceInputsAndExpectations": true,
+    "originalHashesPreserved": true,
+    "newFixtureHashesVerified": true,
+    "modelCalls": 0
+  }
+}

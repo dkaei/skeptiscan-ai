@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "caseId": "M10",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "8cb922d742dc8516031824c53d41cb3492827ff4d4d01c47a41236a372e30082",
+  "capturedAt": "2026-09-27T03:57:56.271Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "I opened my laptop's built-in settings myself to install a scheduled system update. No caller or chat contact is involved and no one asked for remote access. The update screen says I need to restart.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "26ef50c6-9399-46b4-bde8-fefcd62bc5c3",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T03:57:56.271Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "26ef50c6-9399-46b4-bde8-fefcd62bc5c3",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "Your description asks for information, without a stated payment, account-code or device-access request.",
+          "uncertainty": "This covers the details supplied. A later request may need a new check.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "restart",
+                "quote": "The update screen says I need to restart."
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T03:57:55.787Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

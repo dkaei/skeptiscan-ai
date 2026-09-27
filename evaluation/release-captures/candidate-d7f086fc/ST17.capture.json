@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "caseId": "ST17",
+  "candidateHash": "3c9b769f10b5b40c9f521f25fba4a3d6281c8ca59526fff0dd655c12843b59c2",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "fe2cc68cd6381ae58b27bdd6073e527eddaf107f6e852ccf7e5f0501e521b821",
+  "inputSha256": "9330049ebc6d8c36a71078f0bed0b61cee7c636d1e421c2f8327b3e3e414430b",
+  "capturedAt": "2026-09-27T09:18:48.876Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "A caller says do not tell me your password or any code. Instead, open your banking app and approve the Digital Token sign-in request I just triggered so I can reverse a fee. I did not start any sign-in or ask this caller for help.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "bd2a6283-6ca9-49ba-88bc-58edc6705990",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T09:18:48.876Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "bd2a6283-6ca9-49ba-88bc-58edc6705990",
+          "status": "complete",
+          "title": "Keep account codes private",
+          "nextStep": "Do not send your password or account verification code to another person.",
+          "reason": "“do not tell me your password or any code.” does not authorise the separate request “approve the Digital Token sign-in request I just triggered”. Sharing a password or account code, or approving another person’s sign-in, can give them account access.",
+          "uncertainty": "The sender’s identity and intentions have not been verified.",
+          "evidence": [
+            {
+              "id": "guidance-account-credentials",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Keep banking credentials private",
+              "detail": "DBS advises against giving another person banking credentials, one-time passwords or Digital Token approvals. This source concerns account authentication; it does not classify ordinary parcel-collection codes. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.dbs.com.sg/personal/deposits/security-and-you/default.page",
+              "checkedAt": "2026-09-27T09:18:44.814Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "open banking app",
+                "quote": "open your banking app",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 65,
+                  "end": 86
+                }
+              },
+              {
+                "action": "approve sign-in request",
+                "quote": "approve the Digital Token sign-in request I just triggered",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 91,
+                  "end": 149
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T09:18:48.718Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "caseId": "M22",
+  "candidateHash": "fe8372971341d763ca2440a1e164e101dd5801aa8c498cfa467f955992c627d6",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "016eaf2b200d7fae21e65d16c7c607c7e71397f77b3de39ca7be9ba372b7da0f",
+  "capturedAt": "2026-09-27T12:43:55.330Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "A forwarded message claims CPF will close every account tomorrow unless the message is shared with ten people. It includes no source, link, payment instruction or request for a code. Is the claim true?",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "5adafea0-0fb2-49ba-aac8-67b69156b3b5",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T12:43:55.330Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "5adafea0-0fb2-49ba-aac8-67b69156b3b5",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "The claim “claims CPF will close every account tomorrow unless the message is shared with ten people.” has not been verified against a current official source. Check that source independently before relying on or forwarding it.",
+          "uncertainty": "No conclusion about this claim’s truth follows from the absence of a payment or account-access request.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": "CPF",
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "share the message with ten people",
+                "quote": "shared with ten people",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 87,
+                  "end": 109
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T12:43:52.451Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

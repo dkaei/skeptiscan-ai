@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "caseId": "L02",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "164b4d1df202590d9c3d2f325874041268f8398606e1df3b15d158af8b334787",
+  "capturedAt": "2026-09-27T03:56:57.316Z",
+  "submittedInput": {
+    "mode": "link",
+    "content": "https://dbs.com.sg.example.org/",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "83479c40-93ac-4aae-8b3a-10dd051b54cb",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T03:56:57.316Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "83479c40-93ac-4aae-8b3a-10dd051b54cb",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "The actual website address matters. A familiar name within a link does not establish who controls its destination.",
+          "uncertainty": "The website’s content and owner have not been verified.",
+          "evidence": [
+            {
+              "id": "domain-0",
+              "kind": "domain",
+              "state": "observation",
+              "title": "An organisation address appears inside another host",
+              "detail": "Actual host: dbs.com.sg.example.org. Registrable domain: example.org. DBS’s listed host appears as leading text within a different domain. This is not an exact organisation-host match.",
+              "sourceUrl": "https://www.dbs.com.sg/personal/deposits/security-and-you/default.page",
+              "checkedAt": "2026-09-27T03:56:55.055Z"
+            },
+            {
+              "id": "reputation-0",
+              "kind": "reputation",
+              "state": "unsupported",
+              "title": "External link check not performed",
+              "detail": "This subdomain may identify a private service or contain a token. It has not been sent externally.",
+              "checkedAt": "2026-09-27T03:56:55.055Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [
+              "https://dbs.com.sg.example.org/"
+            ],
+            "phoneNumbers": [],
+            "requestedActions": [],
+            "unreadableDetails": [],
+            "missingContext": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T03:56:56.831Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

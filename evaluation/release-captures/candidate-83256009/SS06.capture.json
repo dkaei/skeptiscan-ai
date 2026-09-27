@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "caseId": "SS06",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "2bb78320dcee28f69d9d64fcf413935d42fd8fdeafa34bcdb7a9c49c76fe9116",
+  "inputSha256": "34baabef8651f59dfb804c6454b9e23aa3e859bb46ede16865c224307c14c5e0",
+  "capturedAt": "2026-09-27T04:06:23.062Z",
+  "submittedInput": {
+    "mode": "screenshot",
+    "content": "",
+    "context": "This crop misses the beginning of the sentence. I cannot recover the missing words and do not know whether they change its meaning.",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "imageSha256": "65a37709101b55dc4d4517fca4b736d5d84d361bd31986bd8f67a4d669cee77c",
+  "uploadImageSha256": "e3bb760f6b7b7dd77461ca397aab48589cb3016160610ab5669228ebba763da8",
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "1e91fa8b-65b6-4a5a-9dd9-c44923cb216c",
+        "httpStatus": 200,
+        "observedStatus": "partial",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T04:06:23.062Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "1e91fa8b-65b6-4a5a-9dd9-c44923cb216c",
+          "status": "partial",
+          "title": "Check incomplete",
+          "nextStep": "Confirm the request through a contact route you already trust.",
+          "reason": "The check could not analyse these details reliably.",
+          "uncertainty": "No completed assessment is available.",
+          "evidence": [],
+          "extraction": null,
+          "question": null,
+          "checkedAt": "2026-09-27T04:06:22.500Z",
+          "aiUsed": true,
+          "recovery": "retry"
+        }
+      }
+    }
+  ]
+}

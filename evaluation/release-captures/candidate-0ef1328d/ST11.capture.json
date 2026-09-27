@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "caseId": "ST11",
+  "candidateHash": "fe8372971341d763ca2440a1e164e101dd5801aa8c498cfa467f955992c627d6",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "fe2cc68cd6381ae58b27bdd6073e527eddaf107f6e852ccf7e5f0501e521b821",
+  "inputSha256": "83b5c352f03471d14faf5dd41fa11eb9e279e2b03617e52623627218cd0f07d8",
+  "capturedAt": "2026-09-27T12:49:57.464Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "Chat helper: Send me the account login code to complete your sign-in.",
+    "context": "My note says I am only entering a code in my own app and no one wants me to tell them anything. I am unsure which description is correct for the step in front of me.",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "55f5a30f-01e8-4a0d-9dea-cfd5a6c9294e",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T12:49:57.464Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "55f5a30f-01e8-4a0d-9dea-cfd5a6c9294e",
+          "status": "complete",
+          "title": "Keep account codes private",
+          "nextStep": "Do not send your password or account verification code to another person.",
+          "reason": "The accounts disagree: “My note says I am only entering a code in my own app and no one wants me to tell them anything.” versus “Send me the account login code to complete your sign-in.”. Additional supplied detail: “I am unsure which description is correct for the step in front of me.”. The current step is unresolved. If the step involves these capabilities: Sharing a password or account code, or approving another person’s sign-in, can give them account access.",
+          "uncertainty": "The supplied accounts disagree; the current request has not been established.",
+          "evidence": [
+            {
+              "id": "guidance-account-credentials",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Keep banking credentials private",
+              "detail": "DBS advises against giving another person banking credentials, one-time passwords or Digital Token approvals. This source concerns account authentication; it does not classify ordinary parcel-collection codes. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.dbs.com.sg/personal/deposits/security-and-you/default.page",
+              "checkedAt": "2026-09-27T12:49:51.832Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "tell someone a login code",
+                "quote": "Send me the account login code to complete your sign-in.",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 13,
+                  "end": 69
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [
+              "Did someone ask you to install an app or allow remote access?"
+            ],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T12:49:56.534Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

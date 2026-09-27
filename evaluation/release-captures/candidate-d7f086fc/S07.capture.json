@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "caseId": "S07",
+  "candidateHash": "3c9b769f10b5b40c9f521f25fba4a3d6281c8ca59526fff0dd655c12843b59c2",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "f8c34f0a49ca07955ce985bccc50c09bd5e296caee9e3abb9cc6fb530758f9e4",
+  "inputSha256": "a3b11173b22e2b1f3a515172909fd4bde6030b34e7d05f9156e1dc02882924e4",
+  "capturedAt": "2026-09-27T09:15:16.335Z",
+  "submittedInput": {
+    "mode": "screenshot",
+    "content": "",
+    "context": "This is a screenshot only. I do not know where the button goes.",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "imageSha256": "4a7a1503730b8d9317bf24995583e308aa8ec6daecb262fc823379417c96baca",
+  "uploadImageSha256": "11766ec6e73b222ba918c6e11f2054729f9cab2e46e61f638c8e9e39730014df",
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "6697b046-a1d7-497b-9a26-00c0c3b7d1aa",
+        "httpStatus": 200,
+        "observedStatus": "partial",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T09:15:16.335Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "6697b046-a1d7-497b-9a26-00c0c3b7d1aa",
+          "status": "partial",
+          "title": "Check incomplete",
+          "nextStep": "Confirm the request through a contact route you already trust.",
+          "reason": "The check could not analyse these details reliably.",
+          "uncertainty": "No completed assessment is available.",
+          "evidence": [],
+          "extraction": null,
+          "question": null,
+          "checkedAt": "2026-09-27T09:15:16.079Z",
+          "aiUsed": true,
+          "recovery": "retry"
+        }
+      }
+    }
+  ]
+}

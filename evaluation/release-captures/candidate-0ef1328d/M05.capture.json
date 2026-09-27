@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "caseId": "M05",
+  "candidateHash": "fe8372971341d763ca2440a1e164e101dd5801aa8c498cfa467f955992c627d6",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "dc2839aa6f94e519bb35c29dfa6c6428292c9945fd15cfd52cb3542ceafb501f",
+  "capturedAt": "2026-09-27T12:39:34.240Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "A recruiter in a chat says I passed an online job interview. Before my first shift, I must transfer S$180 to a personal account to unlock tasks. They say the deposit is fully refundable after I finish five tasks.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "0faf1b9b-2327-467d-92d9-1ed940c0cc4e",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T12:39:34.240Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "0faf1b9b-2327-467d-92d9-1ed940c0cc4e",
+          "status": "complete",
+          "title": "Confirm the payment request",
+          "nextStep": "Verify who should receive the payment through a trusted, independent contact route.",
+          "reason": "“They say the deposit is fully refundable after I finish five tasks.” does not authorise the separate request “Before my first shift, I must transfer S$180 to a personal account to unlock tasks.”. The payment recipient still needs independent verification.",
+          "uncertainty": "The recipient and purpose of the payment have not been verified.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "transfer S$180 to a personal account",
+                "quote": "Before my first shift, I must transfer S$180 to a personal account to unlock tasks.",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 61,
+                  "end": 144
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T12:39:03.786Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "caseId": "M09",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "ad55ad936cbe280a2e2e027c316cb4eb79d7907905880bf862dd71be8fb0b76e",
+  "capturedAt": "2026-09-27T03:57:52.084Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "My laptop really has been slow. A stranger who contacted me says they are technical support and can fix it if I install a remote-control app and give them the session access number. I did not request support.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "592626fd-c89a-4107-8cd8-b2cd329e092d",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T03:57:52.084Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "592626fd-c89a-4107-8cd8-b2cd329e092d",
+          "status": "complete",
+          "title": "Pause the installation",
+          "nextStep": "Do not install an app or grant remote access just because this contact asked you to.",
+          "reason": "Installing software or allowing remote access can give someone control of your device.",
+          "uncertainty": "The software and the person requesting access have not been verified.",
+          "evidence": [
+            {
+              "id": "guidance-remote-access",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Check unexpected technical-support requests",
+              "detail": "SPF describes technical-support scams that ask people to download remote-access software or grant control of their device. Confirm an unexpected support request through the software provider’s official channels before following its instructions. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.police.gov.sg/Media-Hub/News/2026/06/20260609_joint_advisory_on_technical_support_scams_involving_the_impersonation_of_microsoft",
+              "checkedAt": "2026-09-27T03:57:48.888Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "install an app",
+                "quote": "install a remote-control app"
+              },
+              {
+                "action": "give them a session access number",
+                "quote": "give them the session access number"
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [
+              "Did you start this request yourself?",
+              "Did someone ask you to install an app or allow remote access?",
+              "Are they asking you to tell someone a login or account code?"
+            ]
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T03:57:51.602Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

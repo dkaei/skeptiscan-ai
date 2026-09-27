@@ -1,0 +1,2035 @@
+{
+  "schemaVersion": 1,
+  "candidateHash": "fe8372971341d763ca2440a1e164e101dd5801aa8c498cfa467f955992c627d6",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "origin": "live",
+  "startedAt": "2026-09-27T12:33:57.828Z",
+  "completedAt": "2026-09-27T12:52:56.414Z",
+  "reviewer": {
+    "name": "Codex final regression evaluation coordinator",
+    "kind": "ai"
+  },
+  "cases": [
+    {
+      "id": "M07",
+      "cohort": "regression_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "3f873954-0fa0-4bab-82fd-420bb7afeeba",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M07.capture.json",
+        "sha256": "afa731da3079c214ab8dcb1c67409187d7dba02c955dded9ca6090dfb7cb9eee"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M07.review.json",
+        "sha256": "5a4336fe05b4e66f2b8b169a00552589f86ac16aca1c3eedefd40f6baaa98017"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "M13",
+      "cohort": "regression_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "1c4aa4c8-e5a7-4ff4-acf7-044fefe784e3",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M13.capture.json",
+        "sha256": "bef7be1f74b3b95f2fae84d3dade8e3806f93abe560cd641718aceb1eccc9974"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M13.review.json",
+        "sha256": "21ee1e6ebb141885cc16cdeb2170bae70a75347767762e3ac518dd73d88b1ab1"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "C09",
+      "cohort": "regression_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "8ae1d7c5-a3be-4004-858a-3a2b65faba08",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/C09.capture.json",
+        "sha256": "31fd9dc3cc258c5dabf2ddbcd28ec3be9e31d181ae180474869130d3e516964c"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/C09.review.json",
+        "sha256": "bc7ea4ae926bedeb037ba5303c2cbfdb8fb08fa3d8208f0afeb44dd1449b609d"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "L02",
+      "cohort": "regression_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "8f126379-830a-4e3a-9721-ef6e700fe0d3",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/L02.capture.json",
+        "sha256": "1d937b87ba95608dfc454c3f7793499c78eeeff46024d40502fc295d66fd2e1c"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/L02.review.json",
+        "sha256": "bcd8da890f2183ed502cef791e6e51340644a5be9f264ff88fa49ecfd6923ee8"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "M01",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "1f405eb2-7d7e-423f-b0d5-150e317ad235",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M01.capture.json",
+        "sha256": "c9a1f3de32771a69e5d35d1f228494419f32b83f08cc034dfa6d1b9a84a9466f"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M01.review.json",
+        "sha256": "a4a686aa3d73bd165bbd99fb4958daf17fad0551c1b289f671c76c2e768b5956"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "M02",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "74a898fc-6257-4b2a-8fc0-261c08977fb1",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M02.capture.json",
+        "sha256": "21476c5c9690a26a6a688c4ab644d0adaa12ed1cef23ba802702320f1dbb4508"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M02.review.json",
+        "sha256": "8a719b6e98349d5d6d232a1c0f47e197a0110a85bc2709319bf5fb83a461da12"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "M05",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "0faf1b9b-2327-467d-92d9-1ed940c0cc4e",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M05.capture.json",
+        "sha256": "e1fb62d21fa7ca11393e8ac00e2743a4f08f2883884785bf9c451edc59faaaf9"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M05.review.json",
+        "sha256": "1476d4ffb156e90920fe69eb9765b7030d1eaa1642bbb73c83c1373fbc0f45a8"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "M06",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "3930141d-734d-4b6a-8449-a4395ae8841b",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M06.capture.json",
+        "sha256": "bd7a11ee37e04805da8f6c1cbb706a0bbea0df354e2e3c9f10858fbb7c7872f0"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M06.review.json",
+        "sha256": "03b700667487fb1a9357edb04c1c581d4216b98fc871e1f09541c0442ebeccd9"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "M09",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "6bc79b50-892e-4e24-a983-d99e1797ece6",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M09.capture.json",
+        "sha256": "060acd0a5438f109d72ead2ed7ee04a1de4fe9e829a7e7fad05afeb041cc0777"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M09.review.json",
+        "sha256": "7e3798276c70c36a37438c474a5176144621dfb8cd04ebd5bd45dedd9e511d2e"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "M10",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "2530e5d5-d2b9-437f-8481-76affa0f4127",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M10.capture.json",
+        "sha256": "e549ec9bafa74cccf2c932cc5fcb538d91e27dfcd5b11145079daec157db0f6b"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M10.review.json",
+        "sha256": "2c9af9b831067f06b9aa5c6dfebb3a3dbfd3587175e20ec8b9e004b0ecaee581"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "M11",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "f1df9655-3674-4ead-a8a3-d5af89cc7651",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M11.capture.json",
+        "sha256": "2a5d7c088e05a008c53eb5c7c7940a248d40dfe050b18639ca26ac3fc7ac4ba8"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M11.review.json",
+        "sha256": "191205096ea61f8984d931c38137e2c02da501c62eee532f949ba0500312ba66"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "M12",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "a1ed3b79-da80-4805-b972-31d9dbf8a33c",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M12.capture.json",
+        "sha256": "48c29ee65985572d37da2774a97afa66c14a23cf6fb81d4d201f8a2bd6d057a6"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M12.review.json",
+        "sha256": "9ef9deee06161b30e163765e36fec017f9c38383299c8e1c7bdf6c71605f475d"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "M14",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "cb80d5e2-ebce-49bc-a989-29b2e22afbcc",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M14.capture.json",
+        "sha256": "5dc829e79420f9c7ca92a78012781cf071f33fbbbfd50fbe81b7fb2d4c3b8c03"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M14.review.json",
+        "sha256": "e957ee645e8b57822b2cc5f0ee338f85e1ce07a741fc6e3d64c10d6e19313ecf"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "M15",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "92bfd63d-5e07-48f7-9492-923f1c485d21",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M15.capture.json",
+        "sha256": "ab974f63b8a909809eaf4b50d1f470aa788024b20f08e36fe10f3d9c222e384a"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M15.review.json",
+        "sha256": "8cb67aa12675be24eeb0d301722836962b505520a47df92c2fd425a258142b52"
+      },
+      "reviewed": true,
+      "workflowMatch": false,
+      "criticalFindings": []
+    },
+    {
+      "id": "M16",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "9b015eeb-4bd8-4d74-b339-addac5a8e772",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M16.capture.json",
+        "sha256": "f15068351dd74be90bceafa2d36b2d90c73a85c7f500fdfb30cda66966f5f3fa"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M16.review.json",
+        "sha256": "904b471421a2e82869b41260fa4d315a25eeb18884e777305678f1842a7c65ab"
+      },
+      "reviewed": true,
+      "workflowMatch": false,
+      "criticalFindings": []
+    },
+    {
+      "id": "M17",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "c23c94b9-ee4a-4f13-bbe3-f81565f424c1",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M17.capture.json",
+        "sha256": "3cf14324704b27c042bfcbd33c41bbe98910d5ecfe17d48eaeb870457b430f81"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M17.review.json",
+        "sha256": "6782ed198523f37f6f33ff170c1e479b552bc6aff5667a8ef5107141cadb26a9"
+      },
+      "reviewed": true,
+      "workflowMatch": false,
+      "criticalFindings": []
+    },
+    {
+      "id": "M18",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "e505bef6-9210-4797-9819-ed64e7e95a16",
+          "httpStatus": 200,
+          "observedStatus": "needs_context",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": "initiated_request"
+        },
+        {
+          "kind": "clarification",
+          "requestId": "e505bef6-9210-4797-9819-ed64e7e95a16",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M18.capture.json",
+        "sha256": "494a3547ab7ebcfd6bdd27166d7165ac828167bdf6775676f5b4c1df89e88979"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M18.review.json",
+        "sha256": "1909f7b18c6e03d887a64e6f1f85a9575b9f33e0ea759306d05a91990586a633"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "M19",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "734da87f-fc0d-40d4-96cc-084f1047a02f",
+          "httpStatus": 200,
+          "observedStatus": "needs_context",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": "asked_to_install"
+        },
+        {
+          "kind": "clarification",
+          "requestId": "734da87f-fc0d-40d4-96cc-084f1047a02f",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M19.capture.json",
+        "sha256": "f9e778967f76ac0404d7b4af9dffb7d987db91197b0d3403d201390a081c1772"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M19.review.json",
+        "sha256": "f9242fb67342799fdd9ce43d9c055fed2fd9c5ee018e651370fc5402eec9c20a"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "M20",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "b09f54c6-70fd-494a-8f92-e8174ec226f0",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M20.capture.json",
+        "sha256": "2624e43a83e2cff87564daf2e5610ad789b9035dbaa2855b612105a0a678af9a"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M20.review.json",
+        "sha256": "5a42c2e0641b387d7c48b5dedde69912509f9938396fbcf4494ff5fd9175da74"
+      },
+      "reviewed": true,
+      "workflowMatch": false,
+      "criticalFindings": []
+    },
+    {
+      "id": "M21",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "850deb99-b2e6-4d4f-b3b4-419293e8ea7b",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M21.capture.json",
+        "sha256": "c988f071bbdf0aa401d6c637a330f7a6a7997fe01f2ae1fe75898c6453ca384f"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M21.review.json",
+        "sha256": "98161fccc3e1caf000ce1b5be0d0191d9e1852a13b0a50898ffcfcabb97804ca"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "M22",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "5adafea0-0fb2-49ba-aac8-67b69156b3b5",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M22.capture.json",
+        "sha256": "aee199999fb0ee8e97943a24f1f4e3a489fb000182e5689009eb8e9fdfbcf057"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M22.review.json",
+        "sha256": "720228f143046c6995190de816d0ccf30e2c768c6431b55099b84af2e4db80c8"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "M23",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "324dc460-b4dd-4786-905a-7e7d4c9622a3",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M23.capture.json",
+        "sha256": "aa0ad071325c59b313ddfa507ead209895091360771e8600b70fb345b3dc6e05"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M23.review.json",
+        "sha256": "15fd8caec3d31d4d0c92397e95e54d67c5b37898f928a5c5d5e08f82f168e3ee"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "M24",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "4af70811-a144-44ec-87d5-8497fe52e40c",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M24.capture.json",
+        "sha256": "9d2c70fdd611cf5ac4dd4920c0d699dd32c14380d840eda980bdad03f8ca6997"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/M24.review.json",
+        "sha256": "506b8861ecc3339f2a9427a352c3dda38da2c9fb544e095fbb39a219c979ba3a"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "C01",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "a90737f4-d855-4be9-98ae-b8cb933ca5b7",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/C01.capture.json",
+        "sha256": "4a0b27e804f9c4faa6a6427d57d82439de50c9959e6948969ff6c87f9fa59eab"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/C01.review.json",
+        "sha256": "3127ade965ba0fcd26b319a2048ea53ea4ad6384a99577721debb185682c3813"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "C02",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "13210954-19d7-4f0c-bacd-4b15d8fdc184",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/C02.capture.json",
+        "sha256": "e3055135cbf1db415a3a5e1b62bd1618ebb7acedca60c2d2a4acbd326ad615b6"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/C02.review.json",
+        "sha256": "a9874a9e241b995647641385cd01b70a3ab54f0d11223de6425643164d2e9b91"
+      },
+      "reviewed": true,
+      "workflowMatch": false,
+      "criticalFindings": []
+    },
+    {
+      "id": "C03",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "b085b868-0448-49cf-a6eb-40eab8299fa5",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/C03.capture.json",
+        "sha256": "77a55eb4c39639c28f3a2362bfa8232d9e66ae9bf621ffe0f86233679093bbdc"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/C03.review.json",
+        "sha256": "509f18c434f03e287ae4e1024506ed1be867f8f558cf57c0e8b0e9d692edcaf5"
+      },
+      "reviewed": true,
+      "workflowMatch": false,
+      "criticalFindings": []
+    },
+    {
+      "id": "C05",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "f172fedc-3b4a-4a2f-ac2f-d5b9bbaedbbd",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/C05.capture.json",
+        "sha256": "8809b86b470480fb5577532f682ac007f042cfc9fddffcd1c4cc453e812f4ffb"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/C05.review.json",
+        "sha256": "74f90feaa4a2bd59cb6af5b1b17d7ee3b3e3009276200a1d59db567898c814bd"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "C06",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "00eaf11f-8362-491e-b110-f8ef6be1fbcb",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/C06.capture.json",
+        "sha256": "6bc0f46fc5433fee437a2683489209963fd26a141317b888f68cd7b511dcb39d"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/C06.review.json",
+        "sha256": "bb5dacbbce2b457c50303ab0dcedfdc8fa94c1a25cff27d8ce4832e97a559a89"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "C08",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "86ee849b-d254-4398-a70d-b7acd832e4ce",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/C08.capture.json",
+        "sha256": "2bfac1a282015ef06650e2bc93374446213f994a173a3e5aa1837b0ec0b84e34"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/C08.review.json",
+        "sha256": "00e968b2a8cbda01d32e98db4e0b591009890315f3d93631c09a7bab44ff3557"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "C10",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "552186de-c97d-4f7f-b554-76ea21032749",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/C10.capture.json",
+        "sha256": "433b06e9cd9fafb90db9c556624e05dc87e73e5184c15b533ebf6231cb6724b1"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/C10.review.json",
+        "sha256": "9a81b772c7d0237e0dd7a0b5ef9d96d27194e5d9c305c496596597ccf0cf84cf"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "L01",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "2843657d-1773-4f5c-8546-c9ca678bbb7c",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/L01.capture.json",
+        "sha256": "84e6790eacb6b64a13c21c340e5a4456bbfeb927a94cfa4fa7a5eb8e519d0698"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/L01.review.json",
+        "sha256": "80d4d511e856da15f52ec7b22bfd5edacbf7f69e5f0bd4e011aa7dfdc07cad3a"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "L04",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "3ae0028f-ea8d-4c96-a42c-5ef4f3ac1db8",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/L04.capture.json",
+        "sha256": "9a6ea060d4276020512150f6f8b1531602ddf0d8d0ec93c2ce881101074210a2"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/L04.review.json",
+        "sha256": "fd940bbf21841403d93a5479ae0e8610cdae60f2dba95b347bca5f5e89583f75"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "L05",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "38ff9643-de19-450f-a744-81ffd686b7d9",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/L05.capture.json",
+        "sha256": "8e2f0c184d1d7584c14282d143ee5a2e597543d37f32b9f11475cabf90ec8868"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/L05.review.json",
+        "sha256": "2b79cda1c035cc18a8343caa711f2cb3b876a17e5205c981211fab0fc74ad6f7"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "L06",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "137b781a-cc64-44f6-9b29-54d3f2384c85",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/L06.capture.json",
+        "sha256": "3a00939eaf495c6c1ae0be53e5eaf403036155f0dc96cf7c9281ff54155532c8"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/L06.review.json",
+        "sha256": "38d3af6e966bb3646793cf1ffff8a737b1888bfcbfa774091d5b58059c5a32cd"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "L07",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "8a8e246e-90a5-41e3-892c-6b08ee66968b",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/L07.capture.json",
+        "sha256": "b50fa51dc3ab985392f41e8153bd20b8caaf58e18a4179ddd51c9f490027fc6c"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/L07.review.json",
+        "sha256": "67e2d49bb1c9c4bc6f701a120bfbecaf659bda3499359e66a2d5312d0df4097f"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "L08",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "f984a032-d979-4e5c-b965-681640982c90",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/L08.capture.json",
+        "sha256": "437dc2619037fab888d2aeb98dd2a8c3caf357409cbc04d1a671b6cc818d2a88"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/L08.review.json",
+        "sha256": "4af1f91fc0b31d135a14a5a9a28150e753e18e032c8c3c7aaa01078a293c3c54"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "L09",
+      "cohort": "fresh_text",
+      "route": "local",
+      "outcome": "expected_abstention",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": null,
+          "httpStatus": null,
+          "observedStatus": "client_rejected",
+          "aiUsed": false,
+          "errorCode": "invalid_input",
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/L09.capture.json",
+        "sha256": "bc9e8331d93262a4899c54c6d7475245707d61be707387c43c260408d57c7240"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/L09.review.json",
+        "sha256": "091a46c9942d614a377fff6996fd9fd483f9461987e34423eb1e25aef67a895c"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "L10",
+      "cohort": "fresh_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "f90ac5df-10d3-4ff6-87a3-2150bafe1bad",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/L10.capture.json",
+        "sha256": "106c7968380ddb5599b4ea2780b87bfd8bbbe5a254b7eabf91bfbf9c96890180"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/L10.review.json",
+        "sha256": "96a838394ef861bbf6fc576f31a87e65ccac95a07e53e61b63000b54b9e6ddf5"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "S02",
+      "cohort": "fresh_screenshots",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "c1a80629-59af-460a-b852-7102f88bccae",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/S02.capture.json",
+        "sha256": "036b3b26bd6215c461ff32632e4c9a35e201541812650ce9ebd1b4101b94590a"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/S02.review.json",
+        "sha256": "45833722b3aa0037b02f0a1515163bc06be6135c679ad4eb4cb51a5968c8375c"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "S03",
+      "cohort": "fresh_screenshots",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "7236cdd2-19f0-4e36-a30d-bddb9c0c5fff",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/S03.capture.json",
+        "sha256": "f2c5ed62e596a613afbfd04c76e5cece13b2044b68bd765062acc10acdd0b70f"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/S03.review.json",
+        "sha256": "203aedc2a7d54ac4f65218f12fc36dbcbd0471548580e84ff81fa4f3d2589494"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "S05",
+      "cohort": "fresh_screenshots",
+      "route": "ai",
+      "outcome": "failed",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "17de0e7d-cc18-4315-b215-08dbd31d7c98",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/S05.capture.json",
+        "sha256": "0d84c989ae5db98d11533ba15a3ee7ef1086cee380a7116d72aeb4250a3298d8"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/S05.review.json",
+        "sha256": "83da1836976c22225f0aafc8d5c4c46b465ba582f347f20ca516483fcac97d6c"
+      },
+      "reviewed": true,
+      "workflowMatch": false,
+      "criticalFindings": []
+    },
+    {
+      "id": "S07",
+      "cohort": "fresh_screenshots",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "504ac6bc-d642-4ee9-ad83-b368c6494ea1",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/S07.capture.json",
+        "sha256": "4c69d9673e6a10ed03fa41877efab6f1e052690905fd53fd75cb30b72a2b9e6f"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/S07.review.json",
+        "sha256": "5b2d879dbe255920d975e05824cc69d5551f1d1fe3f00e8ac03f7e01162072ff"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "S08",
+      "cohort": "fresh_screenshots",
+      "route": "ai",
+      "outcome": "failed",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "04674036-55f7-4e5a-ad13-b50205f3b392",
+          "httpStatus": 200,
+          "observedStatus": "partial",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/S08.capture.json",
+        "sha256": "a1fa90701ca176069d1cbe58375a06573b0c63834cc7ccfb056bc56dd1a618a9"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/S08.review.json",
+        "sha256": "c81fa9475849ee131e1c0c103f7c700893aa5f8979056b48d45fd348f5d4ce3a"
+      },
+      "reviewed": true,
+      "workflowMatch": false,
+      "criticalFindings": []
+    },
+    {
+      "id": "ST01",
+      "cohort": "stress_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "4661ff36-c79d-46f5-94ef-10a5a582e833",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST01.capture.json",
+        "sha256": "db76e0e5dcc48b62d33d5849cf5070cef2a8f4ba75ecdaa3cebc5c822245ae90"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST01.review.json",
+        "sha256": "53a9a2b77159741146cf03b39eaccade02a4c54892fb1fee1d11e4a38f3321aa"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "ST02",
+      "cohort": "stress_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "b81c55f6-8fc2-44e2-8688-2d960baab70e",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST02.capture.json",
+        "sha256": "1b7534b9693acfdd4bc6cf5f59ed1d4093dc9aee7bcc5f53a3acabc2d0ea3707"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST02.review.json",
+        "sha256": "73257c5e0fb0c1a8c8b5a8c9223dafb2685d61e2be9f94c92542693c6a91d8f4"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "ST03",
+      "cohort": "stress_text",
+      "route": "ai",
+      "outcome": "failed",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "3343d8c7-f70d-461e-9b22-51f95a13e60c",
+          "httpStatus": 200,
+          "observedStatus": "partial",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST03.capture.json",
+        "sha256": "21d4cba8b16373035df8a26f2bcc7be9ff6e479fb85bf3fe866c2f74d5451a72"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST03.review.json",
+        "sha256": "92d22c86e93bb2f35d1e26654a8d21d9c427d07ad4fe87061955333f68af58df"
+      },
+      "reviewed": true,
+      "workflowMatch": false,
+      "criticalFindings": []
+    },
+    {
+      "id": "ST04",
+      "cohort": "stress_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "64c51ed4-d800-4101-9c33-ed06fdcb61ce",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST04.capture.json",
+        "sha256": "43ff0f2960a4c14736ad0729b65a67f5b41b0764ea8d83c63a660c2ff3f65d5d"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST04.review.json",
+        "sha256": "99dea307d9a584f2f722aff8a01b0c9bdd9304df4136f82a1d50ad9dfcd0e902"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "ST05",
+      "cohort": "stress_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "9496c7cf-acd7-4ce2-9e8a-0426f6a6ec38",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST05.capture.json",
+        "sha256": "2b1904690c8cea37ade63a8a939d5b1b7e3e19d9913c9b1fbc85da2932fb12ff"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST05.review.json",
+        "sha256": "f5681f3a5d2855af42f958b4d15c30fa7985ec134a96dfd4053df10246eae9f3"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "ST06",
+      "cohort": "stress_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "8a946fb4-3ef6-4cb5-b0f7-1c15ca24846f",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST06.capture.json",
+        "sha256": "5cceb0e4de1f19c3b0ac1f92fa11556e4ebb0ec8e729df26f9fd63f030515e8d"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST06.review.json",
+        "sha256": "9c31a26acc8f549288aaf441b774f81e3100c4326b5dd8b2c5c25be592d7d464"
+      },
+      "reviewed": true,
+      "workflowMatch": false,
+      "criticalFindings": []
+    },
+    {
+      "id": "ST07",
+      "cohort": "stress_text",
+      "route": "ai",
+      "outcome": "failed",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "2cbfc07c-a460-4653-9ef3-16f25be303bc",
+          "httpStatus": 200,
+          "observedStatus": "partial",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST07.capture.json",
+        "sha256": "0968cf27472084320bbd20ddfc1dd42b47850a57d0f1d43a49183f702e41ce79"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST07.review.json",
+        "sha256": "1e5353abe9118d1c371b1dd2c8e213f04a58b1b647b19c4d31e15211aa66a134"
+      },
+      "reviewed": true,
+      "workflowMatch": false,
+      "criticalFindings": []
+    },
+    {
+      "id": "ST08",
+      "cohort": "stress_text",
+      "route": "ai",
+      "outcome": "failed",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "55fe8aa3-79b8-460e-8a25-d362b782138b",
+          "httpStatus": 200,
+          "observedStatus": "partial",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST08.capture.json",
+        "sha256": "fddca53e3b43a64b995d34c3d2cff0fab56d1711412ae657a4abc60cf8b92203"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST08.review.json",
+        "sha256": "0585805278e8fd7489ea5bce159e32d45a1099fb6c785511dc90a96160ebcb95"
+      },
+      "reviewed": true,
+      "workflowMatch": false,
+      "criticalFindings": []
+    },
+    {
+      "id": "ST09",
+      "cohort": "stress_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "16a7dd59-55ed-4499-9a72-815caba033cb",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST09.capture.json",
+        "sha256": "b20b81bf6e585bbab87096dbd58747fd613d8979e41bef422e385a37decf98e4"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST09.review.json",
+        "sha256": "020a972c5a4746664d6fe3eb54cc609d5f786e7b59128303d69fea8b72e68bda"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "ST10",
+      "cohort": "stress_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "03250caf-8dd0-4f45-b235-d260348c2f6e",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST10.capture.json",
+        "sha256": "50897adc5071988cc6522ad41abce4652ab59129eff5f54114893586b1798a5e"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST10.review.json",
+        "sha256": "42ffd8c1fb0502f4f1be9d1ce50b5715fe05e9405f6f733168f79cad15d1b9d2"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "ST11",
+      "cohort": "stress_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "55f5a30f-01e8-4a0d-9dea-cfd5a6c9294e",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST11.capture.json",
+        "sha256": "082da0d1f0332dd9cac3c18773c2702b60cd15651966d8ba5653ccfb4ea11073"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST11.review.json",
+        "sha256": "edb7f8d0db30bd9b9731f6ee7de8b0f382a13a26760cf473e8133cf77ae17051"
+      },
+      "reviewed": true,
+      "workflowMatch": false,
+      "criticalFindings": []
+    },
+    {
+      "id": "ST12",
+      "cohort": "stress_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "91636948-ba78-411b-8649-226ed5140274",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST12.capture.json",
+        "sha256": "bdb6a61b370278edf1d808a4518da5886ff60527b0e11e72ef72f4fdc4aac0a1"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST12.review.json",
+        "sha256": "2e18e3fbc9c3da0764897a5d36714ba3c0a8699a11ab37e55a42af25a7d37977"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "ST13",
+      "cohort": "stress_text",
+      "route": "ai",
+      "outcome": "failed",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "aef0de1d-4d5a-446c-a953-1646a161ce2c",
+          "httpStatus": 200,
+          "observedStatus": "partial",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST13.capture.json",
+        "sha256": "feb14362aaa383ff01d7116cb57c1f6da64184ebe570329c43426727d53ac95f"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST13.review.json",
+        "sha256": "526c2113c3fc688a0fb19cd062d1d04dabe6d7716afed146ac02630735a9470a"
+      },
+      "reviewed": true,
+      "workflowMatch": false,
+      "criticalFindings": []
+    },
+    {
+      "id": "ST14",
+      "cohort": "stress_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "999cad70-78a1-4312-99d5-efdd37646ad2",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST14.capture.json",
+        "sha256": "6cb5e6923b8414834bd0b3391451067ba4806acf1fe217717895dc54a7242598"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST14.review.json",
+        "sha256": "39b121c29bb7fc1aa2e666d3b49b25209a2d770fab64e42020b2dfaab7f82731"
+      },
+      "reviewed": true,
+      "workflowMatch": false,
+      "criticalFindings": []
+    },
+    {
+      "id": "ST15",
+      "cohort": "stress_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "93b7bdcd-2a9e-4706-8c0e-a2a53bd08da4",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST15.capture.json",
+        "sha256": "44ec1620cd49aa8a7a1e5d4986c3dd1b2d8e49cf2c0571e89c6ea4a3b270a370"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST15.review.json",
+        "sha256": "5825a243905e108e27be8a75dc9816133a2ac26b36b77ed7645592114e73f080"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "ST16",
+      "cohort": "stress_text",
+      "route": "ai",
+      "outcome": "failed",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "e1578ac9-8e07-4b49-b34f-680241d233ff",
+          "httpStatus": 200,
+          "observedStatus": "partial",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST16.capture.json",
+        "sha256": "758aa2775148634c04574ac4869e1b8204a8868b33c0ad73c8cc3b5a139df6ed"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST16.review.json",
+        "sha256": "2b85f362627a4870190b0bd427d80b140a39a16bf57c593be9b497d8644018e0"
+      },
+      "reviewed": true,
+      "workflowMatch": false,
+      "criticalFindings": []
+    },
+    {
+      "id": "ST17",
+      "cohort": "stress_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "fb8f03de-d480-4f03-bf58-4feeebce9e8a",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST17.capture.json",
+        "sha256": "03cd68c9feef7a4d5c8c37e30377898b3d5069d08a2305577889db7bee67ac1d"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST17.review.json",
+        "sha256": "22959e2fcf63fb3b5f410332cdfacd85c2b9274f62cac5b869adc7f780b73d28"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "ST18",
+      "cohort": "stress_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "50f440f4-13fe-4d43-bdea-c68357ec64de",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST18.capture.json",
+        "sha256": "660017945cecd4cebe299975ae762bc4bcb9d282d98814c9e9aab4478eaf6bba"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST18.review.json",
+        "sha256": "7560d13d2f32d4d97855c5b86c432227a1a1acc61510c87d2dcd84ff2b386aec"
+      },
+      "reviewed": true,
+      "workflowMatch": false,
+      "criticalFindings": []
+    },
+    {
+      "id": "ST19",
+      "cohort": "stress_text",
+      "route": "ai",
+      "outcome": "failed",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "8e16f760-0c07-44a1-84e2-78a9307e93cd",
+          "httpStatus": 200,
+          "observedStatus": "partial",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST19.capture.json",
+        "sha256": "aeb04f04214d73f1b0778eacc87ba0c6195f8f95982dd158c5133a31b38eed94"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST19.review.json",
+        "sha256": "68406e51f918b37ec0c1191e2106d0ccfaf55284f0ba61a492619e292e24948c"
+      },
+      "reviewed": true,
+      "workflowMatch": false,
+      "criticalFindings": []
+    },
+    {
+      "id": "ST20",
+      "cohort": "stress_text",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "9f637281-a8c6-45c2-af73-046727899320",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST20.capture.json",
+        "sha256": "d5947c05c0271cb7bc0ac682826e8acd429a40d9910e1665de2ac57d9edcae82"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/ST20.review.json",
+        "sha256": "a22b28bf6906abcce8cc124b8460ff71dcf2ee8b93fe242e989ab6eddb926a62"
+      },
+      "reviewed": true,
+      "workflowMatch": false,
+      "criticalFindings": []
+    },
+    {
+      "id": "SS01",
+      "cohort": "stress_screenshots",
+      "route": "ai",
+      "outcome": "failed",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "e6ed4728-4def-406c-bbac-9f86eebf8e11",
+          "httpStatus": 200,
+          "observedStatus": "partial",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/SS01.capture.json",
+        "sha256": "803dd587f0eef0d75779b6781c9151c6e4d74d76b45b90fe5f8caf1061133715"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/SS01.review.json",
+        "sha256": "0fb4a7765c651ece405caa606f498836c29ee4029b0cfe6d761529e02aab08a5"
+      },
+      "reviewed": true,
+      "workflowMatch": false,
+      "criticalFindings": []
+    },
+    {
+      "id": "SS02",
+      "cohort": "stress_screenshots",
+      "route": "ai",
+      "outcome": "failed",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "7fe302fb-ac0e-42e4-a09c-4b674817cc1f",
+          "httpStatus": 200,
+          "observedStatus": "partial",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/SS02.capture.json",
+        "sha256": "aeb6a42dfa637666562c114124d77a2e3b97fc38da74ca4cf482832c82c2b7d2"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/SS02.review.json",
+        "sha256": "5036e7038e575521834cd294c9bebb68087961d3800594880f8b2bdc4ce6b317"
+      },
+      "reviewed": true,
+      "workflowMatch": false,
+      "criticalFindings": []
+    },
+    {
+      "id": "SS03",
+      "cohort": "stress_screenshots",
+      "route": "ai",
+      "outcome": "failed",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "94eebd7d-da33-4a60-b883-db93f2e6ea95",
+          "httpStatus": 200,
+          "observedStatus": "partial",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/SS03.capture.json",
+        "sha256": "fb3d1826e5887383fce61958a45b85a63899d9315606a92ef68092e27d4cf4c8"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/SS03.review.json",
+        "sha256": "aa4f95afac6a25f20182849f4d55731dbba46ac3daf48b478a3c2816dea2aed7"
+      },
+      "reviewed": true,
+      "workflowMatch": false,
+      "criticalFindings": [
+        "fabricated_evidence"
+      ]
+    },
+    {
+      "id": "SS04",
+      "cohort": "stress_screenshots",
+      "route": "ai",
+      "outcome": "complete",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "a636cf1d-f353-4dc1-8e27-e0a143f44720",
+          "httpStatus": 200,
+          "observedStatus": "complete",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/SS04.capture.json",
+        "sha256": "1a7effe511ccf681308b7bb6ed716643a5ed2391b777a68885b182b9fe64ee90"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/SS04.review.json",
+        "sha256": "af1cfe6e9863ac632fa125994bfe8db0c6d27496af96aa0e199dd5da05eb4c32"
+      },
+      "reviewed": true,
+      "workflowMatch": true,
+      "criticalFindings": []
+    },
+    {
+      "id": "SS05",
+      "cohort": "stress_screenshots",
+      "route": "ai",
+      "outcome": "failed",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "449610f5-f732-4e53-a7f1-7edd6aff726a",
+          "httpStatus": 200,
+          "observedStatus": "partial",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/SS05.capture.json",
+        "sha256": "a1cefd58fdf2d35317c7b7c99a1617faba2188134418e5aa314d777f06bc73f0"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/SS05.review.json",
+        "sha256": "61f862c076419a78b3f6d65d0c4c30a43930f3af889487e3951769ff1dd63d56"
+      },
+      "reviewed": true,
+      "workflowMatch": false,
+      "criticalFindings": []
+    },
+    {
+      "id": "SS06",
+      "cohort": "stress_screenshots",
+      "route": "ai",
+      "outcome": "failed",
+      "firstAttempt": true,
+      "attempts": [
+        {
+          "kind": "initial",
+          "requestId": "9f22c351-3f4b-4b43-b207-a2f8218e6e46",
+          "httpStatus": 200,
+          "observedStatus": "partial",
+          "aiUsed": true,
+          "errorCode": null,
+          "questionId": null
+        }
+      ],
+      "artifact": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/SS06.capture.json",
+        "sha256": "841deab26d1096ccd7d55eb7e9f0b57f592d49e394b02da1602caaa46bce34a3"
+      },
+      "semanticReview": {
+        "path": "evaluation/release-captures/candidate-0ef1328d/SS06.review.json",
+        "sha256": "1596c8221751fe0967dc83365a18af3b1d25b88cc2b92a176dec6786ecb2c9bc"
+      },
+      "reviewed": true,
+      "workflowMatch": false,
+      "criticalFindings": []
+    }
+  ]
+}

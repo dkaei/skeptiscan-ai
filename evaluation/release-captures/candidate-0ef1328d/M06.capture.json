@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "caseId": "M06",
+  "candidateHash": "fe8372971341d763ca2440a1e164e101dd5801aa8c498cfa467f955992c627d6",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "16543288c9eaa460ce74396bc2c9cca995e09fffad3f4fe60726305584adb802",
+  "capturedAt": "2026-09-27T12:39:41.554Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "I applied for a library assistant job through a site I already use. The reply offers an interview at the library during office hours and asks me to bring my CV. It asks for no fee, password, code or software installation.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "3930141d-734d-4b6a-8449-a4395ae8841b",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T12:39:41.554Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "3930141d-734d-4b6a-8449-a4395ae8841b",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "As described, “The reply offers an interview at the library during office hours and asks me to bring my CV.”; “It asks for no fee, password, code or software installation.”. This ordinary arrangement states no payment, account-access or remote-control demand; the contact’s identity is not verified.",
+          "uncertainty": "This covers the details supplied. A later request may need a new check.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T12:39:40.636Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

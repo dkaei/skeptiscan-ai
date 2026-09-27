@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "caseId": "M11",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "ee0b67cf2bf971eecddd31ea160505574c6615b570393ecc54f826e847fed0ab",
+  "capturedAt": "2026-09-27T03:58:21.417Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "A seller knows the item and price of my real online order. They say the refund is ready, but I must send them my bank password and the bank's one-time login code in this chat to receive it.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "ba905de7-84c2-4a31-a2c7-eef4ac70e3e4",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T03:58:21.417Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "ba905de7-84c2-4a31-a2c7-eef4ac70e3e4",
+          "status": "complete",
+          "title": "Keep account codes private",
+          "nextStep": "Do not send your password or account verification code to another person.",
+          "reason": "Sharing an account code or password can let someone access your account.",
+          "uncertainty": "The sender’s identity and intentions have not been verified.",
+          "evidence": [
+            {
+              "id": "guidance-account-credentials",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Keep banking credentials private",
+              "detail": "DBS advises against giving another person banking credentials, one-time passwords or Digital Token approvals. This source concerns account authentication; it does not classify ordinary parcel-collection codes. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.dbs.com.sg/personal/deposits/security-and-you/default.page",
+              "checkedAt": "2026-09-27T03:58:18.885Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "send",
+                "quote": "I must send them my bank password and the bank's one-time login code in this chat to receive it."
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [
+              "Did you start this request yourself?",
+              "Are they asking you to tell someone a login or account code?"
+            ]
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T03:58:20.951Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

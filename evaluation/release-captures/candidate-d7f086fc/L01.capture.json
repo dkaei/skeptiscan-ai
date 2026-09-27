@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "caseId": "L01",
+  "candidateHash": "3c9b769f10b5b40c9f521f25fba4a3d6281c8ca59526fff0dd655c12843b59c2",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "22f02e3580382e23a535e012785a72f9401db0ec51cd130ab5c78d2578157cee",
+  "capturedAt": "2026-09-27T09:12:59.129Z",
+  "submittedInput": {
+    "mode": "link",
+    "content": "https://www.dbs.com.sg/",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "53c98043-80a1-4003-b175-384d6d3e0bf3",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T09:12:59.129Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "53c98043-80a1-4003-b175-384d6d3e0bf3",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "The actual website address matters. A familiar name within a link does not establish who controls its destination.",
+          "uncertainty": "A matching domain does not authenticate the sender or the requested action.",
+          "evidence": [
+            {
+              "id": "domain-0",
+              "kind": "domain",
+              "state": "matched",
+              "title": "Host matches the reviewed DBS record",
+              "detail": "Actual host: www.dbs.com.sg. Registrable domain: dbs.com.sg. Exact host match to a record reviewed 2026-09-26. This does not authenticate the sender, verify a redirect destination or authorise the requested action.",
+              "sourceUrl": "https://www.dbs.com.sg/personal/deposits/security-and-you/default.page",
+              "checkedAt": "2026-09-27T09:12:56.982Z"
+            },
+            {
+              "id": "reputation-0",
+              "kind": "reputation",
+              "state": "not_checked",
+              "title": "External link check is off",
+              "detail": "Only local URL and directory checks were performed. The address was not sent to Google Web Risk.",
+              "checkedAt": "2026-09-27T09:12:56.982Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [
+              "https://www.dbs.com.sg/"
+            ],
+            "phoneNumbers": [],
+            "requestedActions": [],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T09:12:58.968Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

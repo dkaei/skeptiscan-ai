@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "caseId": "S07",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "f8c34f0a49ca07955ce985bccc50c09bd5e296caee9e3abb9cc6fb530758f9e4",
+  "inputSha256": "a3b11173b22e2b1f3a515172909fd4bde6030b34e7d05f9156e1dc02882924e4",
+  "capturedAt": "2026-09-27T04:05:11.893Z",
+  "submittedInput": {
+    "mode": "screenshot",
+    "content": "",
+    "context": "This is a screenshot only. I do not know where the button goes.",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "imageSha256": "4a7a1503730b8d9317bf24995583e308aa8ec6daecb262fc823379417c96baca",
+  "uploadImageSha256": "11766ec6e73b222ba918c6e11f2054729f9cab2e46e61f638c8e9e39730014df",
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "a9bacde5-8f7a-44cd-9960-ae4d08acdac3",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T04:05:11.893Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "a9bacde5-8f7a-44cd-9960-ae4d08acdac3",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "Your description asks for information, without a stated payment, account-code or device-access request.",
+          "uncertainty": "This covers the details supplied. A later request may need a new check. Screenshot text is machine-transcribed and may contain mistakes.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "DELIVERY MESSAGE\n\nYour delivery update is ready.\n\nView in delivery app",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "View in delivery app",
+                "quote": "View in delivery app"
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T04:05:11.433Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

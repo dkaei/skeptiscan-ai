@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "caseId": "SS04",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "2bb78320dcee28f69d9d64fcf413935d42fd8fdeafa34bcdb7a9c49c76fe9116",
+  "inputSha256": "76ffaae897e2e31c9943ffd99be6011926fa1a6ca7ca5265f269407b70e0f95e",
+  "capturedAt": "2026-09-27T04:06:14.575Z",
+  "submittedInput": {
+    "mode": "screenshot",
+    "content": "",
+    "context": "I registered for a free community event and received this message.",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "imageSha256": "a776ce2dedeb1b2db4a0c35b1f2a5799792803dc192b53c6f9e36acf990157bc",
+  "uploadImageSha256": "24c741ee565c3cce4aaf7e09f8fd136afb47d52c7b867d1f2faa6a35174e9356",
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "f9c8099a-c06f-494c-9776-bb9e62b2cc11",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T04:06:14.575Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "f9c8099a-c06f-494c-9776-bb9e62b2cc11",
+          "status": "complete",
+          "title": "Keep account codes private",
+          "nextStep": "Do not send your password or account verification code to another person.",
+          "reason": "Sharing an account code or password can let someone access your account.",
+          "uncertainty": "The sender’s identity and intentions have not been verified. Screenshot text is machine-transcribed and may contain mistakes.",
+          "evidence": [
+            {
+              "id": "guidance-account-credentials",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Keep banking credentials private",
+              "detail": "DBS advises against giving another person banking credentials, one-time passwords or Digital Token approvals. This source concerns account authentication; it does not classify ordinary parcel-collection codes. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.dbs.com.sg/personal/deposits/security-and-you/default.page",
+              "checkedAt": "2026-09-27T04:06:11.727Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "EVENT CHECK-IN\n\nPlease bring your confirmation email.\nShow your name at the welcome desk.\n\nOne more step:\nSend me the one-time login code from your email so I can add you to the list.\n\nNo payment is needed.",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "Bring your confirmation email",
+                "quote": "Please bring your confirmation email."
+              },
+              {
+                "action": "Show your name at the welcome desk",
+                "quote": "Show your name at the welcome desk."
+              },
+              {
+                "action": "Send the one-time login code from your email",
+                "quote": "Send me the one-time login code from your email so I can add you to the list."
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [
+              "Did you start this request yourself?",
+              "Are they asking you to tell someone a login or account code?"
+            ]
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T04:06:14.107Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

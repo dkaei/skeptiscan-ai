@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "caseId": "M19",
+  "candidateHash": "3c9b769f10b5b40c9f521f25fba4a3d6281c8ca59526fff0dd655c12843b59c2",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "d77067a59ef0eb08e6481938503d2389d23600a5cd76fef57813a400c60ce8d1",
+  "capturedAt": "2026-09-27T09:10:46.692Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "Someone is helping with my slow phone. They said there is an app step next, but I have not explained whether they asked me to install anything or grant access.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "3b0be4be-5146-4bca-812e-8082f0794e96",
+        "httpStatus": 200,
+        "observedStatus": "needs_context",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": "asked_to_install"
+      },
+      "receivedAt": "2026-09-27T09:10:31.605Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "3b0be4be-5146-4bca-812e-8082f0794e96",
+          "status": "needs_context",
+          "title": "One detail would help",
+          "nextStep": "Answer the question below if you know. You can choose “Not sure”.",
+          "reason": "“They said there is an app step next, but I have not explained whether they asked me to install anything or grant access.” leaves the requested capability unclear. Ordinary restart advice differs from installing software or granting control; confirm the current step first.",
+          "uncertainty": "Your answer may change the next step.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [],
+            "unreadableDetails": [],
+            "missingContext": [
+              "Did someone ask you to install an app or allow remote access?"
+            ],
+            "screenshotIssues": []
+          },
+          "question": {
+            "id": "asked_to_install",
+            "text": "Did someone ask you to install an app or allow remote access?",
+            "options": [
+              "Yes",
+              "No",
+              "Not sure"
+            ]
+          },
+          "checkedAt": "2026-09-27T09:10:31.435Z",
+          "aiUsed": true,
+          "hasContinuation": true
+        }
+      }
+    },
+    {
+      "observation": {
+        "kind": "clarification",
+        "requestId": "3b0be4be-5146-4bca-812e-8082f0794e96",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T09:10:46.692Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "3b0be4be-5146-4bca-812e-8082f0794e96",
+          "status": "complete",
+          "title": "Pause before acting",
+          "nextStep": "Confirm the request through a contact route you already trust.",
+          "reason": "“there is an app step next,” does not authenticate this sparse request. Open an app or contact route you already know independently, rather than relying on the message.",
+          "uncertainty": "The requested action is still unclear.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [],
+            "unreadableDetails": [],
+            "missingContext": [
+              "Did someone ask you to install an app or allow remote access?"
+            ],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T09:10:36.557Z",
+          "aiUsed": true
+        }
+      },
+      "answer": "unsure"
+    }
+  ]
+}

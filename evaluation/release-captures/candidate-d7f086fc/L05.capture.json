@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "caseId": "L05",
+  "candidateHash": "3c9b769f10b5b40c9f521f25fba4a3d6281c8ca59526fff0dd655c12843b59c2",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "5b40cef7699871c2ea6945dcb5e3e3aa5d7f805d80aec38c69ed0e9032b2987a",
+  "capturedAt": "2026-09-27T09:13:30.665Z",
+  "submittedInput": {
+    "mode": "link",
+    "content": "https://db5.com.sg/",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "ec8b1b42-f0ae-46dd-85ad-f10e5d76f414",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T09:13:30.665Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "ec8b1b42-f0ae-46dd-85ad-f10e5d76f414",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "The actual website address matters. A familiar name within a link does not establish who controls its destination.",
+          "uncertainty": "The website’s content and owner have not been verified.",
+          "evidence": [
+            {
+              "id": "domain-0",
+              "kind": "domain",
+              "state": "no_match",
+              "title": "Host is outside the reviewed directory",
+              "detail": "Actual host: db5.com.sg. Registrable domain: db5.com.sg. Unlisted services may be legitimate; missing coverage does not establish fraud or safety.",
+              "checkedAt": "2026-09-27T09:13:28.574Z"
+            },
+            {
+              "id": "reputation-0",
+              "kind": "reputation",
+              "state": "not_checked",
+              "title": "External link check is off",
+              "detail": "Only local URL and directory checks were performed. The address was not sent to Google Web Risk.",
+              "checkedAt": "2026-09-27T09:13:28.574Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [
+              "https://db5.com.sg/"
+            ],
+            "phoneNumbers": [],
+            "requestedActions": [],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T09:13:30.501Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

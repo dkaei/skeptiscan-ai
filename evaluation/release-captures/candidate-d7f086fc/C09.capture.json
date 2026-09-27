@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "caseId": "C09",
+  "candidateHash": "3c9b769f10b5b40c9f521f25fba4a3d6281c8ca59526fff0dd655c12843b59c2",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "4aff0af59b32ad6a0748a02d271ed5f8264b798fbff55dd8165ee4973ac1e314",
+  "capturedAt": "2026-09-27T09:07:13.124Z",
+  "submittedInput": {
+    "mode": "call",
+    "content": "Can you tell whether this caller is on a scam-report database? They hung up before speaking, so I do not know what they wanted.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "+65 6*** 2002",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "ab2608d5-cbb5-4791-82f9-43c7840143c9",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T09:07:13.124Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "ab2608d5-cbb5-4791-82f9-43c7840143c9",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "As described, “They hung up before speaking, so I do not know what they wanted.”. This ordinary arrangement states no payment, account-access or remote-control demand; the contact’s identity is not verified.",
+          "uncertainty": "This covers the details supplied. A later request may need a new check.",
+          "evidence": [
+            {
+              "id": "phone-1",
+              "kind": "phone",
+              "state": "unsupported",
+              "title": "Phone number could not be normalised",
+              "detail": "The supplied number is incomplete, masked or unsupported. No number-report lookup or caller authentication was performed.",
+              "checkedAt": "2026-09-27T09:07:08.886Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [
+              "+65 6*** 2002"
+            ],
+            "requestedActions": [],
+            "unreadableDetails": [],
+            "missingContext": [
+              "Did you start this request yourself?"
+            ],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T09:07:12.946Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

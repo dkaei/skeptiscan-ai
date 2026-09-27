@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "caseId": "ST14",
+  "candidateHash": "3c9b769f10b5b40c9f521f25fba4a3d6281c8ca59526fff0dd655c12843b59c2",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "fe2cc68cd6381ae58b27bdd6073e527eddaf107f6e852ccf7e5f0501e521b821",
+  "inputSha256": "233e05b669c9b5afb359179af46c4a9e81fc616053d19174e319b62491776e60",
+  "capturedAt": "2026-09-27T09:18:18.680Z",
+  "submittedInput": {
+    "mode": "call",
+    "content": "The person on the support call asked which light was flashing and told me to restart my tablet. The phrase install a remote-access app also appears in an older scam-awareness example in my notes.",
+    "context": "I have checked my notes: only restart advice belongs to this call. The installation phrase is from the old example; this caller has not asked for software, passwords, payments or device access.",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "05b03c66-19dd-4fae-a4d6-110e24e32b5f",
+        "httpStatus": 200,
+        "observedStatus": "partial",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T09:18:18.680Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "05b03c66-19dd-4fae-a4d6-110e24e32b5f",
+          "status": "partial",
+          "title": "Check incomplete",
+          "nextStep": "Confirm the request through a contact route you already trust.",
+          "reason": "The final AI review could not be completed.",
+          "uncertainty": "Earlier findings do not replace a completed assessment.",
+          "evidence": [
+            {
+              "id": "phone-unavailable",
+              "kind": "phone",
+              "state": "unavailable",
+              "title": "Caller identity is not verified",
+              "detail": "No complete number was extracted and no authorised reported-number feed is connected. The supplied description can still be assessed for the action requested.",
+              "checkedAt": "2026-09-27T09:18:15.489Z"
+            },
+            {
+              "id": "guidance-remote-access",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Check unexpected technical-support requests",
+              "detail": "SPF describes technical-support scams that ask people to download remote-access software or grant control of their device. Confirm an unexpected support request through the software provider’s official channels before following its instructions. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.police.gov.sg/Media-Hub/News/2026/06/20260609_joint_advisory_on_technical_support_scams_involving_the_impersonation_of_microsoft",
+              "checkedAt": "2026-09-27T09:18:15.489Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "restart your tablet",
+                "quote": "told me to restart my tablet",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 66,
+                  "end": 94
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T09:18:18.430Z",
+          "aiUsed": true,
+          "recovery": "retry"
+        }
+      }
+    }
+  ]
+}

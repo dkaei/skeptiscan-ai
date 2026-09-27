@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "caseId": "ST05",
+  "candidateHash": "3c9b769f10b5b40c9f521f25fba4a3d6281c8ca59526fff0dd655c12843b59c2",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "fe2cc68cd6381ae58b27bdd6073e527eddaf107f6e852ccf7e5f0501e521b821",
+  "inputSha256": "66cdbd1b747de9aea909a51a9e82e0ee79cbfd08a21053d2d557365e1bb16633",
+  "capturedAt": "2026-09-27T09:16:30.307Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "The fictional Cedar Workshop really repaired my chair and I owe S$85. The invoice in the portal I normally use lists the agreed workshop payee. A new chat says the portal is slow, so transfer the same S$85 to the sender's personal account instead and do not call the workshop. The amount is correct.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "18e6f19f-922f-4b5e-ab33-443401b24a3e",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T09:16:30.307Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "18e6f19f-922f-4b5e-ab33-443401b24a3e",
+          "status": "complete",
+          "title": "Confirm the payment request",
+          "nextStep": "Verify who should receive the payment through a trusted, independent contact route.",
+          "reason": "“The invoice in the portal I normally use lists the agreed workshop payee.” does not authorise the separate request “transfer the same S$85 to the sender's personal account instead”. The payment recipient still needs independent verification.",
+          "uncertainty": "The recipient and purpose of the payment have not been verified.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "transfer S$85 to the sender's personal account instead",
+                "quote": "transfer the same S$85 to the sender's personal account instead",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 183,
+                  "end": 246
+                }
+              },
+              {
+                "action": "do not call the workshop",
+                "quote": "do not call the workshop",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 251,
+                  "end": 275
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T09:16:30.139Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "caseId": "S03",
+  "candidateHash": "3c9b769f10b5b40c9f521f25fba4a3d6281c8ca59526fff0dd655c12843b59c2",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "f8c34f0a49ca07955ce985bccc50c09bd5e296caee9e3abb9cc6fb530758f9e4",
+  "inputSha256": "21fb5ff52b1076c753c4970c29f672f7da34dc0a55dec4939525ec0feb4bf34f",
+  "capturedAt": "2026-09-27T09:14:55.353Z",
+  "submittedInput": {
+    "mode": "screenshot",
+    "content": "",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "imageSha256": "6240bab02c329197124c8eac1454de88c761f00df21b30b6ea6fa3539cb8bf21",
+  "uploadImageSha256": "4742cdde1fed5a5a2d0d431d8545e6af7b57734719c512f51e09a47ec808ae3e",
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "634091cc-7a05-4562-9f71-08cf69bd07b7",
+        "httpStatus": 200,
+        "observedStatus": "partial",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T09:14:55.353Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "634091cc-7a05-4562-9f71-08cf69bd07b7",
+          "status": "partial",
+          "title": "Check incomplete",
+          "nextStep": "Add the relevant context or a wider screenshot of the request. Do not infer text outside the image.",
+          "reason": "The supplied screenshot does not show the payment recipient needed for this assessment.",
+          "uncertainty": "Absent information cannot be recovered by reading the same pixels more closely.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "COMMUNITY UPDATE\n\nRead public information at\nhttps://www.gov.sg/\n\nTo reserve your allocation,\ntransfer S$90 now to my\npersonal account.\n\nThe public information page is\nproof you can trust me.",
+            "claimedOrganisation": null,
+            "urls": [
+              "https://www.gov.sg/"
+            ],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "read public information",
+                "quote": "Read public information at",
+                "source": "transcript",
+                "span": {
+                  "source": "transcript",
+                  "start": 18,
+                  "end": 44
+                }
+              },
+              {
+                "action": "transfer money",
+                "quote": "transfer S$90 now to my\npersonal account.",
+                "source": "transcript",
+                "span": {
+                  "source": "transcript",
+                  "start": 94,
+                  "end": 135
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": [
+              {
+                "kind": "missing_detail",
+                "target": "payment_recipient",
+                "location": "body",
+                "consequential": true,
+                "imageQuote": "transfer S$90 now to my\npersonal account.",
+                "userQuote": null,
+                "userSource": null
+              }
+            ]
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T09:14:55.099Z",
+          "aiUsed": true,
+          "recovery": "edit_input"
+        }
+      }
+    }
+  ]
+}

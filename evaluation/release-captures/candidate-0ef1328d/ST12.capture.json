@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "caseId": "ST12",
+  "candidateHash": "fe8372971341d763ca2440a1e164e101dd5801aa8c498cfa467f955992c627d6",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "fe2cc68cd6381ae58b27bdd6073e527eddaf107f6e852ccf7e5f0501e521b821",
+  "inputSha256": "dcf28f7a579bb6f052089fe91a095816885636a36d39f15645fab40db5cbf125",
+  "capturedAt": "2026-09-27T12:50:13.649Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "An old training example reads: Chat helper, send me the account login code. My current app says enter the code here to finish the sign-in I started.",
+    "context": "The helper sentence is only a labelled example in a safety leaflet. For the current step I am entering the code in my own app; nobody is asking me to send it to a person.",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "91636948-ba78-411b-8649-226ed5140274",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T12:50:13.649Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "91636948-ba78-411b-8649-226ed5140274",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "As described, “The helper sentence is only a labelled example in a safety leaflet.”; “For the current step I am entering the code in my own app; nobody is asking me to send it to a person.”; “Chat helper, send me the account login code.”; “My current app says enter the code here to finish the sign-in I started.”. The concerning wording is an example, rather than a current instruction to follow.",
+          "uncertainty": "This assessment covers the example as described, not a separate live request.",
+          "evidence": [
+            {
+              "id": "guidance-account-credentials",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Keep banking credentials private",
+              "detail": "DBS advises against giving another person banking credentials, one-time passwords or Digital Token approvals. This source concerns account authentication; it does not classify ordinary parcel-collection codes. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.dbs.com.sg/personal/deposits/security-and-you/default.page",
+              "checkedAt": "2026-09-27T12:50:00.061Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "tell someone a login or account code",
+                "quote": "send me the account login code",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 44,
+                  "end": 74
+                }
+              },
+              {
+                "action": "enter a code to finish sign-in",
+                "quote": "enter the code here to finish the sign-in I started",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 96,
+                  "end": 147
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T12:50:04.340Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

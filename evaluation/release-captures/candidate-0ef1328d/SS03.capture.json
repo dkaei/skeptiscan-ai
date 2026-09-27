@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "caseId": "SS03",
+  "candidateHash": "fe8372971341d763ca2440a1e164e101dd5801aa8c498cfa467f955992c627d6",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "2bb78320dcee28f69d9d64fcf413935d42fd8fdeafa34bcdb7a9c49c76fe9116",
+  "inputSha256": "6930ec296c2132cc5d4a9b3db9ebe18dd677efefe8a8e97b0e89d82d0851ee4b",
+  "capturedAt": "2026-09-27T12:52:29.103Z",
+  "submittedInput": {
+    "mode": "screenshot",
+    "content": "The message asks me to send the sign-in code to the support agent in this chat.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "imageSha256": "572b053090e6a8f093e0cd39c7bb87f2f2527806744327af4f3610d53d654024",
+  "uploadImageSha256": "fa9f13f5ed8241fb2a78393a69bd5ca9383d3eb7bb4d1c8132ee2ee183f9a726",
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "94eebd7d-da33-4a60-b883-db93f2e6ea95",
+        "httpStatus": 200,
+        "observedStatus": "partial",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T12:52:29.103Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "94eebd7d-da33-4a60-b883-db93f2e6ea95",
+          "status": "partial",
+          "title": "Check incomplete",
+          "nextStep": "Compare the image with your typed correction and correct the difference. Keep account codes private.",
+          "reason": "The screenshot reader flagged a possible difference in what you are being asked to do between the image and your typed correction.",
+          "uncertainty": "Neither version is assumed correct. The screenshot may have been misread.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "SIGN-IN HELP\n\nYou started signing in to your\naccount.\n\nEnter the sign-in code only in\nthis app.\n\nDo not send the code to this chat.\n\nNever tell it to a support agent.",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "send the sign-in code to this chat",
+                "quote": "Do not send the code to this chat.",
+                "source": "transcript",
+                "span": {
+                  "source": "transcript",
+                  "start": 97,
+                  "end": 131
+                }
+              },
+              {
+                "action": "tell it to a support agent",
+                "quote": "Never tell it to a support agent.",
+                "source": "transcript",
+                "span": {
+                  "source": "transcript",
+                  "start": 133,
+                  "end": 166
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [
+              "Did you start this request yourself?",
+              "Are they asking you to tell someone a login or account code?"
+            ],
+            "screenshotIssues": [
+              {
+                "kind": "conflicting_accounts",
+                "target": "requested_action",
+                "location": "body",
+                "consequential": true,
+                "imageQuote": "Enter the sign-in code only in\nthis app.\n\nDo not send the code to this chat.",
+                "userQuote": "The message asks me to send the sign-in code to the support agent in this chat.",
+                "userSource": "correction"
+              }
+            ]
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T12:52:28.090Z",
+          "aiUsed": true,
+          "recovery": "edit_input"
+        }
+      }
+    }
+  ]
+}

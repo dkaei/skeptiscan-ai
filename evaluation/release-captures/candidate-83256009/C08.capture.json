@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "caseId": "C08",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "c1d3de8886c3d31bb159665469063e785244bbe5e3ce3229fa674bdf0e4c70b4",
+  "capturedAt": "2026-09-27T04:00:33.334Z",
+  "submittedInput": {
+    "mode": "call",
+    "content": "The voice sounded like my aunt and caller ID showed her usual saved name. She asked me to tell her my WhatsApp registration code because her phone was broken. I did not start a WhatsApp registration.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "bfb5291f-83d9-4c9a-87c0-ed12fe616e55",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T04:00:33.334Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "bfb5291f-83d9-4c9a-87c0-ed12fe616e55",
+          "status": "complete",
+          "title": "Keep account codes private",
+          "nextStep": "Do not send your password or account verification code to another person.",
+          "reason": "Sharing an account code or password can let someone access your account.",
+          "uncertainty": "The sender’s identity and intentions have not been verified.",
+          "evidence": [
+            {
+              "id": "phone-unavailable",
+              "kind": "phone",
+              "state": "unavailable",
+              "title": "Caller identity is not verified",
+              "detail": "No complete number was extracted and no authorised reported-number feed is connected. The supplied description can still be assessed for the action requested.",
+              "checkedAt": "2026-09-27T04:00:31.014Z"
+            },
+            {
+              "id": "guidance-whatsapp-account",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Protect WhatsApp account codes",
+              "detail": "SPF warns that a compromised WhatsApp account can send requests appearing to come from a familiar person. Do not give another person the one-time password used to access your WhatsApp account. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.police.gov.sg/media-hub/news/2026/05/20260508_police_advisory_on_social_media_impersonation_scams",
+              "checkedAt": "2026-09-27T04:00:31.014Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "tell someone a login or account code",
+                "quote": "She asked me to tell her my WhatsApp registration code because her phone was broken."
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [
+              "Did you start this request yourself?",
+              "Are they asking you to tell someone a login or account code?"
+            ]
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T04:00:32.856Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

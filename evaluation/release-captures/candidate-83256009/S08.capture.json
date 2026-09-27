@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "caseId": "S08",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "f8c34f0a49ca07955ce985bccc50c09bd5e296caee9e3abb9cc6fb530758f9e4",
+  "inputSha256": "51696d0e7a1b713f018042bf1ddcfc88ab6fbf7705a220d3d613958b96716415",
+  "capturedAt": "2026-09-27T04:05:16.557Z",
+  "submittedInput": {
+    "mode": "screenshot",
+    "content": "",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "imageSha256": "874b0004f2e19a8f79faf4f524535c1b5bba1942c63d3fba027dcce6d7742214",
+  "uploadImageSha256": "757fbd7ab0899e54406aa47cfd0878e7561b3b87ff7e37beaf4a64154735c7f3",
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "8e2d5dfe-dd6f-4248-b072-3d2ffd62d1ad",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T04:05:16.557Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "8e2d5dfe-dd6f-4248-b072-3d2ffd62d1ad",
+          "status": "complete",
+          "title": "Confirm the payment request",
+          "nextStep": "Verify who should receive the payment through a trusted, independent contact route.",
+          "reason": "Confirming a payment through a separate trusted route can help prevent a mistaken transfer.",
+          "uncertainty": "The recipient and purpose of the payment have not been verified. Screenshot text is machine-transcribed and may contain mistakes.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "CHAT\n\nEh my phone spoilt lah, this is my new number.\n\nCan transfer S$120 to my colleague first? I pay you back tonight.\n\nDon't call, in meeting now.",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "Transfer S$120 to my colleague first.",
+                "quote": "Can transfer S$120 to my colleague first?"
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [
+              "Did you start this request yourself?",
+              "Were you already expecting this payment request?"
+            ]
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T04:05:16.082Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

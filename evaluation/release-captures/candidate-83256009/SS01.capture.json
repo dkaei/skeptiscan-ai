@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "caseId": "SS01",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "2bb78320dcee28f69d9d64fcf413935d42fd8fdeafa34bcdb7a9c49c76fe9116",
+  "inputSha256": "069cf3e061d85e5644db257f49c98fc73de25d0ac795cd3b18aab582e84fc124",
+  "capturedAt": "2026-09-27T04:05:57.811Z",
+  "submittedInput": {
+    "mode": "screenshot",
+    "content": "",
+    "context": "This notice came in a message. I want to know about the account-update link, not just the public guide.",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "imageSha256": "afb161b5dada2e341010d090317a683c11c760b74ad9179e478815ffd7f9b567",
+  "uploadImageSha256": "321375da51cd089316645dd3a34aafb4c14d449ee7f70a45d77124d9c47bed18",
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "8348acca-2b87-49be-8ddb-d3ddfebd3e93",
+        "httpStatus": 200,
+        "observedStatus": "partial",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T04:05:57.811Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "8348acca-2b87-49be-8ddb-d3ddfebd3e93",
+          "status": "partial",
+          "title": "Check incomplete",
+          "nextStep": "Confirm the request through a contact route you already trust.",
+          "reason": "Some screenshot details could not be read reliably.",
+          "uncertainty": "Unclear text could change the next step.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "SERVICE NOTICE\n\nRead the public guide:\nhttps://www.gov.sg/\n\nTo update your account, use this link:\nhttps://█████████████.example.org/review\n\nPlease finish before 6 pm.",
+            "claimedOrganisation": null,
+            "urls": [
+              "https://www.gov.sg/",
+              "https://█████████████.example.org/review"
+            ],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "Read the public guide",
+                "quote": "Read the public guide:"
+              },
+              {
+                "action": "Use this link to update your account",
+                "quote": "To update your account, use this link:"
+              },
+              {
+                "action": "Finish before 6 pm",
+                "quote": "Please finish before 6 pm."
+              }
+            ],
+            "unreadableDetails": [
+              "The subdomain/host portion of the account-update URL is obscured: \"https:// █████████████ .example.org/review\"."
+            ],
+            "missingContext": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T04:05:57.230Z",
+          "aiUsed": true,
+          "recovery": "clearer_image"
+        }
+      }
+    }
+  ]
+}

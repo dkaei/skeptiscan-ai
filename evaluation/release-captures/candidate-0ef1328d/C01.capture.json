@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "caseId": "C01",
+  "candidateHash": "fe8372971341d763ca2440a1e164e101dd5801aa8c498cfa467f955992c627d6",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "859ca6cf6d66a74fc1d333a34767682f5087363a8622e5c2abbd9a4ada44fa17",
+  "capturedAt": "2026-09-27T12:44:17.424Z",
+  "submittedInput": {
+    "mode": "call",
+    "content": "I missed a call. There is no voicemail and I have not spoken to the caller.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "+65 8*** 1001",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "a90737f4-d855-4be9-98ae-b8cb933ca5b7",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T12:44:17.424Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "a90737f4-d855-4be9-98ae-b8cb933ca5b7",
+          "status": "complete",
+          "title": "Pause before acting",
+          "nextStep": "Confirm the request through a contact route you already trust.",
+          "reason": "The caller has not been identified. No authorised reported-number database is connected.",
+          "uncertainty": "A name or phone number cannot confirm this contact’s identity.",
+          "evidence": [
+            {
+              "id": "phone-1",
+              "kind": "phone",
+              "state": "unsupported",
+              "title": "Phone number could not be normalised",
+              "detail": "The supplied number is incomplete, masked or unsupported. No number-report lookup or caller authentication was performed.",
+              "checkedAt": "2026-09-27T12:44:14.222Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [
+              "+65 8*** 1001"
+            ],
+            "requestedActions": [],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T12:44:16.484Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "caseId": "L08",
+  "candidateHash": "3c9b769f10b5b40c9f521f25fba4a3d6281c8ca59526fff0dd655c12843b59c2",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "18e59fb9e45da3c298b3e26671e4277faa4fcd0dcab7d836d0b64cb0f4913954",
+  "capturedAt": "2026-09-27T09:13:52.235Z",
+  "submittedInput": {
+    "mode": "link",
+    "content": "https://example.org/reset?token=SYNTHETIC-NOT-A-SECRET",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "2c43d9bb-9542-47ec-aadb-ab3ed5a61aaa",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T09:13:52.235Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "2c43d9bb-9542-47ec-aadb-ab3ed5a61aaa",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "The actual website address matters. A familiar name within a link does not establish who controls its destination.",
+          "uncertainty": "The website’s content and owner have not been verified.",
+          "evidence": [
+            {
+              "id": "domain-0",
+              "kind": "domain",
+              "state": "no_match",
+              "title": "Host is outside the reviewed directory",
+              "detail": "Actual host: example.org. Registrable domain: example.org. Unlisted services may be legitimate; missing coverage does not establish fraud or safety.",
+              "checkedAt": "2026-09-27T09:13:50.081Z"
+            },
+            {
+              "id": "reputation-0",
+              "kind": "reputation",
+              "state": "unsupported",
+              "title": "External link check not performed",
+              "detail": "This prototype does not send URL paths, queries, fragments or encoded values to a third party because they may contain private information or access tokens. The full link was not reputation-checked.",
+              "checkedAt": "2026-09-27T09:13:50.081Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [
+              "https://example.org/reset?token=SYNTHETIC-NOT-A-SECRET"
+            ],
+            "phoneNumbers": [],
+            "requestedActions": [],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T09:13:52.071Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

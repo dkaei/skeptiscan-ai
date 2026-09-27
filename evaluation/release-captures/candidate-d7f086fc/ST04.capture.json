@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "caseId": "ST04",
+  "candidateHash": "3c9b769f10b5b40c9f521f25fba4a3d6281c8ca59526fff0dd655c12843b59c2",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "fe2cc68cd6381ae58b27bdd6073e527eddaf107f6e852ccf7e5f0501e521b821",
+  "inputSha256": "82b1609a22b24036b9dcd1101d900fb166d56fbc9b1844953c66c1f8100e471b",
+  "capturedAt": "2026-09-27T09:16:06.351Z",
+  "submittedInput": {
+    "mode": "call",
+    "content": "I called the furniture shop using the receipt for my cancelled order. The person says the refund status is in the order history of the app I already use. I open that app myself and read the status. Nobody asks me to install software, share a password or permit remote control.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "634d11a9-dc7f-45d3-aff7-b919b7525dfa",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T09:16:06.351Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "634d11a9-dc7f-45d3-aff7-b919b7525dfa",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "As described, “I called the furniture shop using the receipt for my cancelled order.”; “I open that app myself and read the status.”. This ordinary arrangement states no payment, account-access or remote-control demand; the contact’s identity is not verified.",
+          "uncertainty": "This covers the details supplied. A later request may need a new check.",
+          "evidence": [
+            {
+              "id": "phone-unavailable",
+              "kind": "phone",
+              "state": "unavailable",
+              "title": "Caller identity is not verified",
+              "detail": "No complete number was extracted and no authorised reported-number feed is connected. The supplied description can still be assessed for the action requested.",
+              "checkedAt": "2026-09-27T09:16:02.728Z"
+            },
+            {
+              "id": "guidance-account-credentials",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Keep banking credentials private",
+              "detail": "DBS advises against giving another person banking credentials, one-time passwords or Digital Token approvals. This source concerns account authentication; it does not classify ordinary parcel-collection codes. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.dbs.com.sg/personal/deposits/security-and-you/default.page",
+              "checkedAt": "2026-09-27T09:16:02.728Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "open app and read refund status in order history",
+                "quote": "The person says the refund status is in the order history of the app I already use.",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 70,
+                  "end": 153
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T09:16:06.191Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

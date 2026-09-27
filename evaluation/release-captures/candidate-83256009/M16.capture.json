@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "caseId": "M16",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "9f489936e33ec27ef4a44e7c4270034cf789a8839f7a361989b434766037806a",
+  "capturedAt": "2026-09-27T03:58:36.494Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "Lunch just now was $8 each ah. I already ate with my colleague and we agreed to split it. Their message says I can settle with them when we meet at work tomorrow; no new account, link or code.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "e7206b4b-65ba-49f1-9fb9-f16f5739f8ef",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T03:58:36.494Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "e7206b4b-65ba-49f1-9fb9-f16f5739f8ef",
+          "status": "complete",
+          "title": "Confirm the payment request",
+          "nextStep": "Verify who should receive the payment through a trusted, independent contact route.",
+          "reason": "Confirming a payment through a separate trusted route can help prevent a mistaken transfer.",
+          "uncertainty": "The recipient and purpose of the payment have not been verified.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [],
+            "unreadableDetails": [],
+            "missingContext": [
+              "Were you already expecting this payment request?"
+            ]
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T03:58:36.017Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

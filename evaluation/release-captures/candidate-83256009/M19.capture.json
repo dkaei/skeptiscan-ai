@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "caseId": "M19",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "d77067a59ef0eb08e6481938503d2389d23600a5cd76fef57813a400c60ce8d1",
+  "capturedAt": "2026-09-27T03:59:20.674Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "Someone is helping with my slow phone. They said there is an app step next, but I have not explained whether they asked me to install anything or grant access.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "16f8ca6e-43d7-4cda-8d4d-69ca13600ebe",
+        "httpStatus": 200,
+        "observedStatus": "needs_context",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": "asked_to_install"
+      },
+      "receivedAt": "2026-09-27T03:59:17.685Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "16f8ca6e-43d7-4cda-8d4d-69ca13600ebe",
+          "status": "needs_context",
+          "title": "One detail would help",
+          "nextStep": "Answer the question below if you know. You can choose “Not sure”.",
+          "reason": "The appropriate next step depends on what you are being asked to do.",
+          "uncertainty": "Your answer may change the next step.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [],
+            "unreadableDetails": [],
+            "missingContext": [
+              "Did someone ask you to install an app or allow remote access?"
+            ]
+          },
+          "question": {
+            "id": "asked_to_install",
+            "text": "Did someone ask you to install an app or allow remote access?",
+            "options": [
+              "Yes",
+              "No",
+              "Not sure"
+            ]
+          },
+          "checkedAt": "2026-09-27T03:59:17.211Z",
+          "aiUsed": true,
+          "hasContinuation": true
+        }
+      }
+    },
+    {
+      "observation": {
+        "kind": "clarification",
+        "requestId": "16f8ca6e-43d7-4cda-8d4d-69ca13600ebe",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T03:59:20.674Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "16f8ca6e-43d7-4cda-8d4d-69ca13600ebe",
+          "status": "complete",
+          "title": "Pause before acting",
+          "nextStep": "Confirm the request through a contact route you already trust.",
+          "reason": "The appropriate next step depends on what you are being asked to do.",
+          "uncertainty": "The requested action is still unclear.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [],
+            "unreadableDetails": [],
+            "missingContext": [
+              "Did someone ask you to install an app or allow remote access?"
+            ]
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T03:59:20.200Z",
+          "aiUsed": true
+        }
+      },
+      "answer": "unsure"
+    }
+  ]
+}

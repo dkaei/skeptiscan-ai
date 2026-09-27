@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "caseId": "M02",
+  "candidateHash": "fe8372971341d763ca2440a1e164e101dd5801aa8c498cfa467f955992c627d6",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "2395381af71298c62340ac3b73363b7cd96e32d6eff29699da01254079adbee2",
+  "capturedAt": "2026-09-27T12:38:58.028Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "My ordered parcel is already in the collection locker. I opened the delivery app myself and it displays a collection PIN to enter on the locker keypad. Nobody is asking for a bank or login code.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "74a898fc-6257-4b2a-8fc0-261c08977fb1",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T12:38:58.028Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "74a898fc-6257-4b2a-8fc0-261c08977fb1",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "As described, “My ordered parcel is already in the collection locker.”; “I opened the delivery app myself and it displays a collection PIN to enter on the locker keypad.”; “Nobody is asking for a bank or login code.”. An item-collection code differs from an account-access code; the collection arrangement is not verified.",
+          "uncertainty": "The collection arrangement and recipient have not been verified.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T12:38:53.277Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

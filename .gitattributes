@@ -1,0 +1,8 @@
+* text=auto eol=lf
+# Preserve exact bytes for frozen references, captures and recorded hashes.
+evaluation/** -text
+verification/evaluation-completion-2026-09-27/reference-plan.json -text
+*.png binary
+*.jpg binary
+*.webp binary
+*.woff2 binary

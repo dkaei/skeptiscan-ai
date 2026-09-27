@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "caseId": "ST08",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "fe2cc68cd6381ae58b27bdd6073e527eddaf107f6e852ccf7e5f0501e521b821",
+  "inputSha256": "2947abe48d010494e4049c347a43114e34b1a24b358347d32b552df96c6dde28",
+  "capturedAt": "2026-09-27T04:02:26.405Z",
+  "submittedInput": {
+    "mode": "link",
+    "content": "https://help.harbour-bank.example/",
+    "context": "I expected help.harbour-bank.example. I have no information about who sent this link. The names are fictional.",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "a043b558-70b0-4956-9240-30a439d931fe",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T04:02:26.405Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "a043b558-70b0-4956-9240-30a439d931fe",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "The actual website address matters. A familiar name within a link does not establish who controls its destination.",
+          "uncertainty": "The website’s content and owner have not been verified.",
+          "evidence": [
+            {
+              "id": "domain-0",
+              "kind": "domain",
+              "state": "unsupported",
+              "title": "Limited URL check",
+              "detail": "Actual host: help.harbour-bank.example. Registrable domain: harbour-bank.example. This is a private, reserved or unsupported domain. No external lookup was performed.",
+              "checkedAt": "2026-09-27T04:02:23.285Z"
+            },
+            {
+              "id": "reputation-0",
+              "kind": "reputation",
+              "state": "unsupported",
+              "title": "External link check not performed",
+              "detail": "This is a private, reserved or unsupported domain. No external lookup was performed.",
+              "checkedAt": "2026-09-27T04:02:23.285Z"
+            },
+            {
+              "id": "domain-1",
+              "kind": "domain",
+              "state": "unsupported",
+              "title": "Limited URL check",
+              "detail": "Actual host: help.harbour-bank.example. Registrable domain: harbour-bank.example. This is a private, reserved or unsupported domain. No external lookup was performed.",
+              "checkedAt": "2026-09-27T04:02:23.285Z"
+            },
+            {
+              "id": "reputation-1",
+              "kind": "reputation",
+              "state": "unsupported",
+              "title": "External link check not performed",
+              "detail": "This is a private, reserved or unsupported domain. No external lookup was performed.",
+              "checkedAt": "2026-09-27T04:02:23.285Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [
+              "https://help.harbour-bank.example/"
+            ],
+            "phoneNumbers": [],
+            "requestedActions": [],
+            "unreadableDetails": [],
+            "missingContext": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T04:02:25.930Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

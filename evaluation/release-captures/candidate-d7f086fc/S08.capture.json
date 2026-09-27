@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "caseId": "S08",
+  "candidateHash": "3c9b769f10b5b40c9f521f25fba4a3d6281c8ca59526fff0dd655c12843b59c2",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "f8c34f0a49ca07955ce985bccc50c09bd5e296caee9e3abb9cc6fb530758f9e4",
+  "inputSha256": "51696d0e7a1b713f018042bf1ddcfc88ab6fbf7705a220d3d613958b96716415",
+  "capturedAt": "2026-09-27T09:15:19.965Z",
+  "submittedInput": {
+    "mode": "screenshot",
+    "content": "",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "imageSha256": "874b0004f2e19a8f79faf4f524535c1b5bba1942c63d3fba027dcce6d7742214",
+  "uploadImageSha256": "757fbd7ab0899e54406aa47cfd0878e7561b3b87ff7e37beaf4a64154735c7f3",
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "16cc0bfb-f415-4a1b-95bf-86fd871e2248",
+        "httpStatus": 200,
+        "observedStatus": "partial",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T09:15:19.964Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "16cc0bfb-f415-4a1b-95bf-86fd871e2248",
+          "status": "partial",
+          "title": "Check incomplete",
+          "nextStep": "Review the screenshot or add text you can verify before checking again.",
+          "reason": "A detail read from the screenshot could not be linked to its exact source text.",
+          "uncertainty": "The image has not been assessed reliably. Uncertain details have not been accepted as evidence.",
+          "evidence": [],
+          "extraction": null,
+          "question": null,
+          "checkedAt": "2026-09-27T09:15:19.705Z",
+          "aiUsed": true,
+          "recovery": "edit_input"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "caseId": "SS05",
+  "candidateHash": "fe8372971341d763ca2440a1e164e101dd5801aa8c498cfa467f955992c627d6",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "2bb78320dcee28f69d9d64fcf413935d42fd8fdeafa34bcdb7a9c49c76fe9116",
+  "inputSha256": "cfd32ff5b18a34e30551d2e32fc38185a9ddf3c677d97ba29fa21e681a782d1b",
+  "capturedAt": "2026-09-27T12:52:46.353Z",
+  "submittedInput": {
+    "mode": "screenshot",
+    "content": "",
+    "context": "This image came from the person contacting me. I have not installed anything.",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "imageSha256": "83f0f61a683328521e5434185b64ce6a5e99961e6b1e6374be5da6e7f3846134",
+  "uploadImageSha256": "7df215dd21d44a334af36400d52a759deb26bda6e94521c9a9efeee592c33794",
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "449610f5-f732-4e53-a7f1-7edd6aff726a",
+        "httpStatus": 200,
+        "observedStatus": "partial",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T12:52:46.353Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "449610f5-f732-4e53-a7f1-7edd6aff726a",
+          "status": "partial",
+          "title": "Check incomplete",
+          "nextStep": "Review the screenshot or add text you can verify before checking again.",
+          "reason": "A detail read from the screenshot could not be linked to its exact source text.",
+          "uncertainty": "The image has not been assessed reliably. Uncertain details have not been accepted as evidence.",
+          "evidence": [],
+          "extraction": null,
+          "question": null,
+          "checkedAt": "2026-09-27T12:52:46.334Z",
+          "aiUsed": true,
+          "recovery": "edit_input"
+        }
+      }
+    }
+  ]
+}

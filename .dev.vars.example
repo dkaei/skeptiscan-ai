@@ -1,0 +1,9 @@
+# Copy to .dev.vars for local development. Never commit real keys.
+ENVIRONMENT=development
+LIVE_AI_ENABLED=false
+WEB_RISK_ENABLED=false
+# Add credentials locally only when ready for the synthetic live smoke test.
+# OPENAI_API_KEY=
+# GOOGLE_WEB_RISK_API_KEY=
+# CONTINUATION_SECRET=use-at-least-32-random-characters
+

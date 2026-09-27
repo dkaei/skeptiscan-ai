@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "caseId": "S07",
+  "candidateHash": "fe8372971341d763ca2440a1e164e101dd5801aa8c498cfa467f955992c627d6",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "f8c34f0a49ca07955ce985bccc50c09bd5e296caee9e3abb9cc6fb530758f9e4",
+  "inputSha256": "a3b11173b22e2b1f3a515172909fd4bde6030b34e7d05f9156e1dc02882924e4",
+  "capturedAt": "2026-09-27T12:47:53.146Z",
+  "submittedInput": {
+    "mode": "screenshot",
+    "content": "",
+    "context": "This is a screenshot only. I do not know where the button goes.",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "imageSha256": "4a7a1503730b8d9317bf24995583e308aa8ec6daecb262fc823379417c96baca",
+  "uploadImageSha256": "11766ec6e73b222ba918c6e11f2054729f9cab2e46e61f638c8e9e39730014df",
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "504ac6bc-d642-4ee9-ad83-b368c6494ea1",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T12:47:53.146Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "504ac6bc-d642-4ee9-ad83-b368c6494ea1",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "As described, “Your delivery update is ready.”; “View in delivery app”. This ordinary arrangement states no payment, account-access or remote-control demand; the contact’s identity is not verified.",
+          "uncertainty": "This covers the details supplied. A later request may need a new check. Screenshot text is machine-transcribed and may contain mistakes. The screenshot does not show where the button goes. Its label cannot reveal the target URL; open a trusted app independently.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "DELIVERY MESSAGE\n\nYour delivery update is ready.\n\nView in delivery app",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "Open the delivery app",
+                "quote": "View in delivery app",
+                "source": "transcript",
+                "span": {
+                  "source": "transcript",
+                  "start": 50,
+                  "end": 70
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": [
+              {
+                "kind": "missing_detail",
+                "target": "link_destination",
+                "location": "button",
+                "consequential": false,
+                "imageQuote": "View in delivery app",
+                "userQuote": null,
+                "userSource": null
+              }
+            ]
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T12:47:52.214Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

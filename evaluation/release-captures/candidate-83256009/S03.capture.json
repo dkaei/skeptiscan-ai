@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "caseId": "S03",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "f8c34f0a49ca07955ce985bccc50c09bd5e296caee9e3abb9cc6fb530758f9e4",
+  "inputSha256": "21fb5ff52b1076c753c4970c29f672f7da34dc0a55dec4939525ec0feb4bf34f",
+  "capturedAt": "2026-09-27T04:04:49.420Z",
+  "submittedInput": {
+    "mode": "screenshot",
+    "content": "",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "imageSha256": "6240bab02c329197124c8eac1454de88c761f00df21b30b6ea6fa3539cb8bf21",
+  "uploadImageSha256": "4742cdde1fed5a5a2d0d431d8545e6af7b57734719c512f51e09a47ec808ae3e",
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "cfdfe63e-5e6e-492f-976b-55c5e511fc2b",
+        "httpStatus": 200,
+        "observedStatus": "partial",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T04:04:49.420Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "cfdfe63e-5e6e-492f-976b-55c5e511fc2b",
+          "status": "partial",
+          "title": "Check incomplete",
+          "nextStep": "Confirm the request through a contact route you already trust.",
+          "reason": "The check could not analyse these details reliably.",
+          "uncertainty": "No completed assessment is available.",
+          "evidence": [],
+          "extraction": null,
+          "question": null,
+          "checkedAt": "2026-09-27T04:04:48.874Z",
+          "aiUsed": true,
+          "recovery": "retry"
+        }
+      }
+    }
+  ]
+}

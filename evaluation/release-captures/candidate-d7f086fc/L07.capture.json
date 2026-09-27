@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "caseId": "L07",
+  "candidateHash": "3c9b769f10b5b40c9f521f25fba4a3d6281c8ca59526fff0dd655c12843b59c2",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "1754e12c58d5504e6953dca72c772267101e9d07af045584872926d1df6ac546",
+  "capturedAt": "2026-09-27T09:13:48.559Z",
+  "submittedInput": {
+    "mode": "link",
+    "content": "https://go.gov.sg/q7",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "99f99864-8721-4427-aefd-792a2747dabd",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T09:13:48.559Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "99f99864-8721-4427-aefd-792a2747dabd",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "The actual website address matters. A familiar name within a link does not establish who controls its destination.",
+          "uncertainty": "A matching domain does not authenticate the sender or the requested action.",
+          "evidence": [
+            {
+              "id": "domain-0",
+              "kind": "domain",
+              "state": "matched",
+              "title": "Host matches the reviewed Singapore Government record",
+              "detail": "Actual host: go.gov.sg. Registrable domain: go.gov.sg. Exact host match to a record reviewed 2026-09-26. This does not authenticate the sender, verify a redirect destination or authorise the requested action.",
+              "sourceUrl": "https://www.gov.sg/trusted-sites/",
+              "checkedAt": "2026-09-27T09:13:46.377Z"
+            },
+            {
+              "id": "reputation-0",
+              "kind": "reputation",
+              "state": "unsupported",
+              "title": "External link check not performed",
+              "detail": "This prototype does not send URL paths, queries, fragments or encoded values to a third party because they may contain private information or access tokens. The full link was not reputation-checked.",
+              "checkedAt": "2026-09-27T09:13:46.377Z"
+            },
+            {
+              "id": "guidance-government-host",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Check the actual government website address",
+              "detail": "Singapore government websites generally use .gov.sg. Government guidance lists exceptions and official short-link hosts. A name appearing earlier in an unrelated hostname is not a match, and a genuine host does not authenticate a separate message or payment request. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.gov.sg/trusted-sites/",
+              "checkedAt": "2026-09-27T09:13:46.377Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [
+              "https://go.gov.sg/q7"
+            ],
+            "phoneNumbers": [],
+            "requestedActions": [],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T09:13:48.391Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

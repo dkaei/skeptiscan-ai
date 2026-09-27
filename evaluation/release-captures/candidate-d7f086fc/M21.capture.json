@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "caseId": "M21",
+  "candidateHash": "3c9b769f10b5b40c9f521f25fba4a3d6281c8ca59526fff0dd655c12843b59c2",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "8d527e1a3242ee847c715a8c6a2fdd5023f0f713183bb5c89c8c4cd5fa0542af",
+  "capturedAt": "2026-09-27T09:11:00.078Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "The SMS thread has the same displayed sender name as old bank messages. This message asks me to text my online-banking login code to a person. I did not begin a login or request help.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "8123b96d-6e63-439b-9a5a-a4eeba1bcd90",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T09:11:00.078Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "8123b96d-6e63-439b-9a5a-a4eeba1bcd90",
+          "status": "complete",
+          "title": "Keep account codes private",
+          "nextStep": "Do not send your password or account verification code to another person.",
+          "reason": "“The SMS thread has the same displayed sender name as old bank messages.” does not authorise the separate request “This message asks me to text my online-banking login code to a person.”. Sharing a password or account code, or approving another person’s sign-in, can give them account access.",
+          "uncertainty": "The sender’s identity and intentions have not been verified.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "send a login code to a person",
+                "quote": "text my online-banking login code to a person",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 96,
+                  "end": 141
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T09:10:59.905Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

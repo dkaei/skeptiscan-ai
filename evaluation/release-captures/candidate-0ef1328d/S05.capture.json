@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "caseId": "S05",
+  "candidateHash": "fe8372971341d763ca2440a1e164e101dd5801aa8c498cfa467f955992c627d6",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "f8c34f0a49ca07955ce985bccc50c09bd5e296caee9e3abb9cc6fb530758f9e4",
+  "inputSha256": "fbf4499d112d8660da7086f877156782722704a0a743fddd6b80315f98005ee5",
+  "capturedAt": "2026-09-27T12:47:44.542Z",
+  "submittedInput": {
+    "mode": "screenshot",
+    "content": "Enter the code in my own app. Nobody is asking me to send it to another person.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "imageSha256": "3ba5f0b69d28d82fcde319b3db1769b0336394e5c5eb3b5e04c0a1fcc459e220",
+  "uploadImageSha256": "fefa1d4eb0c5cdabc078f6abbe3614eecedba1af57b9e6f65f8b73322883a3af",
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "17de0e7d-cc18-4315-b215-08dbd31d7c98",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T12:47:44.542Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "17de0e7d-cc18-4315-b215-08dbd31d7c98",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "As described, “Enter the code in my own app.”; “Nobody is asking me to send it to another person.”. Entering a code only in the app you opened differs from sending it to another person; the app is not authenticated by this check.",
+          "uncertainty": "The app and sign-in request have not been verified. Screenshot text is machine-transcribed and may contain mistakes.",
+          "evidence": [
+            {
+              "id": "guidance-account-credentials",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Keep banking credentials private",
+              "detail": "DBS advises against giving another person banking credentials, one-time passwords or Digital Token approvals. This source concerns account authentication; it does not classify ordinary parcel-collection codes. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.dbs.com.sg/personal/deposits/security-and-you/default.page",
+              "checkedAt": "2026-09-27T12:47:36.520Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "MESSAGE\n\nSend the login code to me\nin this chat.\n\nI will take care of the rest.",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "send login code in this chat",
+                "quote": "Send the login code to me\nin this chat.",
+                "source": "transcript",
+                "span": {
+                  "source": "transcript",
+                  "start": 9,
+                  "end": 48
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": [
+              {
+                "kind": "conflicting_accounts",
+                "target": "requested_action",
+                "location": "body",
+                "consequential": false,
+                "imageQuote": "Send the login code to me\nin this chat.",
+                "userQuote": "Enter the code in my own app. Nobody is asking me to send it to another person.",
+                "userSource": "correction"
+              }
+            ]
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T12:47:41.374Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

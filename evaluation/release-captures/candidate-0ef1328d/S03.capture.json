@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "caseId": "S03",
+  "candidateHash": "fe8372971341d763ca2440a1e164e101dd5801aa8c498cfa467f955992c627d6",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "f8c34f0a49ca07955ce985bccc50c09bd5e296caee9e3abb9cc6fb530758f9e4",
+  "inputSha256": "21fb5ff52b1076c753c4970c29f672f7da34dc0a55dec4939525ec0feb4bf34f",
+  "capturedAt": "2026-09-27T12:47:32.473Z",
+  "submittedInput": {
+    "mode": "screenshot",
+    "content": "",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "imageSha256": "6240bab02c329197124c8eac1454de88c761f00df21b30b6ea6fa3539cb8bf21",
+  "uploadImageSha256": "4742cdde1fed5a5a2d0d431d8545e6af7b57734719c512f51e09a47ec808ae3e",
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "7236cdd2-19f0-4e36-a30d-bddb9c0c5fff",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T12:47:32.473Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "7236cdd2-19f0-4e36-a30d-bddb9c0c5fff",
+          "status": "complete",
+          "title": "Confirm the payment request",
+          "nextStep": "Verify who should receive the payment through a trusted, independent contact route.",
+          "reason": "“The public information page is\nproof you can trust me.” does not authorise the separate request “transfer S$90 now to my\npersonal account.”. Additional supplied detail: “Read public information at\nhttps://www.gov.sg/”. The payment recipient still needs independent verification.",
+          "uncertainty": "A matching domain does not authenticate the sender or the requested action. Screenshot text is machine-transcribed and may contain mistakes. The screenshot does not show the payment recipient. The missing detail is not verified.",
+          "evidence": [
+            {
+              "id": "domain-0",
+              "kind": "domain",
+              "state": "matched",
+              "title": "Host matches the reviewed Singapore Government record",
+              "detail": "Actual host: www.gov.sg. Registrable domain: www.gov.sg. This check does not open the link or follow redirects; no final destination or website owner has been verified. Exact host match to a record reviewed 2026-09-26. This does not authenticate the sender, verify a redirect destination or authorise the requested action.",
+              "sourceUrl": "https://www.gov.sg/trusted-sites/",
+              "checkedAt": "2026-09-27T12:47:26.111Z"
+            },
+            {
+              "id": "reputation-0",
+              "kind": "reputation",
+              "state": "unsupported",
+              "title": "External link check not performed",
+              "detail": "Image-extracted links need review before external lookup. Only local URL checks were performed.",
+              "checkedAt": "2026-09-27T12:47:26.111Z"
+            },
+            {
+              "id": "guidance-government-host",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Check the actual government website address",
+              "detail": "Singapore government websites generally use .gov.sg. Government guidance lists exceptions and official short-link hosts. A name appearing earlier in an unrelated hostname is not a match, and a genuine host does not authenticate a separate message or payment request. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.gov.sg/trusted-sites/",
+              "checkedAt": "2026-09-27T12:47:26.111Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "COMMUNITY UPDATE\n\nRead public information at\nhttps://www.gov.sg/\n\nTo reserve your allocation,\ntransfer S$90 now to my\npersonal account.\n\nThe public information page is\nproof you can trust me.",
+            "claimedOrganisation": null,
+            "urls": [
+              "https://www.gov.sg/"
+            ],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "open a website",
+                "quote": "Read public information at\nhttps://www.gov.sg/",
+                "source": "transcript",
+                "span": {
+                  "source": "transcript",
+                  "start": 18,
+                  "end": 64
+                }
+              },
+              {
+                "action": "transfer money",
+                "quote": "transfer S$90 now to my\npersonal account.",
+                "source": "transcript",
+                "span": {
+                  "source": "transcript",
+                  "start": 94,
+                  "end": 135
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": [
+              {
+                "kind": "missing_detail",
+                "target": "payment_recipient",
+                "location": "body",
+                "consequential": false,
+                "imageQuote": "transfer S$90 now to my\npersonal account.",
+                "userQuote": null,
+                "userSource": null
+              }
+            ]
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T12:47:31.564Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

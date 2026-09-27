@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "caseId": "M01",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "bd05ec6fcfa0379906271d610b312fe705456a5f5d3c6d9e47e1e2150d7a79df",
+  "capturedAt": "2026-09-27T03:57:30.151Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "I am expecting a parcel today. This new message says: Your parcel is at the depot. Pay a S$2 clearance fee to the personal bank account below within ten minutes to keep your delivery slot.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "dc24877c-7d02-4fb9-bf26-c9f994bb0c03",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T03:57:30.151Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "dc24877c-7d02-4fb9-bf26-c9f994bb0c03",
+          "status": "complete",
+          "title": "Confirm the payment request",
+          "nextStep": "Verify who should receive the payment through a trusted, independent contact route.",
+          "reason": "Confirming a payment through a separate trusted route can help prevent a mistaken transfer.",
+          "uncertainty": "The recipient and purpose of the payment have not been verified.",
+          "evidence": [
+            {
+              "id": "guidance-parcel-payment",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Confirm a delivery or marketplace request independently",
+              "detail": "SPF advises against opening dubious payment links or QR codes in marketplace and delivery messages. If uncertain, verify the request directly with the marketplace or delivery company through an independently chosen official channel. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.police.gov.sg/media-hub/news/2025/02/20250212_police_advisory_on-phishing_scams_involving_fake_buyers_on_online_marketplaces",
+              "checkedAt": "2026-09-27T03:57:27.748Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "pay",
+                "quote": "Pay a S$2 clearance fee to the personal bank account below within ten minutes to keep your delivery slot."
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [
+              "Were you already expecting this payment request?"
+            ]
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T03:57:29.671Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

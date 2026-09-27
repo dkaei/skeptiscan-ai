@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "caseId": "M22",
+  "candidateHash": "3c9b769f10b5b40c9f521f25fba4a3d6281c8ca59526fff0dd655c12843b59c2",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "016eaf2b200d7fae21e65d16c7c607c7e71397f77b3de39ca7be9ba372b7da0f",
+  "capturedAt": "2026-09-27T09:11:05.213Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "A forwarded message claims CPF will close every account tomorrow unless the message is shared with ten people. It includes no source, link, payment instruction or request for a code. Is the claim true?",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "d8ef0098-5185-4839-865f-0f34a8fa5063",
+        "httpStatus": 200,
+        "observedStatus": "partial",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T09:11:05.213Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "d8ef0098-5185-4839-865f-0f34a8fa5063",
+          "status": "partial",
+          "title": "Check incomplete",
+          "nextStep": "Confirm the request through a contact route you already trust.",
+          "reason": "The final AI review could not be completed.",
+          "uncertainty": "Earlier findings do not replace a completed assessment.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": "CPF",
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "share the message with ten people",
+                "quote": "shared with ten people",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 87,
+                  "end": 109
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T09:11:04.320Z",
+          "aiUsed": true,
+          "recovery": "retry"
+        }
+      }
+    }
+  ]
+}

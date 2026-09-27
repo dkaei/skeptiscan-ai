@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "caseId": "C06",
+  "candidateHash": "fe8372971341d763ca2440a1e164e101dd5801aa8c498cfa467f955992c627d6",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "7e3159bf3cdf2b16d5c84172b026ccd5f8bbd5694473731941ea8a1c9d4ab75a",
+  "capturedAt": "2026-09-27T12:44:58.670Z",
+  "submittedInput": {
+    "mode": "call",
+    "content": "A caller said they were investigating a bank leak and ordered me to transfer my savings to a safety account today. They said I must keep the investigation secret and not contact my bank.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "00eaf11f-8362-491e-b110-f8ef6be1fbcb",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T12:44:58.670Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "00eaf11f-8362-491e-b110-f8ef6be1fbcb",
+          "status": "complete",
+          "title": "Confirm the payment request",
+          "nextStep": "Verify who should receive the payment through a trusted, independent contact route.",
+          "reason": "The supplied request details “ordered me to transfer my savings to a safety account today.”; “They said I must keep the investigation secret”; “and not contact my bank.” concern a sensitive action. The payment recipient still needs independent verification.",
+          "uncertainty": "The recipient and purpose of the payment have not been verified.",
+          "evidence": [
+            {
+              "id": "phone-unavailable",
+              "kind": "phone",
+              "state": "unavailable",
+              "title": "Caller identity is not verified",
+              "detail": "No complete number was extracted and no authorised reported-number feed is connected. The supplied description can still be assessed for the action requested.",
+              "checkedAt": "2026-09-27T12:44:54.566Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "transfer savings to a safety account",
+                "quote": "transfer my savings to a safety account today",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 68,
+                  "end": 113
+                }
+              },
+              {
+                "action": "keep the investigation secret",
+                "quote": "I must keep the investigation secret",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 125,
+                  "end": 161
+                }
+              },
+              {
+                "action": "not contact my bank",
+                "quote": "not contact my bank",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 166,
+                  "end": 185
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T12:44:57.726Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

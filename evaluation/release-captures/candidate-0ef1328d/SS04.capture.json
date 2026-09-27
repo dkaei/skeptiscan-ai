@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "caseId": "SS04",
+  "candidateHash": "fe8372971341d763ca2440a1e164e101dd5801aa8c498cfa467f955992c627d6",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "2bb78320dcee28f69d9d64fcf413935d42fd8fdeafa34bcdb7a9c49c76fe9116",
+  "inputSha256": "76ffaae897e2e31c9943ffd99be6011926fa1a6ca7ca5265f269407b70e0f95e",
+  "capturedAt": "2026-09-27T12:52:41.617Z",
+  "submittedInput": {
+    "mode": "screenshot",
+    "content": "",
+    "context": "I registered for a free community event and received this message.",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "imageSha256": "a776ce2dedeb1b2db4a0c35b1f2a5799792803dc192b53c6f9e36acf990157bc",
+  "uploadImageSha256": "24c741ee565c3cce4aaf7e09f8fd136afb47d52c7b867d1f2faa6a35174e9356",
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "a636cf1d-f353-4dc1-8e27-e0a143f44720",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T12:52:41.617Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "a636cf1d-f353-4dc1-8e27-e0a143f44720",
+          "status": "complete",
+          "title": "Keep account codes private",
+          "nextStep": "Do not send your password or account verification code to another person.",
+          "reason": "“Please bring your confirmation email.\nShow your name at the welcome desk.” does not authorise the separate request “Send me the one-time login code\nfrom your email so I can add you\nto the list.”. Additional supplied detail: “No payment is needed.”. Sharing a password or account code, or approving another person’s sign-in, can give them account access.",
+          "uncertainty": "The sender’s identity and intentions have not been verified. Screenshot text is machine-transcribed and may contain mistakes.",
+          "evidence": [
+            {
+              "id": "guidance-account-credentials",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Keep banking credentials private",
+              "detail": "DBS advises against giving another person banking credentials, one-time passwords or Digital Token approvals. This source concerns account authentication; it does not classify ordinary parcel-collection codes. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.dbs.com.sg/personal/deposits/security-and-you/default.page",
+              "checkedAt": "2026-09-27T12:52:33.451Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "EVENT CHECK-IN\n\nPlease bring your confirmation email.\nShow your name at the welcome desk.\n\nOne more step:\nSend me the one-time login code\nfrom your email so I can add you\nto the list.\n\nNo payment is needed.",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "tell someone a login or account code",
+                "quote": "Send me the one-time login code\nfrom your email so I can add you\nto the list.",
+                "source": "transcript",
+                "span": {
+                  "source": "transcript",
+                  "start": 106,
+                  "end": 183
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T12:52:37.991Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

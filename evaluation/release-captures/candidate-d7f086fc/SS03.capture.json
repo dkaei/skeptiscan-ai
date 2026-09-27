@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "caseId": "SS03",
+  "candidateHash": "3c9b769f10b5b40c9f521f25fba4a3d6281c8ca59526fff0dd655c12843b59c2",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "2bb78320dcee28f69d9d64fcf413935d42fd8fdeafa34bcdb7a9c49c76fe9116",
+  "inputSha256": "6930ec296c2132cc5d4a9b3db9ebe18dd677efefe8a8e97b0e89d82d0851ee4b",
+  "capturedAt": "2026-09-27T09:20:12.078Z",
+  "submittedInput": {
+    "mode": "screenshot",
+    "content": "The message asks me to send the sign-in code to the support agent in this chat.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "imageSha256": "572b053090e6a8f093e0cd39c7bb87f2f2527806744327af4f3610d53d654024",
+  "uploadImageSha256": "fa9f13f5ed8241fb2a78393a69bd5ca9383d3eb7bb4d1c8132ee2ee183f9a726",
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "c5d2434f-ad26-4d83-bdab-7b1a14d39574",
+        "httpStatus": 200,
+        "observedStatus": "partial",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T09:20:12.078Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "c5d2434f-ad26-4d83-bdab-7b1a14d39574",
+          "status": "partial",
+          "title": "Check incomplete",
+          "nextStep": "Review the screenshot or add text you can verify before checking again.",
+          "reason": "A detail read from the screenshot could not be linked to its exact source text.",
+          "uncertainty": "The image has not been assessed reliably. Uncertain details have not been accepted as evidence.",
+          "evidence": [],
+          "extraction": null,
+          "question": null,
+          "checkedAt": "2026-09-27T09:20:11.819Z",
+          "aiUsed": true,
+          "recovery": "edit_input"
+        }
+      }
+    }
+  ]
+}

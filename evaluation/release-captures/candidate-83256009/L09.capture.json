@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "caseId": "L09",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "83805d87217a02d701f8beaa0b71b81b03d3b3d63674a8a8f07831bcc6b9c420",
+  "capturedAt": "2026-09-27T04:01:35.487Z",
+  "submittedInput": {
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false,
+    "mode": "link",
+    "content": "javascript:alert('synthetic-demo')"
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": null,
+        "httpStatus": null,
+        "observedStatus": "client_rejected",
+        "aiUsed": false,
+        "errorCode": "invalid_input",
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T04:01:35.487Z",
+      "response": null
+    }
+  ]
+}

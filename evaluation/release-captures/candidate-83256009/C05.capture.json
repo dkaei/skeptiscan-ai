@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "caseId": "C05",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "e04ef5870456afdef2a8fe628d14da4e4ed0e70ed561c6e39d15f009999dff85",
+  "capturedAt": "2026-09-27T04:00:25.052Z",
+  "submittedInput": {
+    "mode": "call",
+    "content": "I called the support number from the receipt for my new printer. The person asked which light was flashing and suggested restarting the printer. They did not request a password, payment, app installation or remote access.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "b184fb55-0f83-4540-b9c5-bb8eb5707115",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T04:00:25.052Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "b184fb55-0f83-4540-b9c5-bb8eb5707115",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "Your description asks for information, without a stated payment, account-code or device-access request.",
+          "uncertainty": "This covers the details supplied. A later request may need a new check.",
+          "evidence": [
+            {
+              "id": "phone-unavailable",
+              "kind": "phone",
+              "state": "unavailable",
+              "title": "Caller identity is not verified",
+              "detail": "No complete number was extracted and no authorised reported-number feed is connected. The supplied description can still be assessed for the action requested.",
+              "checkedAt": "2026-09-27T04:00:21.533Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [],
+            "unreadableDetails": [],
+            "missingContext": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T04:00:24.588Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

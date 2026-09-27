@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "caseId": "M07",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "147a7ca12239afea9a6b34c40f626f48fc4feb79b8cb1090df05e482a7418718",
+  "capturedAt": "2026-09-27T03:56:08.709Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "The sender included https://www.gov.sg/ and a genuine-looking policy announcement. They then asked me to transfer S$400 to a personal bank account in this chat to register for the benefit. I did not apply for it.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "fd6e51be-148f-43ed-ba4b-90a0dc60b2b1",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T03:56:08.709Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "fd6e51be-148f-43ed-ba4b-90a0dc60b2b1",
+          "status": "complete",
+          "title": "Confirm the payment request",
+          "nextStep": "Verify who should receive the payment through a trusted, independent contact route.",
+          "reason": "A matching website address does not authorise a separate payment request.",
+          "uncertainty": "A matching domain does not authenticate the sender or the requested action.",
+          "evidence": [
+            {
+              "id": "domain-0",
+              "kind": "domain",
+              "state": "matched",
+              "title": "Host matches the reviewed Singapore Government record",
+              "detail": "Actual host: www.gov.sg. Registrable domain: www.gov.sg. Exact host match to a record reviewed 2026-09-26. This does not authenticate the sender, verify a redirect destination or authorise the requested action.",
+              "sourceUrl": "https://www.gov.sg/trusted-sites/",
+              "checkedAt": "2026-09-27T03:55:45.023Z"
+            },
+            {
+              "id": "reputation-0",
+              "kind": "reputation",
+              "state": "not_checked",
+              "title": "External link check is off",
+              "detail": "Only local URL and directory checks were performed. The address was not sent to Google Web Risk.",
+              "checkedAt": "2026-09-27T03:55:45.023Z"
+            },
+            {
+              "id": "guidance-government-host",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Check the actual government website address",
+              "detail": "Singapore government websites generally use .gov.sg. Government guidance lists exceptions and official short-link hosts. A name appearing earlier in an unrelated hostname is not a match, and a genuine host does not authenticate a separate message or payment request. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.gov.sg/trusted-sites/",
+              "checkedAt": "2026-09-27T03:55:45.023Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [
+              "https://www.gov.sg/"
+            ],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "transfer money",
+                "quote": "asked me to transfer S$400 to a personal bank account in this chat to register for the benefit"
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [
+              "Did you start this request yourself?",
+              "Were you already expecting this payment request?"
+            ]
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T03:55:47.379Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

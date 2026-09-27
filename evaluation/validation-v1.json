@@ -1,0 +1,34 @@
+{
+  "date":"2026-09-26",
+  "scope":"Offline structural and deterministic local-evidence checks only",
+  "modelEvaluationExecuted":false,
+  "httpEvaluationExecuted":false,
+  "humanReferenceReviewCompleted":false,
+  "screenshotPixelsCreated":false,
+  "providerCalls":0,
+  "credentialReads":0,
+  "runtimeFilesModified":false,
+  "structuralCheck":{
+    "command":"node evaluation/validate.mjs",
+    "exitCode":0,
+    "validTextInputs":44,
+    "modalities":{"message":24,"call":10,"link":10},
+    "bands":{"harmful_request":17,"legitimate_counterpart":10,"ambiguous":17},
+    "clarificationEligibleCases":5,
+    "screenshotSpecifications":8,
+    "invalidSchemaControlsRejected":8
+  },
+  "localEvidenceCheck":{
+    "method":"Bundled the existing collectEvidence export in memory with esbuild; called it for all 44 merged inputs with null extraction, an explicit fixed date, and a fetcher that throws on any outbound request.",
+    "referenceDate":"2026-09-26T00:00:00.000Z",
+    "inputsInspected":44,
+    "declaredKindAndStateRequirementsMatched":15,
+    "outboundRequests":0,
+    "limitations":"Checks deterministic evidence kind/state compatibility, not model selection, explanation semantics, live directory freshness, HTTP handling or external reputation."
+  },
+  "sha256":{
+    "heldout-v1.json":"cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+    "screenshot-specs-v1.json":"f8c34f0a49ca07955ce985bccc50c09bd5e296caee9e3abb9cc6fb530758f9e4",
+    "invalid-input-v1.json":"b09ed479ea69954f1d1f1950f51bfebc7e4b5a852fc05f164bb9592f987251e0"
+  }
+}

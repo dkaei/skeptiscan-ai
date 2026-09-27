@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "caseId": "ST18",
+  "candidateHash": "fe8372971341d763ca2440a1e164e101dd5801aa8c498cfa467f955992c627d6",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "fe2cc68cd6381ae58b27bdd6073e527eddaf107f6e852ccf7e5f0501e521b821",
+  "inputSha256": "97fa9b3691d30491eabc20adb86b3a843aaaa4fc0d7e8a7659f6d7c964a082c4",
+  "capturedAt": "2026-09-27T12:51:48.091Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "I opened the banking app I normally use and started signing in myself. The app displays my own matching Digital Token sign-in confirmation. No caller or chat contact triggered it or asked me to approve anything, and I am not sending a password or code to another person.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "50f440f4-13fe-4d43-bdea-c68357ec64de",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T12:51:48.091Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "50f440f4-13fe-4d43-bdea-c68357ec64de",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "As described, “I opened the banking app I normally use and started signing in myself.”; “The app displays my own matching Digital Token sign-in confirmation.”; “No caller or chat contact triggered it or asked me to approve anything,”; “and I am not sending a password or code to another person.”. Entering a code only in the app you opened differs from sending it to another person; the app is not authenticated by this check.",
+          "uncertainty": "The app and sign-in request have not been verified.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T12:51:08.255Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

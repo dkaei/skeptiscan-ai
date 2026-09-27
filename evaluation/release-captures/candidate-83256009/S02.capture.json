@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "caseId": "S02",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "f8c34f0a49ca07955ce985bccc50c09bd5e296caee9e3abb9cc6fb530758f9e4",
+  "inputSha256": "7e84c417489c7d6760cbc3c688cd03c357bdee167bc9f3edf2535c4f46b7d1dd",
+  "capturedAt": "2026-09-27T04:04:36.428Z",
+  "submittedInput": {
+    "mode": "screenshot",
+    "content": "",
+    "context": "I started this sign-in in the app I normally use. No person is asking me for the code.",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "imageSha256": "c284fa4172255699e53c1f6ed6fabf099d4e7e91fd4b71674379f1d8335b3f4e",
+  "uploadImageSha256": "5cd0d3b56b60071e5f816de490899b9a49f561eaebb6a49f690da893a6e3bf8f",
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "2091d255-bf3a-4909-ba53-1d90ff1b539f",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T04:04:36.428Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "2091d255-bf3a-4909-ba53-1d90ff1b539f",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "Entering a code in the app you opened differs from sending it to another person.",
+          "uncertainty": "The app and sign-in request have not been verified. Screenshot text is machine-transcribed and may contain mistakes.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "ACCOUNT SETUP\n\nYou started signing in to your own account.\n\nEnter the code sent to your phone in this app.\n\nDo not tell this code to anyone.",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "Enter the code sent to your phone in this app.",
+                "quote": "Enter the code sent to your phone in this app."
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T04:04:35.954Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

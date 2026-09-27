@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "caseId": "ST18",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "fe2cc68cd6381ae58b27bdd6073e527eddaf107f6e852ccf7e5f0501e521b821",
+  "inputSha256": "97fa9b3691d30491eabc20adb86b3a843aaaa4fc0d7e8a7659f6d7c964a082c4",
+  "capturedAt": "2026-09-27T04:03:40.497Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "I opened the banking app I normally use and started signing in myself. The app displays my own matching Digital Token sign-in confirmation. No caller or chat contact triggered it or asked me to approve anything, and I am not sending a password or code to another person.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "48d580a8-eaaf-48a1-9760-fe8d0ff51eff",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T04:03:40.497Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "48d580a8-eaaf-48a1-9760-fe8d0ff51eff",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "Entering a code in the app you opened differs from sending it to another person.",
+          "uncertainty": "The app and sign-in request have not been verified.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [],
+            "unreadableDetails": [],
+            "missingContext": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T04:03:40.019Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

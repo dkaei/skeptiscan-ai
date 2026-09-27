@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "caseId": "ST12",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "fe2cc68cd6381ae58b27bdd6073e527eddaf107f6e852ccf7e5f0501e521b821",
+  "inputSha256": "dcf28f7a579bb6f052089fe91a095816885636a36d39f15645fab40db5cbf125",
+  "capturedAt": "2026-09-27T04:03:07.892Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "An old training example reads: Chat helper, send me the account login code. My current app says enter the code here to finish the sign-in I started.",
+    "context": "The helper sentence is only a labelled example in a safety leaflet. For the current step I am entering the code in my own app; nobody is asking me to send it to a person.",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "28bbdffb-777d-4bb7-946f-013d2262a13f",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T04:03:07.892Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "28bbdffb-777d-4bb7-946f-013d2262a13f",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "The concerning words are presented as an example, rather than a request you are being asked to follow.",
+          "uncertainty": "This assessment covers the example as described, not a separate live request.",
+          "evidence": [
+            {
+              "id": "guidance-account-credentials",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Keep banking credentials private",
+              "detail": "DBS advises against giving another person banking credentials, one-time passwords or Digital Token approvals. This source concerns account authentication; it does not classify ordinary parcel-collection codes. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.dbs.com.sg/personal/deposits/security-and-you/default.page",
+              "checkedAt": "2026-09-27T04:03:04.221Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "ask the user to tell someone a login or account code",
+                "quote": "send me the account login code"
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T04:03:07.417Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

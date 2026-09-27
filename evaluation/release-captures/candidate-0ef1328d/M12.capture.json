@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "caseId": "M12",
+  "candidateHash": "fe8372971341d763ca2440a1e164e101dd5801aa8c498cfa467f955992c627d6",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "a1c06277f73301a5367119958bfc80577bcea630aca66b888d8b767571e366be",
+  "capturedAt": "2026-09-27T12:40:18.996Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "A chat forwarded a news article about new flats. Below the article, the contact says to pay a reservation fee to their personal account today before the public application opens. The article itself does not mention this contact.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "a1ed3b79-da80-4805-b972-31d9dbf8a33c",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T12:40:18.995Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "a1ed3b79-da80-4805-b972-31d9dbf8a33c",
+          "status": "complete",
+          "title": "Confirm the payment request",
+          "nextStep": "Verify who should receive the payment through a trusted, independent contact route.",
+          "reason": "“A chat forwarded a news article about new flats.” does not authorise the separate request “the contact says to pay a reservation fee to their personal account today before the public application opens.”. Additional supplied detail: “The article itself does not mention this contact.”. The payment recipient still needs independent verification.",
+          "uncertainty": "The recipient and purpose of the payment have not been verified.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "pay a reservation fee to their personal account today",
+                "quote": "pay a reservation fee to their personal account today",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 88,
+                  "end": 141
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T12:40:18.066Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

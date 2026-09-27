@@ -1,0 +1,47 @@
+{
+  "name": "skeptiscan-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k -n api,app \"npm:dev:api\" \"npm:dev:web\"",
+    "dev:web": "vite --host 127.0.0.1 --port 5173 --strictPort",
+    "dev:api": "wrangler dev --local --ip 127.0.0.1 --port 8787",
+    "typecheck": "tsc --noEmit",
+    "types:cloudflare": "wrangler types server/cloudflare-bindings.d.ts --env-interface CloudflareBindings --include-runtime=false --strict-vars=false",
+    "build": "npm run typecheck && vite build",
+    "test": "vitest run",
+    "db:local": "wrangler d1 migrations apply DB --local",
+    "release:prepare": "node scripts/release.mjs prepare",
+    "release:stage": "node scripts/release.mjs stage",
+    "release:check": "node scripts/release.mjs check",
+    "deploy:check": "node scripts/release.mjs check",
+    "deploy": "node scripts/release.mjs deploy"
+  },
+  "dependencies": {
+    "hono": "4.13.9",
+    "jose": "6.2.12",
+    "libphonenumber-js": "1.13.14",
+    "openai": "7.23.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "react-router-dom": "7.18.4",
+    "tldts": "7.4.15",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "4.13.0",
+    "@cloudflare/workers-types": "5.20260926.1",
+    "@playwright/test": "1.63.0",
+    "@types/node": "26.6.3",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.1",
+    "concurrently": "10.0.5",
+    "esbuild": "0.28.1",
+    "typescript": "7.0.2",
+    "vite": "8.3.1",
+    "vitest": "5.0.2",
+    "wrangler": "4.141.0"
+  }
+}

@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "caseId": "SS01",
+  "candidateHash": "3c9b769f10b5b40c9f521f25fba4a3d6281c8ca59526fff0dd655c12843b59c2",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "2bb78320dcee28f69d9d64fcf413935d42fd8fdeafa34bcdb7a9c49c76fe9116",
+  "inputSha256": "069cf3e061d85e5644db257f49c98fc73de25d0ac795cd3b18aab582e84fc124",
+  "capturedAt": "2026-09-27T09:19:56.813Z",
+  "submittedInput": {
+    "mode": "screenshot",
+    "content": "",
+    "context": "This notice came in a message. I want to know about the account-update link, not just the public guide.",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "imageSha256": "afb161b5dada2e341010d090317a683c11c760b74ad9179e478815ffd7f9b567",
+  "uploadImageSha256": "321375da51cd089316645dd3a34aafb4c14d449ee7f70a45d77124d9c47bed18",
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "ec264450-cba5-4e79-844d-c4abe3d0a59d",
+        "httpStatus": 200,
+        "observedStatus": "partial",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T09:19:56.813Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "ec264450-cba5-4e79-844d-c4abe3d0a59d",
+          "status": "partial",
+          "title": "Check incomplete",
+          "nextStep": "Confirm the request through a contact route you already trust.",
+          "reason": "The final AI review could not be completed.",
+          "uncertainty": "Earlier findings do not replace a completed assessment.",
+          "evidence": [
+            {
+              "id": "domain-0",
+              "kind": "domain",
+              "state": "matched",
+              "title": "Host matches the reviewed Singapore Government record",
+              "detail": "Actual host: www.gov.sg. Registrable domain: www.gov.sg. Exact host match to a record reviewed 2026-09-26. This does not authenticate the sender, verify a redirect destination or authorise the requested action.",
+              "sourceUrl": "https://www.gov.sg/trusted-sites/",
+              "checkedAt": "2026-09-27T09:19:49.715Z"
+            },
+            {
+              "id": "reputation-0",
+              "kind": "reputation",
+              "state": "unsupported",
+              "title": "External link check not performed",
+              "detail": "Image-extracted links need review before external lookup. Only local URL checks were performed.",
+              "checkedAt": "2026-09-27T09:19:49.715Z"
+            },
+            {
+              "id": "domain-1",
+              "kind": "domain",
+              "state": "unsupported",
+              "title": "Limited URL check",
+              "detail": "Only ordinary HTTP or HTTPS website addresses with a complete host are supported. The address was not repaired or sent externally.",
+              "checkedAt": "2026-09-27T09:19:49.715Z"
+            },
+            {
+              "id": "reputation-1",
+              "kind": "reputation",
+              "state": "unsupported",
+              "title": "External link check not performed",
+              "detail": "Only ordinary HTTP or HTTPS website addresses with a complete host are supported. The address was not repaired or sent externally.",
+              "checkedAt": "2026-09-27T09:19:49.715Z"
+            },
+            {
+              "id": "guidance-government-host",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Check the actual government website address",
+              "detail": "Singapore government websites generally use .gov.sg. Government guidance lists exceptions and official short-link hosts. A name appearing earlier in an unrelated hostname is not a match, and a genuine host does not authenticate a separate message or payment request. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.gov.sg/trusted-sites/",
+              "checkedAt": "2026-09-27T09:19:49.715Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "SERVICE NOTICE\n\nRead the public guide:\nhttps://www.gov.sg/\n\nTo update your account, use this link:\nhttps:// ████████ .example.org/review\n\nPlease finish before 6 pm.",
+            "claimedOrganisation": null,
+            "urls": [
+              "https://www.gov.sg/"
+            ],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "read the public guide",
+                "quote": "Read the public guide:",
+                "source": "transcript",
+                "span": {
+                  "source": "transcript",
+                  "start": 16,
+                  "end": 38
+                }
+              },
+              {
+                "action": "use this link to update your account",
+                "quote": "To update your account, use this link:",
+                "source": "transcript",
+                "span": {
+                  "source": "transcript",
+                  "start": 60,
+                  "end": 98
+                }
+              },
+              {
+                "action": "finish before 6 pm",
+                "quote": "Please finish before 6 pm.",
+                "source": "transcript",
+                "span": {
+                  "source": "transcript",
+                  "start": 138,
+                  "end": 164
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": [
+              {
+                "kind": "unreadable_region",
+                "target": "link_destination",
+                "location": "link",
+                "consequential": false,
+                "imageQuote": "https:// ████████ .example.org/review",
+                "userQuote": null,
+                "userSource": null
+              }
+            ]
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T09:19:56.560Z",
+          "aiUsed": true,
+          "recovery": "retry"
+        }
+      }
+    }
+  ]
+}

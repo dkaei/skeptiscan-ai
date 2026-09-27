@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "caseId": "M21",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "8d527e1a3242ee847c715a8c6a2fdd5023f0f713183bb5c89c8c4cd5fa0542af",
+  "capturedAt": "2026-09-27T03:59:46.167Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "The SMS thread has the same displayed sender name as old bank messages. This message asks me to text my online-banking login code to a person. I did not begin a login or request help.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "70773efe-b10a-4b74-8391-2e4c5036f781",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T03:59:46.167Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "70773efe-b10a-4b74-8391-2e4c5036f781",
+          "status": "complete",
+          "title": "Keep account codes private",
+          "nextStep": "Do not send your password or account verification code to another person.",
+          "reason": "Sharing an account code or password can let someone access your account.",
+          "uncertainty": "The sender’s identity and intentions have not been verified.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "tell someone a login or account code",
+                "quote": "This message asks me to text my online-banking login code to a person."
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [
+              "Did you start this request yourself?",
+              "Are they asking you to tell someone a login or account code?"
+            ]
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T03:59:45.690Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

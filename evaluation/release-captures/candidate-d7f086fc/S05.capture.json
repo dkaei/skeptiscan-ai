@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "caseId": "S05",
+  "candidateHash": "3c9b769f10b5b40c9f521f25fba4a3d6281c8ca59526fff0dd655c12843b59c2",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "f8c34f0a49ca07955ce985bccc50c09bd5e296caee9e3abb9cc6fb530758f9e4",
+  "inputSha256": "fbf4499d112d8660da7086f877156782722704a0a743fddd6b80315f98005ee5",
+  "capturedAt": "2026-09-27T09:15:04.912Z",
+  "submittedInput": {
+    "mode": "screenshot",
+    "content": "Enter the code in my own app. Nobody is asking me to send it to another person.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "imageSha256": "3ba5f0b69d28d82fcde319b3db1769b0336394e5c5eb3b5e04c0a1fcc459e220",
+  "uploadImageSha256": "fefa1d4eb0c5cdabc078f6abbe3614eecedba1af57b9e6f65f8b73322883a3af",
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "00d300b6-7f14-48b8-9d69-cfefafad782e",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T09:15:04.912Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "00d300b6-7f14-48b8-9d69-cfefafad782e",
+          "status": "complete",
+          "title": "Keep account codes private",
+          "nextStep": "Do not send your password or account verification code to another person.",
+          "reason": "The accounts disagree: “Send the login code to me\nin this chat.” versus “Enter the code in my own app. Nobody is asking me to send it to another person.”. The current step is unresolved. If the step involves these capabilities: Sharing a password or account code, or approving another person’s sign-in, can give them account access.",
+          "uncertainty": "The supplied accounts disagree; the current request has not been established. Screenshot text is machine-transcribed and may contain mistakes.",
+          "evidence": [
+            {
+              "id": "guidance-account-credentials",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Keep banking credentials private",
+              "detail": "DBS advises against giving another person banking credentials, one-time passwords or Digital Token approvals. This source concerns account authentication; it does not classify ordinary parcel-collection codes. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.dbs.com.sg/personal/deposits/security-and-you/default.page",
+              "checkedAt": "2026-09-27T09:14:58.679Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "MESSAGE\n\nSend the login code to me\nin this chat.\n\nI will take care of the rest.",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "send login code in this chat",
+                "quote": "Send the login code to me\nin this chat.",
+                "source": "transcript",
+                "span": {
+                  "source": "transcript",
+                  "start": 9,
+                  "end": 48
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [
+              "Did you start this request yourself?",
+              "Are they asking you to tell someone a login or account code?"
+            ],
+            "screenshotIssues": [
+              {
+                "kind": "conflicting_accounts",
+                "target": "requested_action",
+                "location": "body",
+                "consequential": false,
+                "imageQuote": "Send the login code to me\nin this chat.",
+                "userQuote": "Enter the code in my own app. Nobody is asking me to send it to another person.",
+                "userSource": "correction"
+              }
+            ]
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T09:15:04.745Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

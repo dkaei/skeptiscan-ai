@@ -1,0 +1,19 @@
+{
+  "version":"skeptiscan-invalid-input-v1",
+  "createdAt":"2026-09-26",
+  "status":"offline_schema_controls_not_model_quality_cases",
+  "humanReviewed":false,
+  "defaultInput":{"mode":"message","content":"A fictional contact sent a greeting.","context":"","senderEmail":"","senderPhone":"","externalLookup":false},
+  "requestAssumption":"Wrap each materialized input in CheckRequestSchema with a fresh valid UUID. An authorised same-origin request is required before the input-validation result can be assessed.",
+  "expectedForAll":{"schemaAccepted":false,"httpStatus":422,"errorCode":"invalid_input","generationCalls":0,"externalLookupCalls":0,"prohibitedOutcomes":["Consume an AI call for invalid input.","Present rejected input as a completed scam assessment."]},
+  "cases":[
+    {"id":"I01","inputOverrides":{"content":"   "},"rationale":"Whitespace is not a non-screenshot message."},
+    {"id":"I02","inputOverrides":{"senderEmail":"not-an-email"},"rationale":"A malformed optional sender field must not become an invented identity."},
+    {"id":"I03","inputOverrides":{"mode":"screenshot","content":""},"rationale":"A screenshot input requires an actual image field."},
+    {"id":"I04","inputOverrides":{"image":{"mimeType":"image/png","base64":"SYNTHETIC_NOT_A_REAL_IMAGE"}},"rationale":"Images may not accompany a message-mode input; decoding is not the reason for this schema rejection."},
+    {"id":"I05","inputOverrides":{"mode":"audio"},"rationale":"Call mode accepts a description; audio is not an implemented input mode."},
+    {"id":"I06","inputOverrides":{"model":"user-supplied-model"},"rationale":"Strict input schemas reject an attempted undeclared provider/model override."},
+    {"id":"I07","inputOverrides":{},"repeatField":{"field":"content","character":"x","count":6001},"rationale":"Reject content beyond the declared character limit before any generation."},
+    {"id":"I08","inputOverrides":{"externalLookup":"false"},"rationale":"The privacy preference requires a Boolean; strings must not be silently coerced."}
+  ]
+}

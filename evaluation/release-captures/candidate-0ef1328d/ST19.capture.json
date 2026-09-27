@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "caseId": "ST19",
+  "candidateHash": "fe8372971341d763ca2440a1e164e101dd5801aa8c498cfa467f955992c627d6",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "fe2cc68cd6381ae58b27bdd6073e527eddaf107f6e852ccf7e5f0501e521b821",
+  "inputSha256": "42cd1931e98db41893ef2c5fd51f1c4a53da3f271f1e5a4187c76480c79dcecb",
+  "capturedAt": "2026-09-27T12:51:58.405Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "The contact starts with keep your passwords private and do not pay strangers. Then they say: Install this remote-control app, let our agent operate your phone, transfer S$450 to the account the agent shows you, and read the bank login code aloud to the agent to confirm the transfer. I did not request this service.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "8e16f760-0c07-44a1-84e2-78a9307e93cd",
+        "httpStatus": 200,
+        "observedStatus": "partial",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T12:51:58.405Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "8e16f760-0c07-44a1-84e2-78a9307e93cd",
+          "status": "partial",
+          "title": "Check incomplete",
+          "nextStep": "Confirm the request through a contact route you already trust.",
+          "reason": "The final AI review could not be completed.",
+          "uncertainty": "Earlier findings do not replace a completed assessment.",
+          "evidence": [
+            {
+              "id": "guidance-account-credentials",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Keep banking credentials private",
+              "detail": "DBS advises against giving another person banking credentials, one-time passwords or Digital Token approvals. This source concerns account authentication; it does not classify ordinary parcel-collection codes. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.dbs.com.sg/personal/deposits/security-and-you/default.page",
+              "checkedAt": "2026-09-27T12:51:53.412Z"
+            },
+            {
+              "id": "guidance-remote-access",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Check unexpected technical-support requests",
+              "detail": "SPF describes technical-support scams that ask people to download remote-access software or grant control of their device. Confirm an unexpected support request through the software provider’s official channels before following its instructions. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.police.gov.sg/Media-Hub/News/2026/06/20260609_joint_advisory_on_technical_support_scams_involving_the_impersonation_of_microsoft",
+              "checkedAt": "2026-09-27T12:51:53.412Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "install an app",
+                "quote": "Install this remote-control app",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 93,
+                  "end": 124
+                }
+              },
+              {
+                "action": "allow remote access",
+                "quote": "let our agent operate your phone",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 126,
+                  "end": 158
+                }
+              },
+              {
+                "action": "make a payment",
+                "quote": "transfer S$450 to the account the agent shows you",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 160,
+                  "end": 209
+                }
+              },
+              {
+                "action": "tell someone a login or account code",
+                "quote": "read the bank login code aloud to the agent to confirm the transfer",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 215,
+                  "end": 282
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T12:51:58.361Z",
+          "aiUsed": true,
+          "recovery": "retry"
+        }
+      }
+    }
+  ]
+}

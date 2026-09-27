@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "caseId": "S02",
+  "candidateHash": "3c9b769f10b5b40c9f521f25fba4a3d6281c8ca59526fff0dd655c12843b59c2",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "f8c34f0a49ca07955ce985bccc50c09bd5e296caee9e3abb9cc6fb530758f9e4",
+  "inputSha256": "7e84c417489c7d6760cbc3c688cd03c357bdee167bc9f3edf2535c4f46b7d1dd",
+  "capturedAt": "2026-09-27T09:14:48.431Z",
+  "submittedInput": {
+    "mode": "screenshot",
+    "content": "",
+    "context": "I started this sign-in in the app I normally use. No person is asking me for the code.",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "imageSha256": "c284fa4172255699e53c1f6ed6fabf099d4e7e91fd4b71674379f1d8335b3f4e",
+  "uploadImageSha256": "5cd0d3b56b60071e5f816de490899b9a49f561eaebb6a49f690da893a6e3bf8f",
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "522ada0e-fbcf-4c78-8a6a-c7e35ad8dc66",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T09:14:48.431Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "522ada0e-fbcf-4c78-8a6a-c7e35ad8dc66",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "As described, “I started this sign-in in the app I normally use.”; “No person is asking me for the code.”. Entering a code only in the app you opened differs from sending it to another person; the app is not authenticated by this check.",
+          "uncertainty": "The app and sign-in request have not been verified. Screenshot text is machine-transcribed and may contain mistakes.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "ACCOUNT SETUP\n\nYou started signing in to your own account.\n\nEnter the code sent to your phone in this app.\n\nDo not tell this code to anyone.",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "enter a code",
+                "quote": "Enter the code sent to your phone in this app.",
+                "source": "transcript",
+                "span": {
+                  "source": "transcript",
+                  "start": 60,
+                  "end": 106
+                }
+              },
+              {
+                "action": "do not tell this code to anyone",
+                "quote": "Do not tell this code to anyone.",
+                "source": "transcript",
+                "span": {
+                  "source": "transcript",
+                  "start": 108,
+                  "end": 140
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T09:14:48.268Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

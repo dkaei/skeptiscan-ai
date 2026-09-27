@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "caseId": "M24",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "95dffd678644392c8b27b645376ff12bf0071f553a9fce8beb054586edffce09",
+  "capturedAt": "2026-09-27T03:59:57.841Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "Congratulations, you won a supermarket voucher. To release it before the offer expires, send our agent the login verification code from your banking app. No purchase is required.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "12d77a09-7128-4d82-93d3-ab98d5a5513e",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T03:59:57.841Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "12d77a09-7128-4d82-93d3-ab98d5a5513e",
+          "status": "complete",
+          "title": "Keep account codes private",
+          "nextStep": "Do not send your password or account verification code to another person.",
+          "reason": "Sharing an account code or password can let someone access your account.",
+          "uncertainty": "The sender’s identity and intentions have not been verified.",
+          "evidence": [
+            {
+              "id": "guidance-account-credentials",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Keep banking credentials private",
+              "detail": "DBS advises against giving another person banking credentials, one-time passwords or Digital Token approvals. This source concerns account authentication; it does not classify ordinary parcel-collection codes. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.dbs.com.sg/personal/deposits/security-and-you/default.page",
+              "checkedAt": "2026-09-27T03:59:55.603Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "send a login verification code",
+                "quote": "send our agent the login verification code from your banking app"
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [
+              "Are they asking you to tell someone a login or account code?"
+            ]
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T03:59:57.361Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

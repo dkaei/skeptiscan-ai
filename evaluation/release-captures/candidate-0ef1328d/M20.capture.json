@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "caseId": "M20",
+  "candidateHash": "fe8372971341d763ca2440a1e164e101dd5801aa8c498cfa467f955992c627d6",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "bc15459611b28019060daa8bbd09e81f32c91378e8d48bc59a122847b94da4b8",
+  "capturedAt": "2026-09-27T12:43:40.329Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "A message says: Please pay S$20 today. I have not given any information about whether this is a bill I was expecting.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "b09f54c6-70fd-494a-8f92-e8174ec226f0",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T12:43:40.329Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "b09f54c6-70fd-494a-8f92-e8174ec226f0",
+          "status": "complete",
+          "title": "Confirm the payment request",
+          "nextStep": "Verify who should receive the payment through a trusted, independent contact route.",
+          "reason": "The supplied request details “Please pay S$20 today.” concern a sensitive action. The payment recipient still needs independent verification.",
+          "uncertainty": "The recipient and purpose of the payment have not been verified.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "make a payment of S$20 today",
+                "quote": "Please pay S$20 today.",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 16,
+                  "end": 38
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [
+              "Were you already expecting this payment request?"
+            ],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T12:43:39.395Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

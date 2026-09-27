@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "caseId": "M07",
+  "candidateHash": "3c9b769f10b5b40c9f521f25fba4a3d6281c8ca59526fff0dd655c12843b59c2",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "147a7ca12239afea9a6b34c40f626f48fc4feb79b8cb1090df05e482a7418718",
+  "capturedAt": "2026-09-27T09:05:53.192Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "The sender included https://www.gov.sg/ and a genuine-looking policy announcement. They then asked me to transfer S$400 to a personal bank account in this chat to register for the benefit. I did not apply for it.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "8a9ab1f3-7e80-48b6-9b5e-1c5fbde4f167",
+        "httpStatus": 200,
+        "observedStatus": "partial",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T09:05:48.900Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "8a9ab1f3-7e80-48b6-9b5e-1c5fbde4f167",
+          "status": "partial",
+          "title": "Check incomplete",
+          "nextStep": "Confirm the request through a contact route you already trust.",
+          "reason": "The check could not analyse these details reliably.",
+          "uncertainty": "No completed assessment is available.",
+          "evidence": [
+            {
+              "id": "domain-0",
+              "kind": "domain",
+              "state": "matched",
+              "title": "Host matches the reviewed Singapore Government record",
+              "detail": "Actual host: www.gov.sg. Registrable domain: www.gov.sg. Exact host match to a record reviewed 2026-09-26. This does not authenticate the sender, verify a redirect destination or authorise the requested action.",
+              "sourceUrl": "https://www.gov.sg/trusted-sites/",
+              "checkedAt": "2026-09-27T09:05:48.626Z"
+            },
+            {
+              "id": "reputation-0",
+              "kind": "reputation",
+              "state": "not_checked",
+              "title": "External link check is off",
+              "detail": "Only local URL and directory checks were performed. The address was not sent to Google Web Risk.",
+              "checkedAt": "2026-09-27T09:05:48.626Z"
+            },
+            {
+              "id": "guidance-government-host",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Check the actual government website address",
+              "detail": "Singapore government websites generally use .gov.sg. Government guidance lists exceptions and official short-link hosts. A name appearing earlier in an unrelated hostname is not a match, and a genuine host does not authenticate a separate message or payment request. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.gov.sg/trusted-sites/",
+              "checkedAt": "2026-09-27T09:05:48.626Z"
+            }
+          ],
+          "extraction": null,
+          "question": null,
+          "checkedAt": "2026-09-27T09:05:48.626Z",
+          "aiUsed": true,
+          "recovery": "retry"
+        }
+      }
+    }
+  ]
+}

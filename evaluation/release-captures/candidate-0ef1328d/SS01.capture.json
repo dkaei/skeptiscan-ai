@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "caseId": "SS01",
+  "candidateHash": "fe8372971341d763ca2440a1e164e101dd5801aa8c498cfa467f955992c627d6",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "2bb78320dcee28f69d9d64fcf413935d42fd8fdeafa34bcdb7a9c49c76fe9116",
+  "inputSha256": "069cf3e061d85e5644db257f49c98fc73de25d0ac795cd3b18aab582e84fc124",
+  "capturedAt": "2026-09-27T12:52:18.297Z",
+  "submittedInput": {
+    "mode": "screenshot",
+    "content": "",
+    "context": "This notice came in a message. I want to know about the account-update link, not just the public guide.",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "imageSha256": "afb161b5dada2e341010d090317a683c11c760b74ad9179e478815ffd7f9b567",
+  "uploadImageSha256": "321375da51cd089316645dd3a34aafb4c14d449ee7f70a45d77124d9c47bed18",
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "e6ed4728-4def-406c-bbac-9f86eebf8e11",
+        "httpStatus": 200,
+        "observedStatus": "partial",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T12:52:18.297Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "e6ed4728-4def-406c-bbac-9f86eebf8e11",
+          "status": "partial",
+          "title": "Check incomplete",
+          "nextStep": "Confirm the request through a contact route you already trust.",
+          "reason": "The check could not analyse these details reliably.",
+          "uncertainty": "No completed assessment is available.",
+          "evidence": [],
+          "extraction": null,
+          "question": null,
+          "checkedAt": "2026-09-27T12:52:15.668Z",
+          "aiUsed": true,
+          "recovery": "retry"
+        }
+      }
+    }
+  ]
+}

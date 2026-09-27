@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "caseId": "SS03",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "2bb78320dcee28f69d9d64fcf413935d42fd8fdeafa34bcdb7a9c49c76fe9116",
+  "inputSha256": "6930ec296c2132cc5d4a9b3db9ebe18dd677efefe8a8e97b0e89d82d0851ee4b",
+  "capturedAt": "2026-09-27T04:06:04.984Z",
+  "submittedInput": {
+    "mode": "screenshot",
+    "content": "The message asks me to send the sign-in code to the support agent in this chat.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "imageSha256": "572b053090e6a8f093e0cd39c7bb87f2f2527806744327af4f3610d53d654024",
+  "uploadImageSha256": "fa9f13f5ed8241fb2a78393a69bd5ca9383d3eb7bb4d1c8132ee2ee183f9a726",
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "036b3906-5aa1-4d62-bce0-6221706f317f",
+        "httpStatus": 200,
+        "observedStatus": "partial",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T04:06:04.984Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "036b3906-5aa1-4d62-bce0-6221706f317f",
+          "status": "partial",
+          "title": "Check incomplete",
+          "nextStep": "Confirm the request through a contact route you already trust.",
+          "reason": "Some screenshot details could not be read reliably.",
+          "uncertainty": "Unclear text could change the next step.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "SIGN-IN HELP\n\nYou started signing in to your account.\n\nEnter the sign-in code only in this app.\n\nDo not send the code to this chat.\n\nNever tell it to a support agent.",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "Enter the sign-in code only in this app.",
+                "quote": "Enter the sign-in code only in this app."
+              }
+            ],
+            "unreadableDetails": [
+              "User corrected screenshot text disagrees with the image: the image says \"Do not send the code to this chat.\" and \"Never ",
+              "missingContext"
+            ],
+            "missingContext": [
+              "Are they asking you to tell someone a login or account code?"
+            ]
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T04:06:04.419Z",
+          "aiUsed": true,
+          "recovery": "clearer_image"
+        }
+      }
+    }
+  ]
+}

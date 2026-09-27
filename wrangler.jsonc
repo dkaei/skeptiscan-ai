@@ -1,0 +1,39 @@
+// Public research snapshot. Account identifiers are inert examples.
+// Live AI and external lookups are disabled by default.
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "skeptiscan-pilot",
+  "account_id": "11111111111111111111111111111111",
+  "workers_dev": true,
+  "preview_urls": false,
+  "main": "server/index.ts",
+  "compatibility_date": "2026-09-26",
+  "compatibility_flags": ["nodejs_compat"],
+  // Paid-plan CPU guard; network waiting has separate application deadlines.
+  "limits": { "cpu_ms": 1000 },
+  "images": { "binding": "IMAGES" },
+  "assets": { "directory": "./dist", "binding": "ASSETS", "not_found_handling": "single-page-application", "run_worker_first": ["/api/*"] },
+  "d1_databases": [{
+    "binding": "DB",
+    "database_name": "skeptiscan-pilot",
+    "database_id": "11111111-1111-4111-8111-111111111111",
+    // Preserve the existing local ledger. Never use this placeholder with --preview.
+    "preview_database_id": "00000000-0000-0000-0000-000000000000",
+    "migrations_dir": "migrations"
+  }],
+  "vars": {
+    "ENVIRONMENT": "development",
+    "LIVE_AI_ENABLED": "false",
+    "WEB_RISK_ENABLED": "false",
+    "ACCESS_TEAM_DOMAIN": "your-team.cloudflareaccess.com",
+    "ACCESS_AUD": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "ALLOWED_EMAILS": "operator@example.invalid",
+    "PILOT_END_AT": "2026-10-10T15:59:59Z",
+    "BUDGET_LIMIT_MICRO_USD": "7000000"
+  },
+  "observability": {
+    "enabled": true,
+    "logs": { "enabled": true, "invocation_logs": false, "head_sampling_rate": 1 },
+    "traces": { "enabled": true, "head_sampling_rate": 0.1 }
+  }
+}

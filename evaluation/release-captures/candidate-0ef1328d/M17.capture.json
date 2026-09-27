@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "caseId": "M17",
+  "candidateHash": "fe8372971341d763ca2440a1e164e101dd5801aa8c498cfa467f955992c627d6",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "42292098b27c0e54f35a2d25e6d7b36709c14978670b83cb1f0b9675f1c0b5de",
+  "capturedAt": "2026-09-27T12:40:56.162Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "A person at a service counter said: Tell me the six digits from the message on your phone. I have not said what the message is for.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "c23c94b9-ee4a-4f13-bbe3-f81565f424c1",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T12:40:56.162Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "c23c94b9-ee4a-4f13-bbe3-f81565f424c1",
+          "status": "complete",
+          "title": "Keep account codes private",
+          "nextStep": "Do not send your password or account verification code to another person.",
+          "reason": "The supplied request details “Tell me the six digits from the message on your phone.”; “I have not said what the message is for.” concern a sensitive action. Sharing a password or account code, or approving another person’s sign-in, can give them account access.",
+          "uncertainty": "The sender’s identity and intentions have not been verified.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "tell someone a login or account code",
+                "quote": "Tell me the six digits from the message on your phone.",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 36,
+                  "end": 90
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T12:40:51.996Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

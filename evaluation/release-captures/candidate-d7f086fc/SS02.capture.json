@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "caseId": "SS02",
+  "candidateHash": "3c9b769f10b5b40c9f521f25fba4a3d6281c8ca59526fff0dd655c12843b59c2",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "2bb78320dcee28f69d9d64fcf413935d42fd8fdeafa34bcdb7a9c49c76fe9116",
+  "inputSha256": "17ed7479c4f26b99165874c938383852998c341244b222f107bbf6ac5315784f",
+  "capturedAt": "2026-09-27T09:20:03.262Z",
+  "submittedInput": {
+    "mode": "screenshot",
+    "content": "",
+    "context": "I covered only the order reference. I want to know whether this screenshot shows where the button goes; I do not need the order number read.",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "imageSha256": "c9c9d9597e30c8799af6e28e324fc1105406b76f173f92b83e02e824d9b71f87",
+  "uploadImageSha256": "097acf5cb3b1c8e54d483702f2790ea73834acf2fea4793d02b8106deb66f10c",
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "edbf5212-7acc-4b00-b81b-351d81617629",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T09:20:03.262Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "edbf5212-7acc-4b00-b81b-351d81617629",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "As described, “Your item is ready for collection.”; “View collection details”. This ordinary arrangement states no payment, account-access or remote-control demand; the contact’s identity is not verified.",
+          "uncertainty": "This covers the details supplied. A later request may need a new check. Screenshot text is machine-transcribed and may contain mistakes. The screenshot does not show where the button goes. Its label cannot reveal the target URL; open a trusted app independently.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "DELIVERY UPDATE\n\nYour item is ready for collection.\n\nOrder reference: [redacted]\n\nView collection details",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "open collection details",
+                "quote": "View collection details",
+                "source": "transcript",
+                "span": {
+                  "source": "transcript",
+                  "start": 82,
+                  "end": 105
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": [
+              {
+                "kind": "missing_detail",
+                "target": "link_destination",
+                "location": "button",
+                "consequential": false,
+                "imageQuote": "View collection details",
+                "userQuote": null,
+                "userSource": null
+              }
+            ]
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T09:20:03.079Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "caseId": "SS02",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "2bb78320dcee28f69d9d64fcf413935d42fd8fdeafa34bcdb7a9c49c76fe9116",
+  "inputSha256": "17ed7479c4f26b99165874c938383852998c341244b222f107bbf6ac5315784f",
+  "capturedAt": "2026-09-27T04:06:01.706Z",
+  "submittedInput": {
+    "mode": "screenshot",
+    "content": "",
+    "context": "I covered only the order reference. I want to know whether this screenshot shows where the button goes; I do not need the order number read.",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "imageSha256": "c9c9d9597e30c8799af6e28e324fc1105406b76f173f92b83e02e824d9b71f87",
+  "uploadImageSha256": "097acf5cb3b1c8e54d483702f2790ea73834acf2fea4793d02b8106deb66f10c",
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "b666e84e-0183-4646-8ec6-5465faead365",
+        "httpStatus": 200,
+        "observedStatus": "partial",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T04:06:01.706Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "b666e84e-0183-4646-8ec6-5465faead365",
+          "status": "partial",
+          "title": "Check incomplete",
+          "nextStep": "Confirm the request through a contact route you already trust.",
+          "reason": "Some screenshot details could not be read reliably.",
+          "uncertainty": "Unclear text could change the next step.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "DELIVERY UPDATE\n\nYour item is ready for collection.\n\nOrder reference: [redacted]\n\nView collection details",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "View collection details",
+                "quote": "View collection details"
+              }
+            ],
+            "unreadableDetails": [
+              "The order reference is obscured by a black bar and cannot be read.",
+              "The screenshot shows a button labeled \"View collection details,\" but the destination is not visible."
+            ],
+            "missingContext": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T04:06:01.142Z",
+          "aiUsed": true,
+          "recovery": "clearer_image"
+        }
+      }
+    }
+  ]
+}

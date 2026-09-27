@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "caseId": "M20",
+  "candidateHash": "3c9b769f10b5b40c9f521f25fba4a3d6281c8ca59526fff0dd655c12843b59c2",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "bc15459611b28019060daa8bbd09e81f32c91378e8d48bc59a122847b94da4b8",
+  "capturedAt": "2026-09-27T09:10:50.989Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "A message says: Please pay S$20 today. I have not given any information about whether this is a bill I was expecting.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "81aea217-569c-40a7-b687-ab0ebb9ce126",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T09:10:50.989Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "81aea217-569c-40a7-b687-ab0ebb9ce126",
+          "status": "complete",
+          "title": "Confirm the payment request",
+          "nextStep": "Verify who should receive the payment through a trusted, independent contact route.",
+          "reason": "The request “Please pay S$20 today.” concerns a sensitive action. The payment recipient still needs independent verification.",
+          "uncertainty": "The recipient and purpose of the payment have not been verified.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "pay S$20 today",
+                "quote": "Please pay S$20 today.",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 16,
+                  "end": 38
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T09:10:50.822Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

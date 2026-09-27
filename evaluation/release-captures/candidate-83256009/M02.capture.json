@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "caseId": "M02",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "2395381af71298c62340ac3b73363b7cd96e32d6eff29699da01254079adbee2",
+  "capturedAt": "2026-09-27T03:57:33.640Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "My ordered parcel is already in the collection locker. I opened the delivery app myself and it displays a collection PIN to enter on the locker keypad. Nobody is asking for a bank or login code.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "921ca9c6-3159-4c80-a935-aa5385e8eb42",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T03:57:33.640Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "921ca9c6-3159-4c80-a935-aa5385e8eb42",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "A collection code is for collecting an item, rather than giving access to an account.",
+          "uncertainty": "The collection arrangement and recipient have not been verified.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "enter a collection PIN on the locker keypad",
+                "quote": "it displays a collection PIN to enter on the locker keypad"
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T03:57:33.167Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

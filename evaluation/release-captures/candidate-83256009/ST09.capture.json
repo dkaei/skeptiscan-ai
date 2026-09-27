@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "caseId": "ST09",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "fe2cc68cd6381ae58b27bdd6073e527eddaf107f6e852ccf7e5f0501e521b821",
+  "inputSha256": "05b59fc4adaa1ace1da8bdca496030c3c9e7468289cd9e99e4dca97278175342",
+  "capturedAt": "2026-09-27T04:02:30.418Z",
+  "submittedInput": {
+    "mode": "link",
+    "content": "https://checkout.meridian-pay.example/?continue=https://accounts.harbour-bank.example/",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "fad46efa-9f11-4500-8ae3-7f3a9cf8a08a",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T04:02:30.418Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "fad46efa-9f11-4500-8ae3-7f3a9cf8a08a",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "The actual website address matters. A familiar name within a link does not establish who controls its destination.",
+          "uncertainty": "The website’s content and owner have not been verified.",
+          "evidence": [
+            {
+              "id": "domain-0",
+              "kind": "domain",
+              "state": "unsupported",
+              "title": "Limited URL check",
+              "detail": "Actual host: checkout.meridian-pay.example. Registrable domain: meridian-pay.example. This is a private, reserved or unsupported domain. No external lookup was performed.",
+              "checkedAt": "2026-09-27T04:02:27.691Z"
+            },
+            {
+              "id": "reputation-0",
+              "kind": "reputation",
+              "state": "unsupported",
+              "title": "External link check not performed",
+              "detail": "This is a private, reserved or unsupported domain. No external lookup was performed.",
+              "checkedAt": "2026-09-27T04:02:27.691Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [
+              "https://checkout.meridian-pay.example/?continue=https://accounts.harbour-bank.example/"
+            ],
+            "phoneNumbers": [],
+            "requestedActions": [],
+            "unreadableDetails": [],
+            "missingContext": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T04:02:29.949Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

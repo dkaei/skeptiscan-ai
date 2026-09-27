@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "caseId": "M12",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "a1c06277f73301a5367119958bfc80577bcea630aca66b888d8b767571e366be",
+  "capturedAt": "2026-09-27T03:58:25.087Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "A chat forwarded a news article about new flats. Below the article, the contact says to pay a reservation fee to their personal account today before the public application opens. The article itself does not mention this contact.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "9bf7ee7a-82ee-4e52-aa7c-479c857035b1",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T03:58:25.087Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "9bf7ee7a-82ee-4e52-aa7c-479c857035b1",
+          "status": "complete",
+          "title": "Confirm the payment request",
+          "nextStep": "Verify who should receive the payment through a trusted, independent contact route.",
+          "reason": "Confirming a payment through a separate trusted route can help prevent a mistaken transfer.",
+          "uncertainty": "The recipient and purpose of the payment have not been verified.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "pay a reservation fee to their personal account today before the public application opens",
+                "quote": "pay a reservation fee to their personal account today before the public application opens"
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [
+              "Were you already expecting this payment request?"
+            ]
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T03:58:24.607Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

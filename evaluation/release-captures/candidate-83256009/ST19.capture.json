@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "caseId": "ST19",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "fe2cc68cd6381ae58b27bdd6073e527eddaf107f6e852ccf7e5f0501e521b821",
+  "inputSha256": "42cd1931e98db41893ef2c5fd51f1c4a53da3f271f1e5a4187c76480c79dcecb",
+  "capturedAt": "2026-09-27T04:03:45.955Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "The contact starts with keep your passwords private and do not pay strangers. Then they say: Install this remote-control app, let our agent operate your phone, transfer S$450 to the account the agent shows you, and read the bank login code aloud to the agent to confirm the transfer. I did not request this service.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "57fbde96-cac8-4b28-b01b-79b881c162c1",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T04:03:45.955Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "57fbde96-cac8-4b28-b01b-79b881c162c1",
+          "status": "complete",
+          "title": "Keep account codes private",
+          "nextStep": "Do not send your password or account verification code to another person.",
+          "reason": "Sharing an account code or password can let someone access your account.",
+          "uncertainty": "The sender’s identity and intentions have not been verified.",
+          "evidence": [
+            {
+              "id": "guidance-account-credentials",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Keep banking credentials private",
+              "detail": "DBS advises against giving another person banking credentials, one-time passwords or Digital Token approvals. This source concerns account authentication; it does not classify ordinary parcel-collection codes. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.dbs.com.sg/personal/deposits/security-and-you/default.page",
+              "checkedAt": "2026-09-27T04:03:41.872Z"
+            },
+            {
+              "id": "guidance-remote-access",
+              "kind": "guidance",
+              "state": "observation",
+              "title": "Check unexpected technical-support requests",
+              "detail": "SPF describes technical-support scams that ask people to download remote-access software or grant control of their device. Confirm an unexpected support request through the software provider’s official channels before following its instructions. Source reviewed 2026-09-26; review expires 2026-10-26. This is reference guidance, not proof about this message.",
+              "sourceUrl": "https://www.police.gov.sg/Media-Hub/News/2026/06/20260609_joint_advisory_on_technical_support_scams_involving_the_impersonation_of_microsoft",
+              "checkedAt": "2026-09-27T04:03:41.872Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "install an app",
+                "quote": "Install this remote-control app"
+              },
+              {
+                "action": "allow remote access",
+                "quote": "let our agent operate your phone"
+              },
+              {
+                "action": "make a payment",
+                "quote": "transfer S$450 to the account the agent shows you"
+              },
+              {
+                "action": "share a login or account code",
+                "quote": "read the bank login code aloud to the agent to confirm the transfer"
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [
+              "Did someone ask you to install an app or allow remote access?",
+              "Were you already expecting this payment request?"
+            ]
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T04:03:45.483Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

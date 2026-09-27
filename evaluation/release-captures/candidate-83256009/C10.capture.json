@@ -1,0 +1,69 @@
+{
+  "schemaVersion": 1,
+  "caseId": "C10",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "d7f98ef0efe4daba05e542b3ffedc14a5b6cc6753f7e1ca5df4289c233ae6d1b",
+  "capturedAt": "2026-09-27T04:00:42.556Z",
+  "submittedInput": {
+    "mode": "call",
+    "content": "I was expecting a courier this afternoon. A caller said they were at the building lobby and asked which entrance to use. They did not ask for any account code, money, app or link. I can see the lobby from my window.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "94b73f10-78d4-44d0-a63a-1c50761c35ae",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T04:00:42.556Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "94b73f10-78d4-44d0-a63a-1c50761c35ae",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "Your description asks for information, without a stated payment, account-code or device-access request.",
+          "uncertainty": "This covers the details supplied. A later request may need a new check.",
+          "evidence": [
+            {
+              "id": "phone-unavailable",
+              "kind": "phone",
+              "state": "unavailable",
+              "title": "Caller identity is not verified",
+              "detail": "No complete number was extracted and no authorised reported-number feed is connected. The supplied description can still be assessed for the action requested.",
+              "checkedAt": "2026-09-27T04:00:39.981Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "answer a location/entry question",
+                "quote": "asked which entrance to use"
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T04:00:42.064Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

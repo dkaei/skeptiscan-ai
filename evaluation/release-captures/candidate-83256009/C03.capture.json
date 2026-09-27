@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "caseId": "C03",
+  "candidateHash": "f3607e8031eb60eb4e3ef074b71f7c9262276d04899e71ad9969ba99be70e07b",
+  "policyHash": "3313f98e6a1d381470f92332135d35d2a6beefee610a97b75daf4cc23ec073c9",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "4743dda699b2000d9f9e368bb80a3489c3a131d087e9a464b382f00f437642d2",
+  "capturedAt": "2026-09-27T04:00:20.122Z",
+  "submittedInput": {
+    "mode": "call",
+    "content": "The caller knew my first name and where I used to work. They said they were a relative with a new number and asked me to transfer money to a different person's account without calling the old number.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "ac484777-f4db-4df4-8370-55cf7b4df1c6",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T04:00:20.122Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "ac484777-f4db-4df4-8370-55cf7b4df1c6",
+          "status": "complete",
+          "title": "Confirm the payment request",
+          "nextStep": "Verify who should receive the payment through a trusted, independent contact route.",
+          "reason": "Confirming a payment through a separate trusted route can help prevent a mistaken transfer.",
+          "uncertainty": "The recipient and purpose of the payment have not been verified.",
+          "evidence": [
+            {
+              "id": "phone-unavailable",
+              "kind": "phone",
+              "state": "unavailable",
+              "title": "Caller identity is not verified",
+              "detail": "No complete number was extracted and no authorised reported-number feed is connected. The supplied description can still be assessed for the action requested.",
+              "checkedAt": "2026-09-27T04:00:18.034Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "transfer money to a different person's account",
+                "quote": "asked me to transfer money to a different person's account"
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [
+              "Were you already expecting this payment request?"
+            ]
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T04:00:19.653Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "caseId": "L06",
+  "candidateHash": "3c9b769f10b5b40c9f521f25fba4a3d6281c8ca59526fff0dd655c12843b59c2",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "cdfcfe5966494fbd4c0d7e3a02b75c99548e5855e2ab3066c1c7d7a69c767136",
+  "inputSha256": "65557de5619cfe3e8795fc5fc57fe3631de9a34f986dcc66a0e1b28d7edd336b",
+  "capturedAt": "2026-09-27T09:13:35.046Z",
+  "submittedInput": {
+    "mode": "link",
+    "content": "https://dЬs.com.sg/",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "8356b23d-e6b4-4ab5-a904-d7605c279ad3",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T09:13:35.046Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "8356b23d-e6b4-4ab5-a904-d7605c279ad3",
+          "status": "complete",
+          "title": "Check through a trusted route",
+          "nextStep": "Use the official app or a contact route you already know to confirm the request.",
+          "reason": "The actual website address matters. A familiar name within a link does not establish who controls its destination.",
+          "uncertainty": "The website’s content and owner have not been verified.",
+          "evidence": [
+            {
+              "id": "domain-0",
+              "kind": "domain",
+              "state": "unsupported",
+              "title": "Limited URL check",
+              "detail": "Actual host: xn--ds-mnc.com.sg. Registrable domain: xn--ds-mnc.com.sg. This internationalised hostname needs a separate character-spoofing review. It has not been matched to an organisation or sent externally.",
+              "checkedAt": "2026-09-27T09:13:32.202Z"
+            },
+            {
+              "id": "reputation-0",
+              "kind": "reputation",
+              "state": "unsupported",
+              "title": "External link check not performed",
+              "detail": "This internationalised hostname needs a separate character-spoofing review. It has not been matched to an organisation or sent externally.",
+              "checkedAt": "2026-09-27T09:13:32.202Z"
+            }
+          ],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [
+              "https://dЬs.com.sg/"
+            ],
+            "phoneNumbers": [],
+            "requestedActions": [],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T09:13:34.873Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}

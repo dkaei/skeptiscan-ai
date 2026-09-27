@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "caseId": "ST06",
+  "candidateHash": "fe8372971341d763ca2440a1e164e101dd5801aa8c498cfa467f955992c627d6",
+  "policyHash": "a70ef8eca5610984cb7052cea93b391d95cd83787068b71edc1c005d333fd2fd",
+  "referenceSha256": "fe2cc68cd6381ae58b27bdd6073e527eddaf107f6e852ccf7e5f0501e521b821",
+  "inputSha256": "65ba51a1188dd7383b72d7216a72adde394cf50f5759788c5f75489d536af0f9",
+  "capturedAt": "2026-09-27T12:49:08.394Z",
+  "submittedInput": {
+    "mode": "message",
+    "content": "The fictional Cedar Workshop really repaired my chair and I owe S$85. I opened the portal I normally use myself. It shows the agreed workshop payee and lets me pay there or settle at the workshop when I collect the chair. There is no new payee, unexpected link, secrecy instruction or urgent deadline.",
+    "context": "",
+    "senderEmail": "",
+    "senderPhone": "",
+    "externalLookup": false
+  },
+  "attempts": [
+    {
+      "observation": {
+        "kind": "initial",
+        "requestId": "8a946fb4-3ef6-4cb5-b0f7-1c15ca24846f",
+        "httpStatus": 200,
+        "observedStatus": "complete",
+        "aiUsed": true,
+        "errorCode": null,
+        "questionId": null
+      },
+      "receivedAt": "2026-09-27T12:49:08.394Z",
+      "response": {
+        "httpStatus": 200,
+        "body": {
+          "requestId": "8a946fb4-3ef6-4cb5-b0f7-1c15ca24846f",
+          "status": "complete",
+          "title": "Confirm the payment request",
+          "nextStep": "Verify who should receive the payment through a trusted, independent contact route.",
+          "reason": "As described, “I owe S$85.”; “It shows the agreed workshop payee and lets me pay there or settle at the workshop when I collect the chair.”; “There is no new payee, unexpected link, secrecy instruction or urgent deadline.”. This is an expected payment arrangement, not evidence authenticating a different recipient or changed payment details.",
+          "uncertainty": "The recipient and purpose of the payment have not been verified.",
+          "evidence": [],
+          "extraction": {
+            "transcript": "",
+            "claimedOrganisation": null,
+            "urls": [],
+            "phoneNumbers": [],
+            "requestedActions": [
+              {
+                "action": "pay S$85",
+                "quote": "I owe S$85.",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 58,
+                  "end": 69
+                }
+              },
+              {
+                "action": "pay at the portal",
+                "quote": "It shows the agreed workshop payee and lets me pay there",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 113,
+                  "end": 169
+                }
+              },
+              {
+                "action": "settle at the workshop when I collect the chair",
+                "quote": "or settle at the workshop when I collect the chair",
+                "source": "content",
+                "span": {
+                  "source": "content",
+                  "start": 170,
+                  "end": 220
+                }
+              }
+            ],
+            "unreadableDetails": [],
+            "missingContext": [],
+            "screenshotIssues": []
+          },
+          "question": null,
+          "checkedAt": "2026-09-27T12:49:05.668Z",
+          "aiUsed": true
+        }
+      }
+    }
+  ]
+}
